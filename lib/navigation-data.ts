@@ -1,0 +1,101 @@
+export interface NavLink {
+  label: string;
+  href: string;
+  megaMenu?: MegaMenuCategory[];
+}
+
+export interface MegaMenuCategory {
+  title: string;
+  links: { label: string; href: string }[];
+}
+
+export const navigationData: NavLink[] = [
+  {
+    label: "Development",
+    href: "/development",
+    megaMenu: [
+      {
+        title: "WORDPRESS",
+        links: [
+          { label: "WordPress Development", href: "/development/wordpress" },
+          { label: "WordPress Speed Optimization", href: "/development/wordpress-speed" },
+          { label: "PSD to WordPress", href: "/development/psd-to-wordpress" },
+          { label: "WordPress Support & Maintenance", href: "/development/wordpress-support" },
+          { label: "WordPress Customization Service", href: "/development/wordpress-customization" },
+        ],
+      },
+      {
+        title: "SHOPIFY",
+        links: [
+          { label: "Shopify Development", href: "/development/shopify" },
+          { label: "Shopify Web Design", href: "/development/shopify-design" },
+          { label: "Shopify Marketing", href: "/development/shopify-marketing" },
+          { label: "PSD to Shopify", href: "/development/psd-to-shopify" },
+          { label: "Shopify Store Migration", href: "/development/shopify-migration" },
+        ],
+      },
+      {
+        title: "OPEN SOURCE",
+        links: [
+          { label: "Woocommerce", href: "/development/woocommerce" },
+          { label: "Magento", href: "/development/magento" },
+          { label: "Joomla", href: "/development/joomla" },
+          { label: "Drupal", href: "/development/drupal" },
+          { label: "Open Cart", href: "/development/opencart" },
+        ],
+      },
+      {
+        title: "APP DEVELOPMENT",
+        links: [
+          { label: "iOS App Development", href: "/development/ios" },
+          { label: "Android App Development", href: "/development/android" },
+          { label: "Flutter App Development", href: "/development/flutter" },
+          { label: "React Native App Development", href: "/development/react-native" },
+          { label: "Custom App Development", href: "/development/custom-app" },
+        ],
+      },
+    ],
+  },
+  {
+    label: "AI SEO",
+    href: "/ai-seo",
+  },
+  {
+    label: "Event Management",
+    href: "/event-management",
+    megaMenu: [
+      {
+        title: "EVENT SERVICES",
+        links: [
+          { label: "Corporate Events", href: "/events/corporate" },
+          { label: "Weddings", href: "/events/weddings" },
+          { label: "Conferences", href: "/events/conferences" },
+          { label: "Product Launches", href: "/events/product-launches" },
+          { label: "Gala Dinners", href: "/events/gala-dinners" },
+        ],
+      },
+      {
+        title: "PLANNING",
+        links: [
+          { label: "Venue Selection", href: "/events/venue" },
+          { label: "Catering", href: "/events/catering" },
+          { label: "Entertainment", href: "/events/entertainment" },
+          { label: "Decor & Theme", href: "/events/decor" },
+          { label: "Photography", href: "/events/photography" },
+        ],
+      },
+    ]
+  },
+  {
+    label: "About Us",
+    href: "/about-us",
+  },
+  {
+    label: "Blog",
+    href: "/blog",
+  },
+  {
+    label: "Contact Us",
+    href: "/contact-us",
+  },
+];
