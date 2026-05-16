@@ -130,7 +130,10 @@ export default function Header() {
 
           {/* Mobile Menu Toggle */}
           <button
-            className="lg:hidden p-2 text-gray-700"
+            className={cn(
+              "lg:hidden p-2 transition-colors",
+              scrolled ? "text-gray-900" : "text-white"
+            )}
             onClick={() => setIsOpen(!isOpen)}
           >
             {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -147,12 +150,12 @@ export default function Header() {
             className="lg:hidden bg-slate-900 border-t border-white/10 overflow-hidden"
           >
             <div className="container mx-auto px-6 py-8 flex flex-col gap-6">
-              {navigationData.map((link) => (
+              {navigationData.filter(link => link.label.toLowerCase().trim() !== "contact us").map((link) => (
                 <div key={link.label} className="flex flex-col">
                   <div className="flex items-center justify-between py-3 border-b border-white/5">
                     <Link
                       href={link.href}
-                      className="text-xl font-bold text-white"
+                      className="text-xl text-white"
                     >
                       {link.label}
                     </Link>

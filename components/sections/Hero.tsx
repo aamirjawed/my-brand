@@ -54,7 +54,7 @@ export default function Hero() {
   }, [displayText, isDeleting, index]);
 
   return (
-    <section className="relative h-screen min-h-[700px] flex flex-col overflow-hidden bg-slate-800">
+    <section className="relative h-auto py-24 md:py-0 md:h-screen md:min-h-[700px] flex flex-col overflow-hidden bg-slate-800">
       {/* Background Image Container */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-black/60 z-10" />
@@ -66,7 +66,7 @@ export default function Hero() {
       </div>
 
       {/* Main Content */}
-      <div className="container mx-auto px-6 relative z-20 flex-grow flex flex-col justify-center">
+      <div className="container mx-auto px-6 relative z-20 flex-grow flex flex-col justify-center py-12 md:py-0">
         <div className="max-w-4xl">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
