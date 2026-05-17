@@ -53,7 +53,7 @@ function ServiceCard({ service, index }: { service: any; index: number }) {
           delay: index * 0.1,
           layout: { duration: 0.5, ease: "easeInOut" }
         }}
-        className={`relative p-8 flex flex-col xl:flex-row gap-6 overflow-hidden transition-colors transition-shadow duration-500 rounded-3xl border border-slate-100 ${!isHovered ? 'h-full' : ''} ${isHovered ? "bg-black text-white shadow-2xl -translate-y-2 border-black" : "bg-slate-50 text-slate-900"
+        className={`relative p-5 sm:p-8 flex flex-col xl:flex-row gap-4 sm:gap-6 overflow-hidden transition-colors transition-shadow duration-500 rounded-3xl border border-slate-100 ${!isHovered ? 'h-full' : ''} ${isHovered ? "bg-black text-white shadow-2xl -translate-y-2 border-black" : "bg-slate-50 text-slate-900"
           }`}
       >
 
@@ -61,10 +61,10 @@ function ServiceCard({ service, index }: { service: any; index: number }) {
         {/* Icon Box */}
         <motion.div
           layout="position"
-          className={`w-14 h-14 sm:w-16 sm:h-16 shrink-0 flex items-center justify-center transition-colors transition-transform duration-500 relative z-10 rounded-2xl shadow-sm ${isHovered ? "bg-slate-800 scale-110" : "bg-white"
+          className={`w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 shrink-0 flex items-center justify-center transition-colors transition-transform duration-500 relative z-10 rounded-2xl shadow-sm ${isHovered ? "bg-slate-800 scale-110" : "bg-white"
             }`}
         >
-          <Icon className={`w-7 h-7 sm:w-8 sm:h-8 transition-colors duration-500 ${isHovered ? "text-orange-600" : "text-slate-800"}`} />
+          <Icon className={`w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 transition-colors duration-500 ${isHovered ? "text-orange-600" : "text-slate-800"}`} />
         </motion.div>
 
         {/* Text Content */}
@@ -72,7 +72,7 @@ function ServiceCard({ service, index }: { service: any; index: number }) {
           layout="position"
           className="flex flex-col justify-center relative z-10 flex-grow"
         >
-          <motion.h3 layout="position" className="text-xl sm:text-2xl font-bold mb-3 whitespace-pre-line transition-colors duration-500">
+          <motion.h3 layout="position" className="text-base sm:text-xl md:text-2xl font-bold mb-2 sm:mb-3 whitespace-pre-line transition-colors duration-500 leading-tight">
             {service.title}
           </motion.h3>
 
@@ -86,7 +86,7 @@ function ServiceCard({ service, index }: { service: any; index: number }) {
                 transition={{ duration: 0.3 }}
                 className="flex items-start"
               >
-                <p className="text-slate-500 text-sm sm:text-base leading-relaxed">
+                <p className="text-slate-500 text-[11px] sm:text-sm md:text-base leading-relaxed line-clamp-3 sm:line-clamp-none">
                   {service.description}
                 </p>
               </motion.div>
@@ -99,7 +99,7 @@ function ServiceCard({ service, index }: { service: any; index: number }) {
                 transition={{ duration: 0.3 }}
                 className="flex items-center gap-2 text-sm font-medium text-white"
               >
-                Read more <ArrowRight className="w-4 h-4 text-orange-600" />
+                <span className="text-[11px] sm:text-sm md:text-base">Read more</span> <ArrowRight className="w-3 h-3 sm:w-4 sm:h-4 text-orange-600" />
               </motion.div>
             )}
           </AnimatePresence>
@@ -118,8 +118,8 @@ export default function ServicesSection() {
       {/* Background Subtle Pattern */}
       <div className="absolute inset-0 opacity-[0.03] pointer-events-none" style={{ backgroundImage: 'radial-gradient(#000 1px, transparent 1px)', backgroundSize: '30px 30px' }}></div>
 
-      <div className="container mx-auto px-6 relative z-10">
-        <div className="flex flex-col lg:flex-row gap-16 items-center lg:items-start">
+      <div className="w-full px-6 lg:px-16 xl:px-24 max-w-[1400px] mx-auto relative z-10">
+        <div className="flex flex-col lg:flex-row gap-10 lg:gap-16 items-center lg:items-start">
 
           {/* Left Content */}
           <div className="w-full lg:w-4/12 lg:sticky lg:top-32">
@@ -134,7 +134,7 @@ export default function ServicesSection() {
                 <h4 className="text-orange-600 font-bold tracking-widest text-xs sm:text-sm mb-4 uppercase">Let's know about our Services</h4>
               </div>
 
-              <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-slate-900 leading-[1.1] mb-6 tracking-tight">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 leading-[1.1] mb-6 tracking-tight">
                 Creative <br className="hidden sm:block" />
                 Web Design <br className="hidden sm:block" />
                 and Branding <br className="hidden sm:block" />
@@ -150,7 +150,7 @@ export default function ServicesSection() {
           </div>
 
           {/* Right Content - Grid */}
-          <div className="w-full lg:w-8/12 grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div className="w-full lg:w-8/12 grid grid-cols-2 gap-3 sm:gap-6">
             {services.map((service, index) => (
               <ServiceCard key={index} service={service} index={index} />
             ))}

@@ -31,8 +31,8 @@ export default function AboutSection() {
 
   return (
     <section className="py-24 bg-white overflow-hidden">
-      <div className="container mx-auto px-6">
-        <div className="flex flex-col lg:flex-row items-center gap-16">
+      <div className="w-full px-6 lg:px-16 xl:px-24 max-w-[1400px] mx-auto">
+        <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
           {/* Left Content */}
           <div className="w-full lg:w-1/2">
             <motion.div
