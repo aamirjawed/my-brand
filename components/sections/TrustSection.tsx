@@ -109,15 +109,16 @@ export default function TrustSection() {
         </div>
 
         {/* Interactive Tabs Grid */}
-        <div 
-          className="flex flex-row overflow-x-auto no-scrollbar gap-4 pt-3 pb-4 px-1 mb-16 sm:pt-0 sm:pb-0 sm:px-0 sm:grid sm:grid-cols-2 lg:grid-cols-4 sm:gap-6"
+        <div
+          className="flex flex-row overflow-x-auto no-scrollbar gap-4 pt-3 pb-4 px-2 mb-16 sm:py-3 sm:px-3 sm:grid sm:grid-cols-2 lg:grid-cols-4 sm:gap-6 sm:overflow-visible"
           style={{
             msOverflowStyle: "none",
             scrollbarWidth: "none",
           }}
         >
           {/* Custom style for webkit scrollbar hiding */}
-          <style dangerouslySetInnerHTML={{__html: `
+          <style dangerouslySetInnerHTML={{
+            __html: `
             .no-scrollbar::-webkit-scrollbar {
               display: none;
             }
@@ -178,7 +179,7 @@ export default function TrustSection() {
                 >
                   {tabContent[activeTab].title}
                 </h3>
-                <p className="text-slate-650 text-lg leading-relaxed mb-8">
+                <p className="text-gray-500 text-lg leading-relaxed mb-8">
                   {tabContent[activeTab].description}
                 </p>
                 <button className="bg-slate-900 hover:bg-orange-600 text-white px-8 py-4 rounded-xl font-bold transition-all hover:scale-105 active:scale-95 shadow-xl flex items-center gap-3">
