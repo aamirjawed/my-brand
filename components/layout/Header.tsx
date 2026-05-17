@@ -28,6 +28,18 @@ export default function Header() {
     setActiveMegaMenu(null);
   }, [pathname]);
 
+  // Lock body scroll when mobile menu is open
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [isOpen]);
+
   return (
     <header
       className={cn(
@@ -140,7 +152,7 @@ export default function Header() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="lg:hidden bg-slate-900 border-t border-white/10 overflow-hidden"
+            className="lg:hidden bg-slate-900 border-t border-white/10 overflow-y-auto max-h-[calc(100vh-80px)] pb-12"
           >
             <div className="container mx-auto px-6 py-8 flex flex-col gap-6">
               {navigationData.filter(link => link.label.toLowerCase().trim() !== "contact us").map((link) => (

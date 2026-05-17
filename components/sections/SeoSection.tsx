@@ -82,9 +82,9 @@ export default function SeoSection() {
               transition={{ duration: 10, repeat: Infinity, ease: "linear" }}
               className="absolute inset-0 flex items-center justify-center opacity-10 pointer-events-none"
             >
-              <div className="w-full h-full rounded-full border border-slate-900 relative" style={{ background: 'conic-gradient(from 0deg, transparent 70%, #0f172a 100%)' }}></div>
+              <div className="w-[300px] h-[300px] sm:w-[480px] sm:h-[480px] rounded-full border border-slate-900 relative shrink-0" style={{ background: 'conic-gradient(from 0deg, transparent 70%, #0f172a 100%)' }}></div>
             </motion.div>
-
+ 
             {/* Floating Search Icon */}
             <motion.div 
               animate={{ y: [-15, 15, -15], x: [10, -10, 10] }}
@@ -93,7 +93,7 @@ export default function SeoSection() {
             >
               <Search strokeWidth={2} className="w-10 h-10 text-orange-600" />
             </motion.div>
-
+ 
             {/* Floating Chart Icon */}
             <motion.div 
               animate={{ y: [15, -15, 15] }}
@@ -108,18 +108,18 @@ export default function SeoSection() {
                 <motion.div animate={{ height: ["40%", "100%", "40%"] }} transition={{ duration: 2.2, repeat: Infinity }} className="w-2 bg-orange-600 rounded-t-sm"></motion.div>
               </div>
             </motion.div>
-
+ 
             {/* The Giant Target (Bullseye) */}
             <motion.div 
               initial={{ scale: 0.5, opacity: 0 }}
               whileInView={{ scale: 1, opacity: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8, type: "spring" }}
-              className="relative z-20 flex items-center justify-center"
+              className="relative z-20 flex items-center justify-center shrink-0"
             >
-              <div className="w-[250px] h-[250px] sm:w-[350px] sm:h-[350px] rounded-full border-[15px] border-slate-100 flex items-center justify-center shadow-inner bg-white">
-                <div className="w-[180px] h-[180px] sm:w-[250px] sm:h-[250px] rounded-full border-[15px] border-slate-200 flex items-center justify-center">
-                  <div className="w-[100px] h-[100px] sm:w-[150px] sm:h-[150px] rounded-full bg-orange-600 shadow-2xl flex items-center justify-center">
+              <div className="w-[240px] h-[240px] sm:w-[350px] sm:h-[350px] shrink-0 rounded-full border-[15px] border-slate-100 flex items-center justify-center shadow-inner bg-white">
+                <div className="w-[180px] h-[180px] sm:w-[250px] sm:h-[250px] shrink-0 rounded-full border-[15px] border-slate-200 flex items-center justify-center">
+                  <div className="w-[110px] h-[110px] sm:w-[150px] sm:h-[150px] shrink-0 rounded-full bg-orange-600 shadow-2xl flex items-center justify-center">
                     <Target className="w-12 h-12 sm:w-16 sm:h-16 text-white opacity-80" />
                   </div>
                 </div>
