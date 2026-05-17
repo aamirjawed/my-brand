@@ -37,11 +37,11 @@ export const navigationData: NavLink[] = [
       {
         title: "WEBSITE DEVELOPMENT",
         links: [
-          { label: "Landing Page", href: "/development/landing-page" },
-          { label: "Static Website", href: "/development/static-website" },
-          { label: "Custom Website", href: "/development/custom-website" },
-          { label: "Single Page Application", href: "/development/spa" },
-          { label: "Corporate Website", href: "/development/corporate-website" },
+          { label: "Landing Page", href: "/landing-page" },
+          { label: "Static Website", href: "/static-website" },
+          { label: "Custom Website", href: "/custom-website" },
+          { label: "Single Page Application", href: "/spa" },
+          { label: "Corporate Website", href: "/corporate-website" },
         ],
       },
       {
