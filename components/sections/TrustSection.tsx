@@ -71,7 +71,7 @@ const tabContent = [
 ];
 
 export default function TrustSection() {
-  const [activeTab, setActiveTab] = useState(2); // Default to In-House Team as per screenshot
+  const [activeTab, setActiveTab] = useState(0); // Default to In-House Team as per screenshot
 
   return (
     <section className="py-24 bg-white overflow-hidden">

@@ -34,8 +34,8 @@ export default function LandingPageService() {
         <div className="absolute right-0 top-0 w-80 h-80 bg-orange-600/10 rounded-full blur-[100px] pointer-events-none"></div>
         <div className="max-w-4xl mx-auto px-6 relative z-10">
           <Rocket className="w-10 h-10 text-orange-500 mx-auto mb-6" />
-          
-          <h2 
+
+          <h2
             className="text-3xl sm:text-4xl font-black text-white uppercase tracking-widest mb-4"
             style={{
               textShadow: "2px 2px 0px rgba(0,0,0,0.1)"
@@ -43,11 +43,11 @@ export default function LandingPageService() {
           >
             Ready to Accelerate Growth?
           </h2>
-          
+
           <p className="text-slate-400 text-xs sm:text-sm leading-relaxed max-w-lg mx-auto mb-10">
             Tell us about your campaign goals. Our custom design team will wireframe a bespoke landing page strategy tailored to your exact industry.
           </p>
-          
+
           <Link
             href="/contact-us"
             className="inline-flex items-center gap-2 bg-white text-slate-950 hover:bg-slate-100 px-8 py-4 rounded-full font-bold text-xs tracking-wide transition-all shadow-lg hover:-translate-y-0.5"
