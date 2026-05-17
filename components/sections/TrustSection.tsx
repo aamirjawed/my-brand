@@ -109,7 +109,20 @@ export default function TrustSection() {
         </div>
 
         {/* Interactive Tabs Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mb-16">
+        <div 
+          className="flex flex-row overflow-x-auto no-scrollbar gap-4 pt-3 pb-4 px-1 mb-16 sm:pt-0 sm:pb-0 sm:px-0 sm:grid sm:grid-cols-2 lg:grid-cols-4 sm:gap-6"
+          style={{
+            msOverflowStyle: "none",
+            scrollbarWidth: "none",
+          }}
+        >
+          {/* Custom style for webkit scrollbar hiding */}
+          <style dangerouslySetInnerHTML={{__html: `
+            .no-scrollbar::-webkit-scrollbar {
+              display: none;
+            }
+          `}} />
+
           {stats.map((stat, index) => {
             const Icon = stat.icon;
             const isActive = activeTab === index;
@@ -122,23 +135,23 @@ export default function TrustSection() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: index * 0.05 }}
                 whileHover={{ y: -4 }}
-                className={`w-full p-6 sm:p-8 flex flex-col items-center justify-center text-center gap-4 transition-all duration-300 rounded-[2rem] border ${isActive
+                className={`flex-shrink-0 w-[170px] sm:w-auto p-4 sm:p-8 flex flex-col items-center justify-center text-center gap-2 sm:gap-4 transition-all duration-300 rounded-[1.5rem] sm:rounded-[2rem] border ${isActive
                   ? "bg-slate-900 text-white border-slate-900 shadow-[0_20px_40px_-15px_rgba(15,23,42,0.25)] scale-105 z-10"
                   : "bg-slate-50 text-slate-900 border-slate-100 hover:bg-slate-100/70 shadow-sm"
                   }`}
               >
                 {/* Modern Icon Badge */}
                 <div
-                  className={`w-12 h-12 rounded-2xl flex items-center justify-center transition-all duration-300 relative ${isActive
+                  className={`w-9 h-9 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl flex items-center justify-center transition-all duration-300 relative ${isActive
                     ? "bg-white text-slate-900 shadow-md scale-105"
                     : "bg-white text-slate-800 border border-slate-100"
                     }`}
                 >
-                  <Icon strokeWidth={2} className="w-5 h-5" />
+                  <Icon strokeWidth={2} className="w-4 h-4 sm:w-5 h-5" />
                 </div>
 
                 {/* Text Title */}
-                <h3 className={`font-bold text-sm sm:text-base leading-tight transition-colors duration-300 ${isActive ? "text-white" : "text-slate-700"
+                <h3 className={`font-bold text-[11px] sm:text-base leading-tight transition-colors duration-300 ${isActive ? "text-white" : "text-slate-700"
                   }`}>
                   {stat.title}
                 </h3>
@@ -165,7 +178,7 @@ export default function TrustSection() {
                 >
                   {tabContent[activeTab].title}
                 </h3>
-                <p className="text-slate-600 text-lg leading-relaxed mb-8">
+                <p className="text-slate-650 text-lg leading-relaxed mb-8">
                   {tabContent[activeTab].description}
                 </p>
                 <button className="bg-slate-900 hover:bg-orange-600 text-white px-8 py-4 rounded-xl font-bold transition-all hover:scale-105 active:scale-95 shadow-xl flex items-center gap-3">
@@ -175,7 +188,7 @@ export default function TrustSection() {
               </div>
 
               {/* Right Content (Creative Visual) */}
-              <div className="w-full lg:w-1/2 h-[300px] sm:h-[400px]">
+              <div className="w-full lg:w-1/2 h-[380px] sm:h-[400px]">
                 {tabContent[activeTab].visual}
               </div>
 
