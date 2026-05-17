@@ -35,13 +35,13 @@ export const navigationData: NavLink[] = [
         ],
       },
       {
-        title: "OPEN SOURCE",
+        title: "WEBSITE DEVELOPMENT",
         links: [
-          { label: "Woocommerce", href: "/development/woocommerce" },
-          { label: "Magento", href: "/development/magento" },
-          { label: "Joomla", href: "/development/joomla" },
-          { label: "Drupal", href: "/development/drupal" },
-          { label: "Open Cart", href: "/development/opencart" },
+          { label: "Landing Page", href: "/development/landing-page" },
+          { label: "Static Website", href: "/development/static-website" },
+          { label: "Custom Website", href: "/development/custom-website" },
+          { label: "Single Page Application", href: "/development/spa" },
+          { label: "Corporate Website", href: "/development/corporate-website" },
         ],
       },
       {

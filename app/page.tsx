@@ -7,6 +7,8 @@ import GraphicDesignSection from "@/components/sections/GraphicDesignSection";
 import ContentCreationSection from "@/components/sections/ContentCreationSection";
 import EventManagementSection from "@/components/sections/EventManagementSection";
 import TrustSection from "@/components/sections/TrustSection";
+import TestimonialsSection from "@/components/sections/TestimonialsSection";
+import ContactBanner from "@/components/sections/ContactBanner";
 
 export default function Home() {
   return (
@@ -20,6 +22,8 @@ export default function Home() {
       <ContentCreationSection />
       <EventManagementSection />
       <TrustSection />
+      <TestimonialsSection />
+      <ContactBanner />
     </div>
   );
 }

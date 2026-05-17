@@ -162,7 +162,7 @@ export default function TrustSection() {
               {/* Left Content (Text) */}
               <div className="w-full lg:w-1/2">
                 <h3 className="text-3xl sm:text-4xl font-black text-orange-600 mb-6 capitalize tracking-tight"
-                  style={{ WebkitTextStroke: '0.5px #0f172a' }}>
+                >
                   {tabContent[activeTab].title}
                 </h3>
                 <p className="text-slate-600 text-lg leading-relaxed mb-8">
