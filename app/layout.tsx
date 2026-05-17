@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Brand Website",
-  description: "Modern Brand Website with Next.js",
+  title: "DigitalDeveloper",
+  description: "DigitalDeveloper - Your Trusted Consulting Partner for Web, SEO, and more.",
 };
 
 export default function RootLayout({

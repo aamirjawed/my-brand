@@ -84,7 +84,35 @@ export const navigationData: NavLink[] = [
           { label: "Photography", href: "/events/photography" },
         ],
       },
-    ]
+    ],
+  },
+  {
+    label: "Design",
+    href: "/design",
+    megaMenu: [
+      {
+        title: "CREATIVE",
+        links: [
+          { label: "Branding & Logo", href: "/design/branding" },
+          { label: "UI/UX Design", href: "/design/ui-ux" },
+          { label: "Social Graphics", href: "/design/social" },
+        ],
+      },
+    ],
+  },
+  {
+    label: "Content Creation",
+    href: "/content-creation",
+    megaMenu: [
+      {
+        title: "CREATION",
+        links: [
+          { label: "Video Production", href: "/content/video" },
+          { label: "Copywriting", href: "/content/copywriting" },
+          { label: "Social Media", href: "/content/social" },
+        ],
+      },
+    ],
   },
   {
     label: "About Us",

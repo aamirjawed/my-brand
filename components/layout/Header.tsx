@@ -42,18 +42,18 @@ export default function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 group">
             <div className="w-10 h-10 bg-orange-600 rounded-lg flex items-center justify-center transform transition-transform group-hover:rotate-12">
-              <span className="text-white font-bold text-xl">B</span>
+              <span className="text-white font-bold text-xl">DD</span>
             </div>
             <span className={cn(
-              "font-bold text-2xl tracking-tight transition-colors",
+              "font-bold text-xl tracking-tight transition-colors flex items-center",
               scrolled ? "text-gray-900" : "text-gray-900 md:text-white"
             )}>
-              BRAND<span className="text-orange-600">HUB</span>
+              Digital<span className="text-orange-600">Developer</span>
             </span>
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center gap-8">
+          <div className="hidden lg:flex items-center gap-2 xl:gap-4 flex-grow justify-center px-4">
             {navigationData.map((link) => (
               <div
                 key={link.label}
@@ -64,14 +64,14 @@ export default function Header() {
                 <Link
                   href={link.href}
                   className={cn(
-                    "flex items-center gap-1 font-medium transition-colors py-2",
+                    "flex items-center gap-1 font-medium text-[12px] xl:text-[14px] tracking-tight transition-colors py-2 whitespace-nowrap",
                     scrolled ? "text-gray-700 hover:text-orange-600" : "text-gray-700 md:text-white hover:text-orange-400",
                     pathname.startsWith(link.href) && "text-orange-600"
                   )}
                 >
                   {link.label}
                   {link.megaMenu && (
-                    <ChevronDown className="w-4 h-4 transition-transform group-hover:rotate-180" />
+                    <ChevronDown className="w-3 h-3 transition-transform group-hover:rotate-180 opacity-50" />
                   )}
                 </Link>
 
@@ -117,15 +117,8 @@ export default function Header() {
             ))}
           </div>
 
-          {/* Right Actions */}
+          {/* Right Actions - Empty for now */}
           <div className="hidden md:flex items-center gap-4">
-
-            <Link
-              href="/contact-us"
-              className="bg-orange-600 hover:bg-orange-700 text-white px-6 py-2.5 rounded-full font-semibold transition-all hover:scale-105 active:scale-95 shadow-lg shadow-orange-600/20"
-            >
-              Get Started
-            </Link>
           </div>
 
           {/* Mobile Menu Toggle */}
