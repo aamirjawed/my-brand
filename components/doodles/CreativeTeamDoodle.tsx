@@ -1,16 +1,20 @@
 "use client";
 
+import { useState } from "react";
 import { motion } from "framer-motion";
 
 export default function CreativeTeamDoodle() {
+  const [isRevealed, setIsRevealed] = useState(false);
+
   return (
     <div className="relative w-full h-full flex items-center justify-center overflow-visible">
       {/* Container holding the doodle team */}
       <motion.div
-        className="relative w-full max-w-[340px] aspect-[4/5] overflow-hidden rounded-[2.5rem] border-4 text-orange-600 bg-white shadow-[8px_8px_0px_rgba(15,23,42,0.1)] cursor-pointer group"
+        className="relative w-full max-w-[340px] aspect-[4/5] overflow-hidden rounded-[2.5rem] border-4 text-orange-600 bg-white shadow-[8px_8px_0px_rgba(15,23,42,0.1)] cursor-pointer group select-none"
         whileHover="hover"
         initial="rest"
-        animate="rest"
+        animate={isRevealed ? "hover" : "rest"}
+        onClick={() => setIsRevealed(!isRevealed)}
       >
         {/* The Hidden "Creative Team Doodles" (Under the curtain) */}
         <div className="absolute inset-0 bg-white p-6 flex items-end justify-start">
@@ -196,7 +200,7 @@ export default function CreativeTeamDoodle() {
                 Our Creative Engine
               </span>
               <span className="text-xs text-slate-400 font-bold tracking-widest uppercase">
-                Hover to reveal team
+                Hover or tap to reveal
               </span>
             </div>
           </div>
