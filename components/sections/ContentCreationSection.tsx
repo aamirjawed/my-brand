@@ -111,7 +111,7 @@ export default function ContentCreationSection() {
                 whileInView={{ scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.8, type: "spring" }}
-                className="absolute top-[80%] left-[80%] -translate-x-1/2 -translate-y-1/2 bg-orange-600 text-white font-black text-xl sm:text-2xl tracking-widest px-8 py-3 transform -rotate-[10deg] whitespace-nowrap flex items-center gap-3 border-[3px] border-white shadow-2xl rounded-sm z-40"
+                className="absolute top-[80%] left-[65%] sm:left-[80%] -translate-x-1/2 -translate-y-1/2 bg-orange-600 text-white font-black text-sm sm:text-2xl tracking-wider sm:tracking-widest px-5 sm:px-8 py-2 sm:py-3 transform -rotate-[10deg] whitespace-nowrap flex items-center gap-3 border-[3px] border-white shadow-2xl rounded-sm z-40"
               >
                 VIRAL STORYTELLING
               </motion.div>
