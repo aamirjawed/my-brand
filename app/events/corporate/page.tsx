@@ -4,33 +4,33 @@ import React from "react";
 import Link from "next/link";
 import { ArrowUpRight, CalendarCheck } from "lucide-react";
 
-import CorporateEventHero from "@/components/sections/events/CorporateEventHero";
-import CorporateEventShowcase from "@/components/sections/events/CorporateEventShowcase";
-import CorporateEventStats from "@/components/sections/events/CorporateEventStats";
-import CorporateEventFeatures from "@/components/sections/events/CorporateEventFeatures";
-import CorporateEventProcess from "@/components/sections/events/CorporateEventProcess";
-import CorporateEventFAQ from "@/components/sections/events/CorporateEventFAQ";
+import Hero from "@/components/sections/events/corporate/Hero";
+import Showcase from "@/components/sections/events/corporate/Showcase";
+import Stats from "@/components/sections/events/corporate/Stats";
+import Features from "@/components/sections/events/corporate/Features";
+import Process from "@/components/sections/events/corporate/Process";
+import FAQ from "@/components/sections/events/corporate/FAQ";
 
 export default function CorporateEventPage() {
   return (
     <div className="relative bg-white min-h-screen">
       {/* 1. Hero — dynamic doodles & event typewriter */}
-      <CorporateEventHero />
+      <Hero />
 
       {/* 2. Showcase — moodboard polaroids & run of show */}
-      <CorporateEventShowcase />
+      <Showcase />
 
       {/* 3. Stats Strip — 500+ events, 250k attendees */}
-      <CorporateEventStats />
+      <Stats />
 
       {/* 4. Features Bento — Services: Venue, F&B, AV, Styling */}
-      <CorporateEventFeatures />
+      <Features />
 
       {/* 5. Process Timeline — Discovery to Post-Event Debrief */}
-      <CorporateEventProcess />
+      <Process />
 
       {/* 6. FAQ — Security, timelines, destination events */}
-      <CorporateEventFAQ />
+      <FAQ />
 
       {/* 7. CTA */}
       <section className="py-24 bg-slate-950 text-white relative overflow-hidden text-center border-t border-slate-900">

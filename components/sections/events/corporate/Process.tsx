@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { ClipboardList, Lightbulb, FileSignature, HardHat, CalendarCheck, BarChart3 } from "lucide-react";
 
-export default function CorporateEventProcess() {
+export default function Process() {
   const [hoveredStep, setHoveredStep] = useState<number | null>(null);
 
   const steps = [

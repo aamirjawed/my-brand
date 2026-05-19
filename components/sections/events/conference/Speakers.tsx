@@ -3,7 +3,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-export default function ConferenceSpeakers() {
+export default function Speakers() {
   const speakers = [
     { name: "Executive Keynotes", role: "Industry Titans & CEOs", img: "https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=600&auto=format&fit=crop" },
     { name: "Technical Deep-Dives", role: "Lead Engineers & Authors", img: "https://images.unsplash.com/photo-1573164713988-8665fc963095?q=80&w=600&auto=format&fit=crop" },

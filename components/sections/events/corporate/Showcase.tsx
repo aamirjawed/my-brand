@@ -3,7 +3,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-export default function CorporateEventShowcase() {
+export default function Showcase() {
   return (
     <section className="py-24 bg-white relative overflow-hidden">
       <div className="container mx-auto px-6 max-w-[1400px]">

@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { HelpCircle, ChevronDown, ChevronUp } from "lucide-react";
 
-export default function ConferenceFAQ() {
+export default function FAQ() {
   const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
 
   const faqs = [

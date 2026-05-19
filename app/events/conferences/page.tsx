@@ -4,33 +4,33 @@ import React from "react";
 import Link from "next/link";
 import { ArrowUpRight, MicVocal } from "lucide-react";
 
-import ConferenceHero from "@/components/sections/events/ConferenceHero";
-import ConferenceShowcase from "@/components/sections/events/ConferenceShowcase";
-import ConferenceStats from "@/components/sections/events/ConferenceStats";
-import ConferenceSpeakers from "@/components/sections/events/ConferenceSpeakers";
-import ConferenceProcess from "@/components/sections/events/ConferenceProcess";
-import ConferenceFAQ from "@/components/sections/events/ConferenceFAQ";
+import Hero from "@/components/sections/events/conference/Hero";
+import Showcase from "@/components/sections/events/conference/Showcase";
+import Stats from "@/components/sections/events/conference/Stats";
+import Speakers from "@/components/sections/events/conference/Speakers";
+import Process from "@/components/sections/events/conference/Process";
+import FAQ from "@/components/sections/events/conference/FAQ";
 
 export default function ConferencePage() {
   return (
     <div className="relative bg-white min-h-screen">
       {/* 1. Standard Hero */}
-      <ConferenceHero />
+      <Hero />
 
       {/* 2. New Design: Dynamic Tabbed Image viewer for modules */}
-      <ConferenceShowcase />
+      <Showcase />
 
       {/* 3. New Design: Bold Grid layout with huge orange background */}
-      <ConferenceStats />
+      <Stats />
 
       {/* 4. New Section: Speaker/Talent card grid */}
-      <ConferenceSpeakers />
+      <Speakers />
 
       {/* 5. New Design: Horizontal animated timeline */}
-      <ConferenceProcess />
+      <Process />
 
       {/* 6. New Design: Split-pane fixed grid FAQ */}
-      <ConferenceFAQ />
+      <FAQ />
 
       {/* 7. CTA */}
       <section className="py-24 bg-orange-600 text-white relative overflow-hidden text-center">

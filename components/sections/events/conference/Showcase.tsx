@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { MicVocal, Users, Store, Coffee } from "lucide-react";
 
-export default function ConferenceShowcase() {
+export default function Showcase() {
   const [activeTab, setActiveTab] = useState(0);
 
   const modules = [
@@ -51,7 +51,7 @@ export default function ConferenceShowcase() {
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
           
-          {/* Interactive Menu (New Design replacing standard side-by-side) */}
+          {/* Interactive Menu */}
           <div className="col-span-1 lg:col-span-5 flex flex-row lg:flex-col justify-start lg:justify-center overflow-x-auto lg:overflow-visible gap-4 lg:gap-0 lg:space-y-4 pb-6 lg:pb-0 snap-x snap-mandatory [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
             {modules.map((mod, idx) => {
               const isActive = activeTab === idx;
@@ -63,7 +63,7 @@ export default function ConferenceShowcase() {
                   className={`shrink-0 w-36 sm:w-40 aspect-square lg:aspect-auto lg:w-full snap-center flex flex-col lg:block items-center justify-center text-center lg:text-left p-4 lg:p-6 rounded-2xl transition-all duration-300 border ${
                     isActive 
                     ? "bg-slate-900 border-orange-500/50 shadow-[0_0_30px_rgba(234,88,12,0.15)] lg:scale-105 z-10" 
-                    : "bg-slate-900/40 lg:bg-transparent border-slate-800 hover:bg-slate-900/80 lg:opacity-60 hover:opacity-100"
+                    : "bg-slate-900/40 lg:bg-transparent border-transparent hover:bg-slate-900/80 lg:opacity-60 hover:opacity-100"
                   }`}
                 >
                   <div className={`lg:hidden w-12 h-12 rounded-2xl flex items-center justify-center mb-3 shadow-inner transition-colors ${isActive ? "bg-orange-500/20 text-orange-500" : "bg-slate-800 text-slate-400"}`}>
@@ -93,7 +93,7 @@ export default function ConferenceShowcase() {
             })}
           </div>
 
-          {/* Dynamic Image Window (New Design) */}
+          {/* Dynamic Image Window */}
           <div className="col-span-1 lg:col-span-7 relative min-h-[400px] lg:min-h-full rounded-3xl overflow-hidden border border-slate-800 shadow-2xl">
             <AnimatePresence mode="wait">
               <motion.img

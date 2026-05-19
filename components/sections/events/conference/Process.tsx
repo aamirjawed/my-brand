@@ -4,7 +4,7 @@ import React, { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { Map, Zap, Cog, MonitorSpeaker, CheckCircle } from "lucide-react";
 
-export default function ConferenceProcess() {
+export default function Process() {
   const containerRef = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: containerRef,
@@ -25,6 +25,7 @@ export default function ConferenceProcess() {
     <section ref={containerRef} className="py-32 bg-slate-50 relative overflow-hidden">
       <div className="container mx-auto px-6 max-w-[1400px]">
         
+        {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-24">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-slate-900 uppercase tracking-wide">
             Linear Execution Model

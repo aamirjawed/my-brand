@@ -4,7 +4,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Users, Building, MonitorPlay, Ticket } from "lucide-react";
 
-export default function ConferenceStats() {
+export default function Stats() {
   const stats = [
     { val: "10k+", label: "Max Attendee Capacity", icon: Users },
     { val: "500+", label: "Exhibitor Booths Managed", icon: Building },
@@ -37,14 +37,13 @@ export default function ConferenceStats() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: i * 0.1 }}
-                className="bg-orange-700/30 backdrop-blur-sm border border-orange-500/50 rounded-2xl sm:rounded-3xl p-5 sm:p-8 flex flex-col items-start relative overflow-hidden group hover:bg-orange-700/50 transition-colors"
+                className="flex flex-col items-center text-center p-6 text-white group"
               >
-                <Icon className="w-8 h-8 sm:w-10 sm:h-10 text-orange-200 mb-4 sm:mb-6 opacity-70 group-hover:opacity-100 transition-opacity" />
-                <div className="text-3xl sm:text-5xl lg:text-6xl font-black text-white mb-1 sm:mb-2">{s.val}</div>
-                <div className="text-orange-200 font-bold uppercase tracking-wide text-[10px] sm:text-sm">{s.label}</div>
-                
-                {/* Decorative background icon */}
-                <Icon className="absolute -right-4 -bottom-4 sm:-right-6 sm:-bottom-6 w-24 h-24 sm:w-32 sm:h-32 text-orange-800/20 group-hover:scale-110 transition-transform duration-500 pointer-events-none" />
+                <div className="w-14 h-14 rounded-full bg-white/10 flex items-center justify-center mb-6 group-hover:bg-white group-hover:text-orange-600 transition-all duration-300">
+                  <Icon className="w-6 h-6 text-white group-hover:text-orange-600 transition-colors" />
+                </div>
+                <div className="text-4xl sm:text-5xl font-black mb-2 tracking-tight">{s.val}</div>
+                <div className="text-xs sm:text-sm font-bold uppercase tracking-widest text-orange-100">{s.label}</div>
               </motion.div>
             );
           })}

@@ -21,7 +21,7 @@ function AnimatedCount({ target, suffix = "" }: { target: number; suffix?: strin
   return <span ref={ref}>{count.toLocaleString()}{suffix}</span>;
 }
 
-export default function CorporateEventStats() {
+export default function Stats() {
   const stats = [
     { value: 500, suffix: "+", label: "Corporate Events Executed", caption: "flawlessly delivered across the globe" },
     { value: 250, suffix: "k+", label: "Attendees Hosted", caption: "ensuring exceptional guest experiences" },

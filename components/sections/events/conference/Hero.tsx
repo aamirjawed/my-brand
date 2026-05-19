@@ -3,8 +3,14 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
-export default function ConferenceHero() {
-  const words = ["Global Summits", "Industry Expos", "Tech Conferences", "Trade Shows", "Medical Congresses"];
+export default function Hero() {
+  const words = [
+    "Global Summits",
+    "Industry Expos",
+    "Tech Conferences",
+    "Trade Shows",
+    "Medical Congresses"
+  ];
   const [index, setIndex] = useState(0);
   const [displayText, setDisplayText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
@@ -28,7 +34,8 @@ export default function ConferenceHero() {
   }, [displayText, isDeleting, index]);
 
   return (
-    <section className="relative h-auto pt-36 pb-20 sm:py-28 md:py-32 flex flex-col overflow-hidden bg-slate-900">
+    <section className="relative h-auto pt-44 pb-28 sm:py-36 md:py-40 flex flex-col overflow-hidden bg-slate-900">
+      {/* Background Image & Overlay */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-slate-950/80 z-10" />
         <img
@@ -38,6 +45,7 @@ export default function ConferenceHero() {
         />
       </div>
 
+      {/* Content */}
       <div className="container mx-auto px-6 relative z-20 flex flex-col items-center justify-center text-center">
         <div className="max-w-4xl mx-auto">
           <motion.div
@@ -46,6 +54,7 @@ export default function ConferenceHero() {
             transition={{ duration: 0.8 }}
             className="flex flex-col items-center justify-center"
           >
+            {/* Minimal Subheader */}
             <motion.div 
               className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-orange-500/10 text-orange-500 font-bold text-xs uppercase tracking-widest mb-8 border border-orange-500/20 shadow-sm"
               initial={{ opacity: 0, scale: 0.9 }}
@@ -56,16 +65,17 @@ export default function ConferenceHero() {
               Conference Production
             </motion.div>
 
-            <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold text-white leading-[1.15] tracking-tight mb-8">
+            {/* Title with inline typewriter */}
+            <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-black uppercase text-white leading-[1.2] tracking-wide mb-8 max-w-5xl mx-auto">
               We Produce <br />
-              <div className="h-[1.25em] relative flex items-center justify-center">
-                <span className="text-orange-500 relative inline-block">
-                  {displayText}
-                  <span className="inline-block w-[3px] h-[0.8em] bg-orange-500 ml-2 animate-pulse" />
-                </span>
-              </div>
+              Conference <span className="text-orange-500 inline-block min-h-[1.2em] relative whitespace-nowrap">
+                {displayText}
+                <span className="inline-block w-[3px] h-[0.85em] bg-orange-500 ml-1.5 animate-pulse align-middle" />
+              </span>
             </h1>
-            <p className="text-gray-300 text-sm sm:text-base md:text-lg leading-relaxed max-w-2xl mx-auto mb-10">
+
+            {/* Paragraph copy */}
+            <p className="text-gray-300 text-xs sm:text-sm md:text-base leading-relaxed max-w-2xl mx-auto mb-10 font-medium">
               Conferences are massive logistical ecosystems. We engineer, design, and operate large-scale industry summits that unite thousands of attendees, exhibitors, and keynote speakers under one roof flawlessly.
             </p>
           </motion.div>
