@@ -77,7 +77,7 @@ export const navigationData: NavLink[] = [
       {
         title: "PLANNING",
         links: [
-          { label: "Venue Selection", href: "/events/venue" },
+          { label: "Venue Selection", href: "/event-venue-selection" },
           { label: "Catering", href: "/events/catering" },
           { label: "Entertainment", href: "/events/entertainment" },
           { label: "Decor & Theme", href: "/events/decor" },
