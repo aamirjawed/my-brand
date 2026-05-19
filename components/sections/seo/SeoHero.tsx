@@ -48,16 +48,16 @@ export default function SeoHero() {
             className="flex flex-col items-center justify-center"
           >
             <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold text-white leading-[1.15] tracking-tight mb-8">
-              Dominate Your <br />
-              <div className="h-[1.25em] relative flex items-center justify-center">
+              AI SEO Services to <br />
+              <div className="h-[1.25em] relative flex items-center justify-center mt-2">
                 <span className="text-orange-500">
-                  {displayText}
+                  Scale {displayText}
                   <span className="inline-block w-[3px] h-[0.8em] bg-orange-500 ml-2 animate-pulse" />
                 </span>
               </div>
             </h1>
             <p className="text-gray-300 text-sm sm:text-base md:text-lg leading-relaxed max-w-xl mx-auto mb-10">
-              Stop waiting for months of guesswork. Our AI-powered SEO systems analyze, optimize, and scale your rankings with machine-precision intelligence that outperforms any manual strategy.
+              Stop waiting for months of guesswork. Our AI SEO services analyze, optimize, and scale your rankings with machine-precision intelligence that outperforms any manual strategy.
             </p>
           </motion.div>
         </div>

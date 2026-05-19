@@ -99,15 +99,15 @@ export default function SeoShowcase() {
               className="space-y-6 sm:space-y-8 text-slate-800"
             >
               <p className="text-base sm:text-lg leading-relaxed font-medium">
-                Sitting on page two of Google is as good as being invisible. Without a data-driven, technically precise SEO strategy, your competitors are actively stealing customers that should rightfully belong to you — every single day. With our cutting-edge <strong className="text-orange-600 font-extrabold">AI-powered SEO services</strong>, we reverse that. We deploy machine learning models that analyze thousands of ranking signals simultaneously, enabling us to build strategies that manually operated agencies simply cannot replicate at scale.
+                Sitting on page two of Google is as good as being invisible. But we know that achieving better rankings is ultimately about one thing: <strong>you want high-quality traffic</strong>. Without a data-driven, technically precise SEO strategy, your competitors are actively stealing leads and business growth that should rightfully belong to you. With our cutting-edge <strong className="text-orange-600 font-extrabold">AI-powered SEO services</strong>, we deploy machine learning models that enable a faster SEO workflow, allowing us to build strategies that manually operated agencies simply cannot replicate at scale.
               </p>
 
               <p className="text-sm sm:text-base leading-relaxed">
-                Our proprietary AI auditing systems crawl your entire website architecture, identifying technical bottlenecks, content cannibalization issues, schema markup gaps, and internal link equity leaks in minutes rather than weeks. We then execute a precise, prioritized action plan using our battle-tested content frameworks, deep keyword clustering models, and high-authority backlink acquisition networks. The result is a measurable, compounding growth in organic visibility month after month.
+                We start with deep technical optimization for better site performance. Our proprietary AI auditing systems crawl your entire website architecture, identifying technical bottlenecks and internal link equity leaks in minutes. We then execute a precise action plan using our battle-tested content optimization frameworks for better ranking content, deep keyword clustering models, and high-authority backlink networks. The result is measurable, compounding growth.
               </p>
 
               <p className="text-slate-700 text-xs sm:text-sm font-semibold italic border-l-2 border-orange-500 pl-4">
-                So, stop burning ad budgets on short-lived paid clicks — let our AI SEO systems build you an unstoppable organic traffic engine that compounds in value permanently.
+                Stop burning ad budgets on short-lived clicks — let our AI automation systems build you an unstoppable organic traffic engine that drives real leads and permanent business growth.
               </p>
             </motion.div>
           </div>

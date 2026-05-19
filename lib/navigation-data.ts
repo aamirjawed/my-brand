@@ -58,7 +58,7 @@ export const navigationData: NavLink[] = [
   },
   {
     label: "AI SEO",
-    href: "/ai-seo",
+    href: "/ai-seo-services",
   },
   {
     label: "Event Management",

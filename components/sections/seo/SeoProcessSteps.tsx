@@ -10,28 +10,28 @@ export default function SeoProcessSteps() {
   const steps = [
     {
       icon: Search,
-      title: "AI Site Audit & Diagnosis",
-      description: "We deploy our 250-point AI crawler across your entire domain — mapping technical errors, speed bottlenecks, crawl budget leaks, duplicate content, and missed schema opportunities in under 24 hours."
+      title: "Technical Optimization for Site Performance",
+      description: "We deploy our 250-point AI crawler across your entire domain — mapping technical errors, speed bottlenecks, and crawl budget leaks to guarantee better site performance from day one."
     },
     {
       icon: Brain,
-      title: "Semantic Keyword Clustering",
-      description: "Our NLP models process millions of real search queries to build a comprehensive keyword universe — primary targets, LSI clusters, long-tail variations, and featured snippet angles — ranked by traffic potential and conversion intent."
+      title: "Better Rankings for Quality Traffic",
+      description: "Our NLP models process millions of real search queries to build a comprehensive keyword universe ranked by traffic potential and conversion intent, ensuring better rankings translate into real traffic."
     },
     {
       icon: FileText,
-      title: "Authority Content Production",
-      description: "We write deeply researched, semantically optimized long-form content that satisfies search intent, covers all entity relationships Google expects, and structurally outperforms every competitor currently ranking above you."
+      title: "Content Optimization for Ranking Content",
+      description: "We write deeply researched, semantically optimized long-form content that satisfies search intent and structurally outperforms every competitor, resulting in better ranking content."
     },
     {
       icon: Link2,
-      title: "High-DR Backlink Acquisition",
-      description: "We execute targeted digital PR outreach and expert content syndication campaigns to earn authoritative editorial backlinks from high-DR publications in your industry — building real, compounding domain authority."
+      title: "High-DR Links for Business Growth",
+      description: "We execute targeted digital PR outreach to earn authoritative editorial backlinks from high-DR publications, building compounding domain authority that drives more leads and business growth."
     },
     {
       icon: BarChart2,
-      title: "Technical Implementation & Fixes",
-      description: "Our engineers implement all on-page optimizations — Core Web Vitals fixes, Schema markup deployment, internal linking restructuring, sitemap configuration, and page speed improvements — with zero disruption to your live site."
+      title: "AI Automation for Faster SEO Workflows",
+      description: "Our engineers implement all on-page optimizations — Core Web Vitals fixes, Schema markup deployment, and internal linking — using AI automation for faster SEO workflows with zero disruption to your live site."
     },
     {
       icon: TrendingUp,

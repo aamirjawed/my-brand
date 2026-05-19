@@ -27,7 +27,7 @@ const services = [
   {
     title: "Digital Marketing",
     description: "Boosting visibility, engagement, and conversions with data-driven digital marketing solutions.",
-    href: "/ai-seo",
+    href: "/ai-seo-services",
     icon: Megaphone,
   },
 ];
