@@ -9,20 +9,24 @@ export default function LandingFAQ() {
 
   const faqs = [
     {
-      q: "Why do I need a landing page instead of just routing traffic to my homepage?",
-      a: "Homepages are designed for general exploration; they contain main navigation links, multiple products, and brand descriptions. When you run paid advertisements (Google, Meta, etc.), general options distract visitors, causing high bounce rates. A bespoke landing page has a single specific intent, removes navigation exit points, and focuses entirely on converting that unique paid traffic into leads or buyers, driving up to 3x higher conversion yields!"
+      q: "How long does landing page development take?",
+      a: "Our typical timeline is 1 to 2 weeks. This includes audience research, conversion-focused copywriting, custom UI/UX design, custom Next.js development, CRM integration, and analytics setup."
     },
     {
-      q: "How do you optimize page loading performance for higher conversions?",
-      a: "We assemble landing pages using Next.js with Turbopack, static page rendering, responsive CSS grids, and server-side image compression. Because every 100ms delay in load speeds can slash lead volumes by up to 7%, our modular, standard-setting builds guarantee lightning-fast load scores across all viewports and mobile devices!"
+      q: "Are the landing pages SEO-friendly?",
+      a: "Absolutely. We build all landing pages with clean semantic HTML structures, server-side page rendering, optimized meta tags, and structured schema markup. This makes it easy for search engine crawlers to read and rank your page."
     },
     {
-      q: "Can you integrate the landing pages with my CRM or analytical toolsets?",
-      a: "Absolutely! We write custom hooks and API routes to seamlessly bind your landing page lead forms to standard CRM networks (Salesforce, HubSpot, Mailchimp, active databases) and configure advanced tracking metrics (Google Tag Manager, Meta Pixel, heatmaps) to monitor performance in real-time."
+      q: "Can you redesign existing landing pages?",
+      a: "Yes. We analyze your existing page to identify friction points and conversion drop-offs. Then, we redesign it with clear copywriting, modern styling, and optimized CTA paths to lift conversion rates."
     },
     {
-      q: "Are the wobbly illustrative doodles and device structures fully custom?",
-      a: "Yes! All doodles, overlapping device mockups, interactive sandboxes, and process timelines are hand-drawn vector paths and pure CSS modular systems crafted exclusively by our team. We completely avoid boring layout templates, giving your brand a highly curated, premium visual edge that immediately wins customer trust."
+      q: "Do you develop responsive landing pages?",
+      a: "Yes. Every landing page we build is developed mobile-first. Over 60% of web traffic is mobile, so we optimize and test extensively on mobile, tablet, and desktop viewports to ensure seamless visual layouts and swift loading times."
+    },
+    {
+      q: "Which technologies do you use?",
+      a: "We build with Next.js, React, Tailwind CSS, and Framer Motion. This modern stack allows us to create blazing-fast static pages, custom interactive components, and smooth micro-animations without heavy bundle weight."
     }
   ];
 
@@ -36,10 +40,10 @@ export default function LandingFAQ() {
             <HelpCircle className="w-3.5 h-3.5 text-orange-600" /> Have Questions?
           </div>
           <h2 className="text-3xl sm:text-4xl font-black text-slate-900 uppercase tracking-wide">
-            Strategy & Capabilities FAQ
+            Frequently Asked Questions
           </h2>
           <p className="text-slate-500 text-xs sm:text-sm leading-relaxed max-w-md mt-2">
-            Got queries about custom landing page layouts, page loading metrics, and tracking features? Explore our strategic answers below.
+            Explore answers to our most common questions regarding timelines, SEO, redesigns, and capabilities.
           </p>
         </div>
 

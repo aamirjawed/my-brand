@@ -10,33 +10,33 @@ export default function LandingProcessSteps() {
   const steps = [
     {
       icon: Search,
-      title: "Audience & Campaign Mapping",
-      description: "We deep-dive into your analytics, dissect customer buying motivations, and map out a tailored narrative flow before drafting a single outline line."
+      title: "Research & Strategy",
+      description: "We dive deep into your market niche, target audience, and ad campaigns to map out a clear conversion strategy."
     },
     {
       icon: PenTool,
-      title: "Magnetic Copywriting",
-      description: "Writing scroll-stopping headers, highly persuasive value propositions, and crystal-clear call-to-actions tailored specifically to your target avatar."
+      title: "Wireframing",
+      description: "We design low-fidelity structural blueprint mockups to align page messaging, information flow, and CTA button placements."
     },
     {
       icon: Layout,
-      title: "Tactile Blueprint Wireframes",
-      description: "Arranging structured layout hierarchies, visual triggers, and wobbly organic thread connectors to guide eye movement cleanly toward lead entries."
+      title: "UI/UX Design",
+      description: "We craft custom, premium visual assets, organic vector doodles, and beautiful responsive layouts aligned with your branding."
     },
     {
       icon: Code2,
-      title: "Blazing Speed Assembly",
-      description: "Writing clean, modular Next.js components styled with maximum precision. Every element is structured for rapid load speeds and fast rendering."
+      title: "Development",
+      description: "We write clean, modular Next.js components designed for rapid loading speeds, accessibility, and zero layout shift."
     },
     {
       icon: ShieldAlert,
-      title: "A/B Testing & Hardening",
-      description: "Verifying secure forms, integrating analytics tracking seals, and running viewport tests on smaller mobile displays to ensure absolute compliance."
+      title: "Optimization",
+      description: "We audit page performance, optimize images, verify form integrations, and align Core Web Vitals to guarantee speed."
     },
     {
       icon: Award,
-      title: "Launch & Growth Monitoring",
-      description: "Deploying your bespoke high-converting page and establishing ongoing monitoring to track, measure, and scale lead volumes to the absolute max."
+      title: "Launch & Testing",
+      description: "We deploy the page to production, set up analytics trackers, and prepare A/B test variations to continuously scale conversions."
     }
   ];
 
@@ -53,7 +53,7 @@ export default function LandingProcessSteps() {
             Proven Conversion Blueprint
           </span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-black uppercase tracking-wide">
-            How We Build To Convert
+            Our Landing Page Development Process
           </h2>
           <p className="text-slate-400 text-sm sm:text-base leading-relaxed max-w-lg mt-4">
             We bypass cookie-cutter layouts. Here is our modular, state-of-the-art process from initial campaign strategy to live landing execution.

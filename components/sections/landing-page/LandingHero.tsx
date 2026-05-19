@@ -55,20 +55,19 @@ export default function LandingHero() {
           >
 
 
-            {/* Dynamic Headline */}
-            <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold text-white leading-[1.15] tracking-tight mb-8">
-              Multiply Your <br />
-              <div className="h-[1.25em] relative flex items-center justify-center">
-                <span className="text-orange-500">
-                  {displayText}
-                  <span className="inline-block w-[3px] h-[0.8em] bg-orange-500 ml-2 animate-pulse" />
-                </span>
-              </div>
+            {/* Dynamic Headline with typewriter effect inside the title */}
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-white leading-[1.15] tracking-tight mb-6 uppercase max-w-5xl mx-auto">
+              Landing Page Development Services <br />
+              That Drive More <br />
+              <span className="text-orange-500 inline-block min-h-[1.2em] relative">
+                {displayText}
+                <span className="inline-block w-[3px] h-[0.85em] bg-orange-500 ml-1.5 animate-pulse align-middle" />
+              </span>
             </h1>
 
             {/* Pitch */}
-            <p className="text-gray-300 text-sm sm:text-base md:text-lg leading-relaxed max-w-xl mx-auto mb-10">
-              Stop throwing traffic into generic websites. We design bespoke, lightning-fast landing pages engineered specifically to convert visitors into loyal clients.
+            <p className="text-gray-300 text-xs sm:text-sm md:text-base leading-relaxed max-w-2xl mx-auto mb-10">
+              We design and develop fast, modern, and conversion-focused landing pages optimized for leads, sales, and business growth.
             </p>
 
 
