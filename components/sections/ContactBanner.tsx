@@ -59,7 +59,7 @@ export default function ContactBanner() {
 
             {/* Custom Interactive Button */}
             <motion.a
-              href="/contact"
+              href="/contact-us"
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.98 }}
               className="inline-flex items-center gap-3 bg-orange-600 hover:bg-orange-700 text-white font-black px-6 py-4 rounded-xl transition-all duration-300 shadow-md text-xs tracking-widest uppercase"

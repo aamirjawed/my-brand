@@ -3,9 +3,9 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
-import { 
-  ArrowLeft, Calendar, Clock, Bookmark, ChevronRight, 
-  Sparkles, CheckCircle2, ChevronDown, Send, User, ArrowUpRight 
+import {
+  ArrowLeft, Calendar, Clock, Bookmark, ChevronRight,
+  Sparkles, CheckCircle2, ChevronDown, Send, User, ArrowUpRight
 } from "lucide-react";
 import { BlogPost, BlogPostSection } from "@/lib/blog-data";
 
@@ -79,14 +79,14 @@ export default function BlogLayout({ post, relatedPosts }: BlogLayoutProps) {
 
   return (
     <div className="min-h-screen bg-slate-950 text-white pt-32 sm:pt-40 pb-24 relative overflow-hidden">
-      
+
       {/* Background aesthetics */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#ea580c03_1px,transparent_1px),linear-gradient(to_bottom,#ea580c03_1px,transparent_1px)] bg-[size:4rem_4rem] z-0 pointer-events-none" />
       <div className="absolute right-0 top-0 w-96 h-96 bg-orange-600/5 rounded-full blur-[120px] pointer-events-none" />
       <div className="absolute left-0 bottom-0 w-96 h-96 bg-orange-600/5 rounded-full blur-[120px] pointer-events-none" />
 
       <div className="container mx-auto px-6 max-w-[1200px] relative z-10">
-        
+
         {/* Navigation Breadcrumb */}
         <Link
           href="/blog"
@@ -127,7 +127,7 @@ export default function BlogLayout({ post, relatedPosts }: BlogLayoutProps) {
             >
               {post.category}
             </motion.div>
-            
+
             <div className="absolute bottom-6 left-6 sm:left-8 z-10 flex items-center gap-3">
               <div className="w-10 h-10 rounded-full bg-orange-600/10 border border-orange-500/30 flex items-center justify-center">
                 <Sparkles className="w-5 h-5 text-orange-500" />
@@ -142,7 +142,7 @@ export default function BlogLayout({ post, relatedPosts }: BlogLayoutProps) {
 
         {/* Dynamic Asymmetric Grid Layout */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
-          
+
           {/* SECTION 2 — TABLE OF CONTENTS (Sticky Sidebar for large screens) */}
           <aside className="col-span-1 lg:col-span-4 lg:sticky lg:top-36 space-y-8 order-2 lg:order-1">
             {headings.length > 0 && (
@@ -163,11 +163,10 @@ export default function BlogLayout({ post, relatedPosts }: BlogLayoutProps) {
                           document.getElementById(heading.id)?.scrollIntoView({ behavior: "smooth" });
                           setActiveSection(heading.id);
                         }}
-                        className={`block text-xs sm:text-sm font-bold leading-relaxed transition-all duration-300 ${
-                          isActive 
-                            ? "text-orange-500 pl-3 border-l-2 border-orange-500" 
+                        className={`block text-xs sm:text-sm font-bold leading-relaxed transition-all duration-300 ${isActive
+                            ? "text-orange-500 pl-3 border-l-2 border-orange-500"
                             : "text-slate-400 hover:text-white pl-0 border-l-0"
-                        }`}
+                          }`}
                       >
                         {heading.text}
                       </a>
@@ -178,7 +177,7 @@ export default function BlogLayout({ post, relatedPosts }: BlogLayoutProps) {
             )}
 
             {/* SECTION 8 — AUTHOR / EXPERIENCE SECTION */}
-            <div className="bg-slate-950/40 border border-slate-900 p-6 sm:p-8 rounded-3xl text-left relative overflow-hidden group/author">
+            {/* <div className="bg-slate-950/40 border border-slate-900 p-6 sm:p-8 rounded-3xl text-left relative overflow-hidden group/author">
               <div className="absolute right-0 top-0 w-24 h-24 bg-orange-500/5 rounded-full blur-[40px] pointer-events-none" />
               <div className="flex items-center gap-4 mb-4">
                 <div className="w-12 h-12 rounded-full bg-orange-600/10 border border-orange-500/20 flex items-center justify-center shrink-0">
@@ -192,14 +191,14 @@ export default function BlogLayout({ post, relatedPosts }: BlogLayoutProps) {
               <p className="text-xs sm:text-sm text-slate-400 leading-relaxed font-medium">
                 Written by <strong>Aamir</strong> — developer and SEO-focused website creator helping businesses improve performance, design, and conversions.
               </p>
-            </div>
+            </div> */}
           </aside>
 
           {/* SECTION 3 — CONTENT AREA */}
           <main className="col-span-1 lg:col-span-8 space-y-12 order-1 lg:order-2">
             {post.sections.map((section, sectionIdx) => {
               const elementId = `section-${sectionIdx}`;
-              
+
               switch (section.type) {
                 case "intro":
                   return (
@@ -298,9 +297,8 @@ export default function BlogLayout({ post, relatedPosts }: BlogLayoutProps) {
                               <button
                                 key={idx}
                                 onClick={() => setCurrentCarouselIndex(p => ({ ...p, [sectionIdx]: idx }))}
-                                className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                                  idx === activeSlideIdx ? "bg-orange-500 w-6" : "bg-slate-800 hover:bg-slate-700"
-                                }`}
+                                className={`w-2 h-2 rounded-full transition-all duration-300 ${idx === activeSlideIdx ? "bg-orange-500 w-6" : "bg-slate-800 hover:bg-slate-700"
+                                  }`}
                               />
                             ))}
                           </div>
@@ -348,9 +346,8 @@ export default function BlogLayout({ post, relatedPosts }: BlogLayoutProps) {
                                 {row.map((cell, cIdx) => (
                                   <td
                                     key={cIdx}
-                                    className={`p-4 sm:p-5 text-xs sm:text-sm border-r border-slate-900 last:border-0 ${
-                                      cIdx === 0 ? "font-bold text-white" : ""
-                                    }`}
+                                    className={`p-4 sm:p-5 text-xs sm:text-sm border-r border-slate-900 last:border-0 ${cIdx === 0 ? "font-bold text-white" : ""
+                                      }`}
                                   >
                                     {cell}
                                   </td>
@@ -410,9 +407,8 @@ export default function BlogLayout({ post, relatedPosts }: BlogLayoutProps) {
                               >
                                 <span>{faq.question}</span>
                                 <ChevronDown
-                                  className={`w-4 h-4 text-orange-500 transition-transform duration-300 ${
-                                    isOpen ? "rotate-180" : ""
-                                  }`}
+                                  className={`w-4 h-4 text-orange-500 transition-transform duration-300 ${isOpen ? "rotate-180" : ""
+                                    }`}
                                 />
                               </button>
                               <AnimatePresence initial={false}>
