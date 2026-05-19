@@ -44,8 +44,19 @@ export default async function BlogPostPage({ params }: PageProps) {
     notFound();
   }
 
-  // Filter out the current post to show other related insights
-  const relatedPosts = blogPosts.filter((p) => p.slug !== post.slug);
+  // Filter and sort to prioritize related posts in the same category or sharing tags
+  const relatedPosts = blogPosts
+    .filter((p) => p.slug !== post.slug)
+    .sort((a, b) => {
+      const aCatMatch = a.category === post.category ? 1 : 0;
+      const bCatMatch = b.category === post.category ? 1 : 0;
+      if (aCatMatch !== bCatMatch) {
+        return bCatMatch - aCatMatch;
+      }
+      const aSharedTags = a.tags.filter(t => post.tags.includes(t)).length;
+      const bSharedTags = b.tags.filter(t => post.tags.includes(t)).length;
+      return bSharedTags - aSharedTags;
+    });
 
   return <BlogLayout post={post} relatedPosts={relatedPosts} />;
 }
