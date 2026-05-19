@@ -67,6 +67,81 @@ export default function LandingPageDevelopment() {
       {/* 9. Frequently Asked Questions (Intent 8) */}
       <LandingFAQ />
 
+      {/* JSON-LD Structured Schema Markup */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "serviceType": "Landing Page Development",
+            "name": "Landing Page Development Services",
+            "provider": {
+              "@type": "Organization",
+              "name": "DigitalDeveloper",
+              "url": "https://digitaldeveloper.co"
+            },
+            "areaServed": "Worldwide",
+            "description": "High-converting landing page development services focused on performance, lead generation, SEO, and user experience.",
+            "offers": {
+              "@type": "Offer",
+              "availability": "https://schema.org/InStock"
+            }
+          })
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "How long does landing page development take?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Our typical timeline is 1 to 2 weeks. This includes audience research, conversion-focused copywriting, custom UI/UX design, custom Next.js development, CRM integration, and analytics setup."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Are the landing pages SEO-friendly?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Absolutely. We build all landing pages with clean semantic HTML structures, server-side page rendering, optimized meta tags, and structured schema markup. This makes it easy for search engine crawlers to read and rank your page."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Can you redesign existing landing pages?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. We analyze your existing page to identify friction points and conversion drop-offs. Then, we redesign it with clear copywriting, modern styling, and optimized CTA paths to lift conversion rates."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Do you develop responsive landing pages?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. Every landing page we build is developed mobile-first. Over 60% of web traffic is mobile, so we optimize and test extensively on mobile, tablet, and desktop viewports to ensure seamless visual layouts and swift loading times."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Which technologies do you use?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "We build with Next.js, React, Tailwind CSS, and Framer Motion. This modern stack allows us to create blazing-fast static pages, custom interactive components, and smooth micro-animations without heavy bundle weight."
+                }
+              }
+            ]
+          })
+        }}
+      />
+
       {/* 10. Mid-Page Mini CTA */}
       <section className="py-24 bg-slate-950 text-white relative overflow-hidden text-center border-t border-slate-900">
         <div className="absolute right-0 top-0 w-80 h-80 bg-orange-600/10 rounded-full blur-[100px] pointer-events-none"></div>

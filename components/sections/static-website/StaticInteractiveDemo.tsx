@@ -23,7 +23,7 @@ export default function StaticInteractiveDemo() {
             <Sliders className="w-3.5 h-3.5" /> Architecture Simulator
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-slate-900 uppercase tracking-wide leading-tight mb-4">
-            Static Site Sandbox
+            SEO-Friendly Website Development Sandbox
           </h2>
           <p className="text-slate-500 text-sm sm:text-base leading-relaxed max-w-xl">
             Toggle our static site architecture variables below to see how pre-compiled components adapt in real-time for maximum performance.

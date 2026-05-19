@@ -52,6 +52,81 @@ export default function AiSeoPage() {
       {/* 10. FAQ — 5 detailed answers about AI SEO, timelines, guarantees */}
       <SeoFAQ />
 
+      {/* JSON-LD Structured Schema Markup */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "serviceType": "AI SEO Services",
+            "name": "AI SEO Services",
+            "provider": {
+              "@type": "Organization",
+              "name": "DigitalDeveloper",
+              "url": "https://digitaldeveloper.co"
+            },
+            "areaServed": "Worldwide",
+            "description": "AI-powered SEO services focused on technical optimization, keyword research, content strategy, and organic growth.",
+            "offers": {
+              "@type": "Offer",
+              "availability": "https://schema.org/InStock"
+            }
+          })
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "How long does it take to see results from SEO?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Genuine, algorithm-proof SEO results typically begin appearing between months 3 and 6, with significant compounding growth becoming highly visible between months 6 and 12. Timelines vary based on your domain's existing authority and the volume of technical issues we need to resolve first. As a specialized AI SEO agency, our clients typically see first measurable organic traffic increases within 60–90 days."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How is your AI SEO different from a traditional SEO agency?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Traditional SEO agencies rely on manual keyword research, generic content writing, and slow link outreach cycles that take months to produce any data. Our AI-powered SEO services process search intent signals, competitor content gaps, and real-time algorithm patterns simultaneously. This means we execute precise AI SEO optimization faster and at a fraction of the cost — while continuously learning as Google evolves."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Will my rankings drop if I stop your SEO service?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Unlike paid advertising that stops instantly the moment you end a campaign, SEO investments produce compounding, durable results. The high-quality content we publish and the technical foundations we build continue delivering organic traffic long after campaigns end. However, search is competitive — an ongoing partnership with a dedicated AI SEO company ensures you hold and grow your positions rather than ceding ground to competitors."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Do you guarantee first page rankings?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Any agency that guarantees specific Google rankings is either lying or using black-hat tactics that will eventually destroy your domain. What we guarantee is a rigorous, best-practice methodology. Our AI SEO experts deliver transparent monthly reporting on all ranking movements and possess a strong track record of delivering measurable first-page results across hundreds of competitive markets."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Can you optimize for AI search platforms like ChatGPT and Perplexity?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes — this is increasingly critical. We optimize your content for AI overview visibility using structured data markup, authoritative entity building, and E-E-A-T signal strengthening. Our SEO automation services cover both traditional search dominance and emerging AI search visibility simultaneously, ensuring your brand establishes strong topical authority everywhere."
+                }
+              }
+            ]
+          })
+        }}
+      />
+
       {/* 11. CTA */}
       <section className="py-24 bg-slate-950 text-white relative overflow-hidden text-center border-t border-slate-900">
         <div className="absolute right-0 top-0 w-80 h-80 bg-orange-600/10 rounded-full blur-[100px] pointer-events-none"></div>

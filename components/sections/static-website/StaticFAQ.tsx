@@ -9,20 +9,24 @@ export default function StaticFAQ() {
 
   const faqs = [
     {
-      q: "What makes a static website different from a WordPress or CMS-driven site?",
-      a: "WordPress builds pages dynamically on every visitor request — querying a database, executing PHP, and sending the result back. A static website is pre-compiled into raw HTML/CSS/JS at build time and served instantly from a CDN. This means zero database lag, zero server-side attack surface, and significantly lower hosting costs — while delivering vastly superior performance scores."
+      q: "What is a static website?",
+      a: "A static website is a lightweight business website made of pre-rendered HTML, CSS, and JavaScript files served directly from a global Content Delivery Network (CDN). Unlike traditional dynamic sites that query databases on every visit, static sites deliver instant page speed and require zero server-side calculations."
     },
     {
-      q: "Can I still update content easily without touching the code?",
-      a: "Absolutely. We integrate Headless CMS platforms like Sanity, Contentful, or Notion so your team can update text, images, and structured content from a clean editor interface. Every content save triggers an automated rebuild pipeline that recompiles the updated static pages and pushes them live — no developer involvement required."
+      q: "Are static websites faster?",
+      a: "Yes, static websites are significantly faster because they bypass database processing and server-side rendering entirely. Since pages are already compiled and stored at the network edge, users receive files in milliseconds, resulting in perfect Core Web Vitals and stellar user experience."
     },
     {
-      q: "Will a static website rank well on Google?",
-      a: "Static websites are the gold standard for SEO. Because they serve pre-rendered HTML without any server processing delay, they consistently achieve perfect Google Lighthouse Performance and SEO scores. Google's Core Web Vitals heavily reward fast loading times, stable layouts, and clean markup — all of which our static builds deliver by default."
+      q: "Can static websites rank on Google?",
+      a: "Yes, static websites are highly SEO-friendly because they load faster, improve Core Web Vitals, and provide cleaner performance for search engines. Their fast loading speed and lightweight structure make them ideal for modern technical SEO requirements."
     },
     {
-      q: "How do contact forms or dynamic features work on a static site?",
-      a: "We integrate serverless function APIs (Vercel Functions, Netlify Functions, or AWS Lambda) for dynamic requirements like form submissions, newsletter signups, and search features. The static HTML shell loads instantly while these lightweight functions handle data processing asynchronously in the background — best of both worlds."
+      q: "Are static websites secure?",
+      a: "Yes, static websites are extremely secure because they completely eliminate traditional server-side databases, plugins, and PHP entry points. With no database to hack and no backend code running, there are no vulnerability points for SQL injection or dynamic server exploits."
+    },
+    {
+      q: "Which businesses should use static websites?",
+      a: "Businesses needing fast-loading business websites, landing pages, documentation centers, and corporate sites should use static architectures. They are perfect for startups and enterprises seeking high-performance websites with low maintenance overhead and high security."
     }
   ];
 

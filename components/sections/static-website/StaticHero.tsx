@@ -5,7 +5,13 @@ import { motion } from "framer-motion";
 
 
 export default function StaticHero() {
-  const staticBenefits = ["Speed", "Security", "SEO Rankings", "Global Scale"];
+  const staticBenefits = [
+    "for Modern Businesses",
+    "for Speed & Security",
+    "for SEO Rankings",
+    "for Global Scale",
+    "for High Performance"
+  ];
   const [index, setIndex] = useState(0);
   const [displayText, setDisplayText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
@@ -55,20 +61,19 @@ export default function StaticHero() {
           >
 
 
-            {/* Dynamic Headline */}
-            <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold text-white leading-[1.15] tracking-tight mb-8">
-              Maximize Your <br />
-              <div className="h-[1.25em] relative flex items-center justify-center">
-                <span className="text-orange-500">
-                  {displayText}
-                  <span className="inline-block w-[3px] h-[0.8em] bg-orange-500 ml-2 animate-pulse" />
-                </span>
-              </div>
+            {/* Static H1 with orange accent typewriter inline */}
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black uppercase text-white leading-[1.2] tracking-wide mb-8 max-w-5xl mx-auto">
+              Static Website <br />
+              Development Services <br />
+              <span className="text-orange-500 inline-block min-h-[1.2em] relative whitespace-nowrap">
+                {displayText}
+                <span className="inline-block w-[3px] h-[0.85em] bg-orange-500 ml-1.5 animate-pulse align-middle" />
+              </span>
             </h1>
 
-            {/* Pitch */}
-            <p className="text-gray-300 text-sm sm:text-base md:text-lg leading-relaxed max-w-xl mx-auto mb-10">
-              Ditch clunky databases and slow servers. We develop ultra-fast, highly secure static websites that load instantly and dominate search engine results.
+            {/* Pitch with keywords */}
+            <p className="text-gray-300 text-xs sm:text-sm md:text-base leading-relaxed max-w-2xl mx-auto mb-10 font-medium">
+              Ditch clunky databases and slow servers. As an expert <strong className="text-white">static website developer</strong>, we engineer <strong className="text-white">modern static websites</strong> that load instantly. Our <strong className="text-white">static web design services</strong> ensure your business dominates search results with ultra-secure, <strong className="text-white">high-performance websites</strong>.
             </p>
 
 

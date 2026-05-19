@@ -8,7 +8,7 @@ export default function StaticShowcase() {
     <section className="py-24 bg-white relative overflow-hidden">
       <div className="container mx-auto px-6 max-w-[1400px]">
         
-        {/* Section Heading (Matching LandingShowcase pattern: orange bold uppercase) */}
+        {/* Section Heading */}
         <div className="w-full mb-16 border-l-4 border-orange-600 pl-4 sm:pl-6">
           <motion.h2
             initial={{ opacity: 0, x: -20 }}
@@ -17,7 +17,7 @@ export default function StaticShowcase() {
             transition={{ duration: 0.6 }}
             className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-black text-orange-600 uppercase tracking-wider leading-[1.25]"
           >
-            DELIVER LIGHTNING-FAST EXPERIENCES WITH OUR PRE-COMPILED STATIC ARCHITECTURE
+            Why Fast-Loading Websites Matter for Businesses
           </motion.h2>
         </div>
 
@@ -102,15 +102,15 @@ export default function StaticShowcase() {
               className="space-y-6 sm:space-y-8 text-slate-800"
             >
               <p className="text-base sm:text-lg leading-relaxed font-medium">
-                Running a dynamic database-driven website comes with massive overhead, constant security patching, and slow server response times. Your brand could face severe drop-offs in traffic and SEO penalties without a highly optimized architecture. With our custom <strong className="text-orange-600 font-extrabold">static website development services</strong>, we eliminate database lag. We can be relied upon to provide impenetrable, hyper-fast experiences because we use state-of-the-art JAMstack technologies.
+                Running a dynamic database-driven website comes with massive overhead, constant security patching, and slow server response times. Without highly optimized technical SEO architecture, your brand faces high bounce rates and search engine penalties. By partnering with a dedicated <strong className="text-orange-600 font-extrabold">static website developer</strong>, you can elevate your search presence with high-converting <a href="/landing-page-development" className="text-orange-600 underline font-bold hover:text-orange-500">landing page development</a> and performance-focused <a href="/ai-seo-services" className="text-orange-600 underline font-bold hover:text-orange-500">AI SEO services</a>.
               </p>
 
               <p className="text-sm sm:text-base leading-relaxed">
-                Our in-house engineering team pre-compiles your entire website into raw, highly-optimized HTML and CSS files, deploying them directly to global edge networks. This means your site loads instantly for users anywhere in the world, boasts a 100% perfect Lighthouse performance score, and is completely immune to traditional database hacking attempts. 
+                Our in-house engineering team pre-compiles your entire custom static website into raw, highly-optimized HTML and CSS files, deploying them to global edge networks. This secures a 100/100 Core Web Vitals score. To learn about speed strategies, read our guide on <a href="/blog/landing-page-speed-optimization" className="text-orange-600 underline font-semibold hover:text-orange-500">website speed optimization</a> and discover how to design high-converting flows in our analysis of <a href="/blog/frictionless-forms-landing-page-conversions" className="text-orange-600 underline font-semibold hover:text-orange-500">frictionless landing page conversions</a>.
               </p>
               
               <p className="text-slate-700 text-xs sm:text-sm font-semibold italic border-l-2 border-orange-500 pl-4">
-                So, ensure your digital presence is unbreakable and delivers instantaneous rendering speeds to keep your audience engaged and your search rankings at the absolute top.
+                Ensure your web performance is bulletproof, delivers instantaneous rendering speeds, and optimizes technical SEO properties to keep users engaged and search engines satisfied.
               </p>
             </motion.div>
           </div>
