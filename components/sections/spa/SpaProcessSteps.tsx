@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { Search, Database, Layers, Code2, Zap, Rocket } from "lucide-react";
+import { Search, PenTool, Layers, Code2, Zap, Rocket } from "lucide-react";
 
 export default function SpaProcessSteps() {
   const [hoveredStep, setHoveredStep] = useState<number | null>(null);
@@ -10,33 +10,33 @@ export default function SpaProcessSteps() {
   const steps = [
     {
       icon: Search,
-      title: "Architecture & Data Flow Planning",
-      description: "We design the entire application state tree before writing code. We define how data moves between components, plan the API contract, and select the exact state management tool (Redux, Zustand, or Context) that fits your specific scaling needs."
+      title: "Requirement Analysis",
+      description: "We dive deep into your business requirements, user persona workflows, and functional scopes to formulate a robust engineering plan."
     },
     {
-      icon: Database,
-      title: "Backend & API Integration Strategy",
-      description: "SPAs live or die by their APIs. We architect a robust communication layer, implementing intelligent data fetching with React Query or SWR to handle caching, background updates, optimistic mutations, and precise error handling."
+      icon: PenTool,
+      title: "UI/UX Planning",
+      description: "We map out low-friction visual layouts, interactive wireframe components, and smooth design systems to guarantee an app-like feel."
     },
     {
       icon: Layers,
-      title: "Component Library Development",
-      description: "We don't just build pages; we build design systems. We engineer a scalable, deeply reusable library of atomic React or Vue components, ensuring complete visual consistency and radically accelerating future feature development."
+      title: "Frontend Architecture",
+      description: "We design a scalable codebase using modern React components, client-side routing, and code-splitting structures."
     },
     {
       icon: Code2,
-      title: "Client-Side Routing & Logic",
-      description: "We implement advanced client-side routers (React Router or Next.js App Router) with strict code-splitting. This ensures users only download the exact JavaScript needed for the current view, keeping initial load times lightning fast."
+      title: "API Integration",
+      description: "We build secure data fetchers linked to backend APIs, managing optimistic rendering updates and data cache layers."
     },
     {
       icon: Zap,
-      title: "Performance & Rendering Optimization",
-      description: "We meticulously audit the rendering cycle, eliminating unnecessary re-renders, memoizing heavy computations, lazy-loading off-screen assets, and securing a flawless 60fps experience even during complex state updates."
+      title: "Performance Optimization",
+      description: "We optimize hydration, lazy load off-screen components, compress bundle sizes, and align key Core Web Vitals to pass search speed assessments."
     },
     {
       icon: Rocket,
-      title: "CI/CD Deployment & Monitoring",
-      description: "Your SPA is deployed via edge networks (Vercel, AWS CloudFront) for global low-latency access. We integrate robust error tracking (Sentry) and performance monitoring to catch and resolve issues before users ever notice them."
+      title: "Testing & Deployment",
+      description: "We test code responsiveness under simulated user stress and deploy your SPA to global edge networks for sub-second delivery."
     }
   ];
 
@@ -51,9 +51,9 @@ export default function SpaProcessSteps() {
             Engineering Pipeline
           </span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-black uppercase tracking-wide">
-            How We Build SPAs
+            Our SPA Development Process
           </h2>
-          <p className="text-slate-400 text-sm sm:text-base leading-relaxed max-w-lg mt-4">
+          <p className="text-slate-400 text-sm sm:text-base leading-relaxed max-w-lg mt-4 font-medium">
             Building a true application in the browser requires strict engineering discipline. Here is our end-to-end technical process for shipping flawless SPAs.
           </p>
         </div>
@@ -115,6 +115,22 @@ export default function SpaProcessSteps() {
             })}
           </div>
         </div>
+
+        {/* EEAT Personal Experience Statement Box */}
+        <div className="mt-20 p-8 border border-slate-800 rounded-3xl bg-slate-950/50 backdrop-blur-sm max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-6 text-left">
+          <div className="w-16 h-16 rounded-full bg-orange-600/10 border border-orange-500/20 flex items-center justify-center shrink-0">
+            <span className="text-orange-500 font-black text-xl">EEAT</span>
+          </div>
+          <div>
+            <h4 className="font-extrabold text-sm uppercase tracking-wider text-orange-500 mb-1">
+              Field Notes: Real-World SPA Architecture Experience
+            </h4>
+            <p className="text-slate-400 text-xs sm:text-sm leading-relaxed font-medium">
+              "In many SPA projects, optimizing hydration, lazy loading, and bundle size significantly improved user experience and loading performance. By establishing tight API boundaries and memoizing rendering trees, we consistently achieve sub-second client transitions."
+            </p>
+          </div>
+        </div>
+
       </div>
     </section>
   );

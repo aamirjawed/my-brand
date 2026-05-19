@@ -9,24 +9,24 @@ export default function SpaFAQ() {
 
   const faqs = [
     {
-      q: "What is the difference between a traditional website and a Single Page Application?",
-      a: "A traditional website requests a completely new HTML document from the server every time a user clicks a link, causing the screen to flash white and completely reload. A Single Page Application (SPA) loads only one HTML file initially. When users click links, the SPA uses JavaScript to instantly swap out components and fetch only the necessary data via API in the background. The result is a fluid, app-like experience with zero page reloads."
+      q: "What is a single page application?",
+      a: "A single page application (SPA) is a modern web application that loads a single HTML page and dynamically updates it as the user interacts with the app. This provides a fluid, app-like experience and eliminates the need for full page reloads."
     },
     {
-      q: "Are Single Page Applications bad for SEO?",
-      a: "Historically, yes — but not anymore. Pure client-side SPAs (like early React or Angular apps) forced search engine crawlers to execute heavy JavaScript before seeing content, which often hurt rankings. Today, we build SPAs using meta-frameworks like Next.js or Nuxt.js. This allows us to use Server-Side Rendering (SSR) or Static Site Generation (SSG), meaning Google immediately receives fully rendered HTML while your users still get the lightning-fast, app-like experience. You get perfect SEO without sacrificing interactivity."
+      q: "Are SPAs good for SEO?",
+      a: "Yes, modern single page applications are highly SEO-friendly when built using frameworks like Next.js with server-side rendering (SSR) or pre-rendering. This ensures search engines receive fully indexable content immediately while users still experience seamless performance."
     },
     {
-      q: "When should I choose an SPA over a traditional WordPress site?",
-      a: "You should choose an SPA if your project is an actual application rather than a brochure. If you are building a SaaS product, a user dashboard, a complex e-commerce flow, an internal tool, or any platform that requires persistent state (like a playing audio track that continues across pages), real-time data updates, or heavy user interactivity, an SPA is the correct choice. If you just need a simple blog or a 5-page informational site with mostly static text, WordPress or a basic static site is more appropriate."
+      q: "Which framework is best for SPA development?",
+      a: "The best framework depends on your specific product requirements. React is the industry standard for custom interfaces, Vue offers lightweight and flexible templating, while Next.js is ideal for production-grade, SEO-friendly applications."
     },
     {
-      q: "What technologies do you use to build SPAs?",
-      a: "We are strictly framework-agnostic and choose the right tool for the exact technical requirements of your product. Our primary stacks utilize React (via Next.js or Vite) and Vue.js (via Nuxt or Vite). For state management, we utilize Redux Toolkit, Zustand, or Pinia. For data fetching and caching, we deploy React Query or SWR. We style using Tailwind CSS for highly maintainable, utility-first design systems. We do not use bloated templates — everything is engineered from scratch."
+      q: "Are React SPAs fast?",
+      a: "Yes, React SPAs are extremely fast when optimized correctly. By implementing route-based code splitting, bundle minification, and progressive loading, interactive response times can be brought down to sub-second speeds."
     },
     {
-      q: "How do you handle initial load times for large applications?",
-      a: "A common pitfall of poorly built SPAs is a massive initial JavaScript payload that takes seconds to download, leaving users staring at a blank screen. We solve this through aggressive route-based code splitting and lazy loading. A user visiting your login page only downloads the exact code needed for the login page — the heavy dashboard logic is fetched dynamically only when they actually navigate there. Combined with aggressive asset caching and edge network deployment, our SPAs typically reach 'Time to Interactive' in under 1.5 seconds."
+      q: "What is the difference between SPA and traditional websites?",
+      a: "Traditional websites request a completely new page from the server on every click, causing white flashes and page reloads. SPAs load the shell once and fetch data dynamically via APIs in the background, making navigation instantaneous."
     }
   ];
 
@@ -39,10 +39,10 @@ export default function SpaFAQ() {
             <HelpCircle className="w-3.5 h-3.5 text-orange-600" /> Have Questions?
           </div>
           <h2 className="text-3xl sm:text-4xl font-black text-slate-900 uppercase tracking-wide">
-            SPA Technical FAQ
+            Frequently Asked Questions
           </h2>
           <p className="text-slate-500 text-xs sm:text-sm leading-relaxed max-w-md mt-2">
-            Got questions about SPA architecture, SEO implications, performance tuning, or technology stacks? We have answers.
+            Got questions about SPA architecture, SEO optimization, performance tuning, or technology stacks? We have answers.
           </p>
         </div>
 

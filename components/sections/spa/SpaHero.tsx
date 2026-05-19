@@ -4,7 +4,13 @@ import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
 export default function SpaHero() {
-  const words = ["React Applications", "Vue.js Dashboards", "SaaS Platforms", "Customer Portals", "Web Applications"];
+  const words = [
+    "for React Applications",
+    "for Vue.js Dashboards",
+    "for SaaS Platforms",
+    "for Customer Portals",
+    "for Web Applications"
+  ];
   const [index, setIndex] = useState(0);
   const [displayText, setDisplayText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
@@ -29,14 +35,17 @@ export default function SpaHero() {
 
   return (
     <section className="relative h-auto pt-44 pb-28 sm:py-36 md:py-40 flex flex-col overflow-hidden bg-slate-900">
+      {/* Background Image & Overlay */}
       <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-black/70 z-10" />
+        <div className="absolute inset-0 bg-black/75 z-10" />
         <img
           src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2000&auto=format&fit=crop"
           alt="Single Page Application Development"
           className="w-full h-full object-cover select-none"
         />
       </div>
+
+      {/* Content */}
       <div className="container mx-auto px-6 relative z-20 flex flex-col items-center justify-center text-center">
         <div className="max-w-4xl mx-auto">
           <motion.div
@@ -45,16 +54,18 @@ export default function SpaHero() {
             transition={{ duration: 0.8 }}
             className="flex flex-col items-center justify-center"
           >
-            <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold text-white leading-[1.15] tracking-tight mb-8">
-              We Build <br />
-              <div className="h-[1.25em] relative flex items-center justify-center">
-                <span className="text-orange-500">
-                  {displayText}
-                  <span className="inline-block w-[3px] h-[0.8em] bg-orange-500 ml-2 animate-pulse" />
-                </span>
-              </div>
+            {/* Inline H1 Typewriter animation */}
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black uppercase text-white leading-[1.2] tracking-wide mb-8 max-w-5xl mx-auto">
+              Single Page Application <br />
+              Development Services <br />
+              <span className="text-orange-500 inline-block min-h-[1.2em] relative whitespace-nowrap">
+                {displayText}
+                <span className="inline-block w-[3px] h-[0.85em] bg-orange-500 ml-1.5 animate-pulse align-middle" />
+              </span>
             </h1>
-            <p className="text-gray-300 text-sm sm:text-base md:text-lg leading-relaxed max-w-2xl mx-auto mb-10">
+
+            {/* Subtitle description */}
+            <p className="text-gray-300 text-xs sm:text-sm md:text-base leading-relaxed max-w-2xl mx-auto mb-10 font-medium">
               Single Page Applications load once and never reload — delivering native-app speed, fluid transitions, and real-time interactivity that traditional multi-page websites simply cannot match. We engineer production-grade SPAs using React, Next.js, and Vue.js that handle thousands of concurrent users without breaking a sweat.
             </p>
           </motion.div>

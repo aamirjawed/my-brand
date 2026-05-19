@@ -34,12 +34,16 @@ export default function SpaStats() {
       <div className="absolute inset-0 opacity-[0.025] bg-[radial-gradient(#fff_1px,transparent_1px)] bg-[size:20px_20px] pointer-events-none"></div>
       <div className="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 w-[600px] h-[300px] bg-orange-600/10 rounded-full blur-[120px] pointer-events-none"></div>
       <div className="container mx-auto px-6 max-w-[1200px] relative z-10">
-        <div className="flex items-center justify-center mb-14">
-          <div className="flex items-center gap-3">
-            <div className="h-px w-12 bg-orange-600"></div>
-            <span className="text-orange-500 font-extrabold text-xs tracking-[0.3em] uppercase">Proven Results</span>
-            <div className="h-px w-12 bg-orange-600"></div>
-          </div>
+        <div className="flex flex-col items-center justify-center text-center mb-14">
+          <span className="font-extrabold text-xs text-orange-500 uppercase tracking-widest bg-orange-600/10 px-4 py-2 rounded-full border border-orange-500/20 mb-4 inline-block">
+            Performance Metrics
+          </span>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-white uppercase tracking-wide">
+            Performance-Focused SPA Solutions
+          </h2>
+          <p className="text-slate-400 text-xs sm:text-sm mt-3 max-w-xl">
+            We deliver top-tier Lighthouse scores and instant interactivity to secure high conversion rates and responsive user journeys.
+          </p>
         </div>
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-0 divide-y lg:divide-y-0 lg:divide-x divide-slate-800">
           {stats.map((stat, idx) => (

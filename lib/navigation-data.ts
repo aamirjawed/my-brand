@@ -40,7 +40,7 @@ export const navigationData: NavLink[] = [
           { label: "Landing Page Development", href: "/landing-page-development" },
           { label: "Static Website", href: "/static-website-development" },
           { label: "Custom Website", href: "/custom-website" },
-          { label: "Single Page Application", href: "/spa" },
+          { label: "Single Page Application", href: "/single-page-application-development" },
           { label: "Corporate Website", href: "/corporate-website" },
         ],
       },
