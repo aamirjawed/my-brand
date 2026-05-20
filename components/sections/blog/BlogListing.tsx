@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
-import { ArrowRight, Calendar, Clock, Bookmark, Filter, Send, Sparkles } from "lucide-react";
+import { ArrowRight, Calendar, Clock, Bookmark, Filter, Send, Sparkles, ChevronLeft, ChevronRight } from "lucide-react";
 import { BlogPost } from "@/lib/blog-data";
 
 interface BlogListingProps {
@@ -12,8 +12,11 @@ interface BlogListingProps {
 
 export default function BlogListing({ posts }: BlogListingProps) {
   const [activeCategory, setActiveCategory] = useState("All");
+  const [currentPage, setCurrentPage] = useState(1);
   const [email, setEmail] = useState("");
   const [submitted, setSubmitted] = useState(false);
+
+  const POSTS_PER_PAGE = 6;
 
   // Extract unique categories
   const categories = ["All", ...Array.from(new Set(posts.map((p) => p.category)))];
@@ -26,6 +29,15 @@ export default function BlogListing({ posts }: BlogListingProps) {
   // Define first post as featured if "All" is active, otherwise render list
   const featuredPost = posts[0];
   const listPosts = activeCategory === "All" ? filteredPosts.slice(1) : filteredPosts;
+
+  const totalPages = Math.ceil(listPosts.length / POSTS_PER_PAGE);
+  const startIndex = (currentPage - 1) * POSTS_PER_PAGE;
+  const paginatedListPosts = listPosts.slice(startIndex, startIndex + POSTS_PER_PAGE);
+
+  const handleCategoryChange = (cat: string) => {
+    setActiveCategory(cat);
+    setCurrentPage(1);
+  };
 
   const handleSubscribe = (e: React.FormEvent) => {
     e.preventDefault();
@@ -49,7 +61,7 @@ export default function BlogListing({ posts }: BlogListingProps) {
             return (
               <button
                 key={cat}
-                onClick={() => setActiveCategory(cat)}
+                onClick={() => handleCategoryChange(cat)}
                 className={`relative px-4 py-2 text-xs font-black uppercase tracking-widest rounded-full border transition-all duration-300 ${
                   isActive
                     ? "border-orange-500 text-white bg-orange-600/10 shadow-[0_0_20px_rgba(234,88,12,0.15)]"
@@ -63,8 +75,8 @@ export default function BlogListing({ posts }: BlogListingProps) {
         </div>
       </div>
 
-      {/* 2. Featured Post - Show only when All is active and we have posts */}
-      {activeCategory === "All" && featuredPost && (
+      {/* 2. Featured Post - Show only when All is active and we have posts on page 1 */}
+      {activeCategory === "All" && currentPage === 1 && featuredPost && (
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -190,8 +202,8 @@ export default function BlogListing({ posts }: BlogListingProps) {
               No insights found for this category.
             </motion.div>
           ) : (
-            listPosts.map((post, idx) => {
-              const displayIndex = String(idx + (activeCategory === "All" ? 2 : 1)).padStart(2, "0");
+            paginatedListPosts.map((post, idx) => {
+              const displayIndex = String(startIndex + idx + (activeCategory === "All" ? 2 : 1)).padStart(2, "0");
               return (
                 <motion.article
                   layout
@@ -270,6 +282,63 @@ export default function BlogListing({ posts }: BlogListingProps) {
           )}
         </AnimatePresence>
       </div>
+
+      {/* Pagination Controls */}
+      {totalPages > 1 && (
+        <div className="flex items-center justify-center gap-2 mt-20">
+          <button
+            onClick={() => {
+              setCurrentPage((prev) => Math.max(prev - 1, 1));
+              window.scrollTo({ top: 300, behavior: "smooth" });
+            }}
+            disabled={currentPage === 1}
+            className={`w-10 h-10 rounded-full flex items-center justify-center border transition-all duration-300 ${
+              currentPage === 1
+                ? "border-slate-900 text-slate-700 cursor-not-allowed"
+                : "border-slate-800 text-slate-400 hover:text-white hover:border-slate-700 hover:bg-slate-950/40 cursor-pointer"
+            }`}
+            aria-label="Previous Page"
+          >
+            <ChevronLeft className="w-4 h-4" />
+          </button>
+
+          {Array.from({ length: totalPages }, (_, i) => i + 1).map((pageNum) => {
+            const isCurrent = pageNum === currentPage;
+            return (
+              <button
+                key={pageNum}
+                onClick={() => {
+                  setCurrentPage(pageNum);
+                  window.scrollTo({ top: 300, behavior: "smooth" });
+                }}
+                className={`w-10 h-10 rounded-full flex items-center justify-center font-bold text-xs transition-all duration-300 cursor-pointer ${
+                  isCurrent
+                    ? "border-orange-500 text-white bg-orange-600/10 shadow-[0_0_15px_rgba(234,88,12,0.15)]"
+                    : "border-slate-800 text-slate-400 hover:text-white hover:border-slate-700 bg-slate-950/40"
+                }`}
+              >
+                {pageNum}
+              </button>
+            );
+          })}
+
+          <button
+            onClick={() => {
+              setCurrentPage((prev) => Math.min(prev + 1, totalPages));
+              window.scrollTo({ top: 300, behavior: "smooth" });
+            }}
+            disabled={currentPage === totalPages}
+            className={`w-10 h-10 rounded-full flex items-center justify-center border transition-all duration-300 ${
+              currentPage === totalPages
+                ? "border-slate-900 text-slate-700 cursor-not-allowed"
+                : "border-slate-800 text-slate-400 hover:text-white hover:border-slate-700 hover:bg-slate-950/40 cursor-pointer"
+            }`}
+            aria-label="Next Page"
+          >
+            <ChevronRight className="w-4 h-4" />
+          </button>
+        </div>
+      )}
 
       {/* 4. Newsletter Signup Conversion Box */}
       <motion.div

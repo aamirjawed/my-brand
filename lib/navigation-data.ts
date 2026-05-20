@@ -72,6 +72,7 @@ export const navigationData: NavLink[] = [
           { label: "Conferences", href: "/events/conferences" },
           { label: "Product Launches", href: "/events/product-launches" },
           { label: "Gala Dinners", href: "/events/gala-dinners" },
+          { label: "League Management", href: "/league-management-services" },
         ],
       },
       {
