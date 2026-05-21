@@ -11,32 +11,44 @@ export default function Gallery() {
     {
       title: "Tournament Visuals",
       category: "Match Action",
-      img: "https://images.unsplash.com/photo-1508098682722-e99c43a406b2?q=80&w=800&auto=format&fit=crop",
-      colSpan: "md:col-span-8 lg:col-span-6",
+      img: "/images/tournament_visuals.png",
+      colSpan: "md:col-span-6 md:row-span-2 h-full min-h-[320px] md:min-h-[460px]",
+      aspect: "aspect-square md:aspect-auto",
     },
     {
       title: "Crowd Images",
       category: "Spectator Engagement",
-      img: "https://images.unsplash.com/photo-1519766304817-4f37bda74a27?q=80&w=800&auto=format&fit=crop",
-      colSpan: "md:col-span-4 lg:col-span-3",
+      img: "/images/crowd_images.png",
+      colSpan: "md:col-span-3",
+      aspect: "aspect-[4/3]",
     },
     {
       title: "Scoreboard Images",
       category: "Analytics & Tracking",
-      img: "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=800&auto=format&fit=crop",
-      colSpan: "md:col-span-4 lg:col-span-3",
+      img: "/images/scoreboard_images.png",
+      colSpan: "md:col-span-3",
+      aspect: "aspect-[4/3]",
     },
     {
       title: "Match Coordination",
       category: "Tournament Officiating",
-      img: "https://images.unsplash.com/photo-1579952362224-89a7640077cd?q=80&w=800&auto=format&fit=crop",
-      colSpan: "md:col-span-4 lg:col-span-3",
+      img: "/images/match_coordination.png",
+      colSpan: "md:col-span-3",
+      aspect: "aspect-[4/3]",
+    },
+    {
+      title: "Broadcasting & Media",
+      category: "Broadcasting & Media",
+      img: "/images/broadcasting_media.png",
+      colSpan: "md:col-span-3",
+      aspect: "aspect-[4/3]",
     },
     {
       title: "Venue Setups",
       category: "Stadium Infrastructure",
-      img: "https://images.unsplash.com/photo-1518063319789-7217e6706b04?q=80&w=800&auto=format&fit=crop",
-      colSpan: "md:col-span-8 lg:col-span-9",
+      img: "/images/venue_setups.png",
+      colSpan: "md:col-span-12",
+      aspect: "aspect-[16/9] md:aspect-[21/9]",
     },
   ];
 
@@ -62,11 +74,11 @@ export default function Gallery() {
         </div>
 
         {/* Asymmetric Gallery Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-6 grid-flow-row-dense">
           {items.map((item, idx) => (
             <motion.div
               key={idx}
-              className={`relative overflow-hidden rounded-xl border border-slate-800 bg-slate-900 group aspect-[4/3] ${item.colSpan} cursor-pointer`}
+              className={`relative overflow-hidden rounded-xl border border-slate-800 bg-slate-900 group ${item.aspect} ${item.colSpan} cursor-pointer`}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
