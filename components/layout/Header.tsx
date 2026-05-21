@@ -73,19 +73,28 @@ export default function Header() {
                 onMouseEnter={() => setActiveMegaMenu(link.label)}
                 onMouseLeave={() => setActiveMegaMenu(null)}
               >
-                <Link
-                  href={link.href}
-                  className={cn(
-                    "flex items-center gap-1 font-medium text-[12px] xl:text-[14px] tracking-tight transition-colors py-2 whitespace-nowrap",
-                    scrolled ? "text-gray-700 hover:text-orange-600" : "text-gray-700 md:text-white hover:text-orange-400",
-                    pathname.startsWith(link.href) && "text-orange-600"
-                  )}
-                >
-                  {link.label}
-                  {link.megaMenu && (
+                {link.megaMenu ? (
+                  <span
+                    className={cn(
+                      "flex items-center gap-1 font-medium text-[12px] xl:text-[14px] tracking-tight transition-colors py-2 whitespace-nowrap cursor-default select-none",
+                      scrolled ? "text-gray-700" : "text-gray-700 md:text-white"
+                    )}
+                  >
+                    {link.label}
                     <ChevronDown className="w-3 h-3 transition-transform group-hover:rotate-180 opacity-50" />
-                  )}
-                </Link>
+                  </span>
+                ) : (
+                  <Link
+                    href={link.href}
+                    className={cn(
+                      "flex items-center gap-1 font-medium text-[12px] xl:text-[14px] tracking-tight transition-colors py-2 whitespace-nowrap",
+                      scrolled ? "text-gray-700 hover:text-orange-600" : "text-gray-700 md:text-white hover:text-orange-400",
+                      pathname === link.href && "text-orange-600"
+                    )}
+                  >
+                    {link.label}
+                  </Link>
+                )}
 
                 {/* Mega Menu Desktop */}
                 {link.megaMenu && (
@@ -158,22 +167,24 @@ export default function Header() {
               {navigationData.filter(link => link.label.toLowerCase().trim() !== "contact us").map((link) => (
                 <div key={link.label} className="flex flex-col">
                   <div className="flex items-center justify-between py-3 border-b border-white/5">
-                    <Link
-                      href={link.href}
-                      className="text-xl text-white"
-                    >
-                      {link.label}
-                    </Link>
-                    {link.megaMenu && (
+                    {link.megaMenu ? (
                       <button
                         onClick={() => setActiveMegaMenu(activeMegaMenu === link.label ? null : link.label)}
-                        className="p-2 bg-white/5 rounded-lg"
+                        className="text-xl text-white text-left w-full flex items-center justify-between py-1"
                       >
+                        <span>{link.label}</span>
                         <ChevronDown className={cn(
-                          "w-5 h-5 text-gray-400 transition-transform",
+                          "w-5 h-5 text-gray-405 transition-transform",
                           activeMegaMenu === link.label && "rotate-180"
                         )} />
                       </button>
+                    ) : (
+                      <Link
+                        href={link.href}
+                        className="text-xl text-white w-full block py-1"
+                      >
+                        {link.label}
+                      </Link>
                     )}
                   </div>
 
