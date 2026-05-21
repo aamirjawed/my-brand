@@ -14,6 +14,7 @@ export const navigationData: NavLink[] = [
     label: "Development",
     href: "/development",
     megaMenu: [
+      /*
       {
         title: "WORDPRESS",
         links: [
@@ -34,16 +35,18 @@ export const navigationData: NavLink[] = [
           { label: "Shopify Store Migration", href: "/development/shopify-migration" },
         ],
       },
+      */
       {
         title: "WEBSITE DEVELOPMENT",
         links: [
           { label: "Landing Page Development", href: "/landing-page-development" },
           { label: "Static Website", href: "/static-website-development" },
-          { label: "Custom Website", href: "/custom-website" },
+          { label: "Custom Website", href: "/custom-website-development" },
           { label: "Single Page Application", href: "/single-page-application-development" },
           { label: "Corporate Website", href: "/corporate-website-development" },
         ],
       },
+      /*
       {
         title: "APP DEVELOPMENT",
         links: [
@@ -54,6 +57,7 @@ export const navigationData: NavLink[] = [
           { label: "Custom App Development", href: "/development/custom-app" },
         ],
       },
+      */
     ],
   },
   {

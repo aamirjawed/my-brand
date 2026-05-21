@@ -56,7 +56,7 @@ export default function WhyChooseUs() {
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-slate-900 uppercase tracking-tight leading-none">
             Why Choose Our League Management Team
           </h2>
-          <p className="text-slate-655 text-sm sm:text-base leading-relaxed mt-4">
+          <p className="text-slate-600 text-sm sm:text-base leading-relaxed mt-4">
             We operate as your dedicated production and operations team, ensuring competitive integrity and technical coordination so you can focus on the sport.
           </p>
         </div>

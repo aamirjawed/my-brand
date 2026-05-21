@@ -112,7 +112,7 @@ export default function WhyMatters() {
                       }`}>
                         {point.title}
                       </h3>
-                      <p className="text-slate-655 text-xs sm:text-sm leading-relaxed font-semibold">
+                      <p className="text-slate-600 text-xs sm:text-sm leading-relaxed font-semibold">
                         {point.desc}
                       </p>
                     </div>

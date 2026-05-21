@@ -180,6 +180,8 @@ export default function SinglePageApplicationDevelopmentPage() {
           <div className="border-t border-slate-900 pt-10 mt-10">
             <p className="text-[10px] text-slate-500 uppercase tracking-widest font-black mb-4">Explore Our Development Services</p>
             <div className="flex flex-wrap justify-center gap-6 text-xs text-slate-400 font-semibold">
+              <Link href="/custom-website-development" className="hover:text-orange-500 transition-colors">Custom Website Development</Link>
+              <span className="text-slate-800">•</span>
               <Link href="/static-website-development" className="hover:text-orange-500 transition-colors">Static Website Development</Link>
               <span className="text-slate-800">•</span>
               <Link href="/landing-page-development" className="hover:text-orange-500 transition-colors">Landing Page Development</Link>

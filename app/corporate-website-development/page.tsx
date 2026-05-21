@@ -169,6 +169,8 @@ export default function CorporateWebsiteDevelopmentPage() {
           <div className="border-t border-slate-900 pt-10 mt-10">
             <p className="text-[10px] text-slate-500 uppercase tracking-widest font-black mb-4">Explore More Services</p>
             <div className="flex flex-wrap justify-center gap-6 text-xs text-slate-400 font-semibold">
+              <Link href="/custom-website-development" className="hover:text-orange-500 transition-colors">Custom Website Development</Link>
+              <span className="text-slate-800">•</span>
               <Link href="/single-page-application-development" className="hover:text-orange-500 transition-colors">Single Page Application</Link>
               <span className="text-slate-800">•</span>
               <Link href="/static-website-development" className="hover:text-orange-500 transition-colors">Static Website Development</Link>

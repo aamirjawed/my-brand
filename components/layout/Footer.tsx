@@ -67,19 +67,19 @@ export default function Footer() {
               <li>
                 <a href="/web-development" className="text-slate-400 hover:text-white transition-colors duration-200 flex items-center gap-0.5 group">
                   Web Development
-                  <ArrowUpRight className="w-2.5 h-2.5 text-slate-650 group-hover:text-white transition-colors" />
+                  <ArrowUpRight className="w-2.5 h-2.5 text-slate-600 group-hover:text-white transition-colors" />
                 </a>
               </li>
               <li>
                 <a href="/seo" className="text-slate-400 hover:text-white transition-colors duration-200 flex items-center gap-0.5 group">
                   SEO & Marketing
-                  <ArrowUpRight className="w-2.5 h-2.5 text-slate-650 group-hover:text-white transition-colors" />
+                  <ArrowUpRight className="w-2.5 h-2.5 text-slate-600 group-hover:text-white transition-colors" />
                 </a>
               </li>
               <li>
                 <a href="/graphic-design" className="text-slate-400 hover:text-white transition-colors duration-200 flex items-center gap-0.5 group">
                   Graphic Design
-                  <ArrowUpRight className="w-2.5 h-2.5 text-slate-650 group-hover:text-white transition-colors" />
+                  <ArrowUpRight className="w-2.5 h-2.5 text-slate-600 group-hover:text-white transition-colors" />
                 </a>
               </li>
             </ul>

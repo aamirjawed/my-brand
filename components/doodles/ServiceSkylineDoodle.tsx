@@ -10,7 +10,7 @@ export default function ServiceSkylineDoodle({ isHovered = false }: ServiceSkyli
   return (
     <svg 
       viewBox="0 0 1000 120" 
-      className="w-full h-full text-slate-650 pointer-events-none origin-bottom preserve-3d"
+      className="w-full h-full text-slate-600 pointer-events-none origin-bottom preserve-3d"
       preserveAspectRatio="none"
     >
       {/* Ground wobbly horizon connector line */}

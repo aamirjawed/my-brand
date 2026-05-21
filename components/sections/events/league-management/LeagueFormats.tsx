@@ -56,7 +56,7 @@ export default function LeagueFormats() {
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-slate-900 uppercase tracking-tight leading-none">
             Types of Leagues We Manage
           </h2>
-          <p className="text-slate-650 text-sm sm:text-base leading-relaxed mt-4">
+          <p className="text-slate-600 text-sm sm:text-base leading-relaxed mt-4">
             We adapt rules, scheduling software, and bracket layouts to support the exact format matching your player count and game type.
           </p>
         </div>
