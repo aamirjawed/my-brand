@@ -112,11 +112,10 @@ export default function StaticProcessSteps() {
                   {/* Center Node Column */}
                   <div className="absolute left-[30px] md:left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 z-20 flex items-center justify-center pointer-events-none hidden sm:flex">
                     <motion.div
-                      className={`w-16 h-16 rounded-full border-4 flex items-center justify-center transition-all duration-300 ${
-                        isHovered
+                      className={`w-16 h-16 rounded-full border-4 flex items-center justify-center transition-all duration-300 ${isHovered
                           ? "bg-orange-600 border-white text-white scale-110 shadow-[0_0_20px_rgba(234,88,12,0.5)]"
                           : "bg-slate-950 border-slate-800 text-slate-400"
-                      }`}
+                        }`}
                     >
                       <Icon className="w-6 h-6" />
                     </motion.div>

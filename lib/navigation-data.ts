@@ -99,7 +99,7 @@ export const navigationData: NavLink[] = [
         title: "CREATIVE",
         links: [
           { label: "Branding & Logo", href: "/design/branding" },
-          { label: "UI/UX Design", href: "/design/ui-ux" },
+          { label: "UI/UX Design", href: "/ui-ux-design-services" },
           { label: "Social Graphics", href: "/design/social" },
         ],
       },
@@ -114,7 +114,7 @@ export const navigationData: NavLink[] = [
         links: [
           { label: "Video Production", href: "/content/video" },
           { label: "Copywriting", href: "/content/copywriting" },
-          { label: "Social Media", href: "/content/social" },
+          { label: "Social Media Management", href: "/social-media-management-services" },
         ],
       },
     ],
