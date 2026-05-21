@@ -3,19 +3,21 @@ import { Metadata } from "next";
 import Link from "next/link";
 import { ArrowUpRight, Sparkles } from "lucide-react";
 
+import dynamic from "next/dynamic";
+
 // Modular Social Components
 import SocialHero from "@/components/sections/social-media/SocialHero";
-import SocialShowcase from "@/components/sections/social-media/SocialShowcase";
-import SocialWhyMatters from "@/components/sections/social-media/SocialWhyMatters";
-import SocialServices from "@/components/sections/social-media/SocialServices";
-import SocialPlatforms from "@/components/sections/social-media/SocialPlatforms";
-import SocialContentStrategy from "@/components/sections/social-media/SocialContentStrategy";
-import SocialBenefits from "@/components/sections/social-media/SocialBenefits";
-import SocialProcess from "@/components/sections/social-media/SocialProcess";
-import SocialWhyChooseUs from "@/components/sections/social-media/SocialWhyChooseUs";
-import SocialPortfolio from "@/components/sections/social-media/SocialPortfolio";
-import SocialTestimonials from "@/components/sections/social-media/SocialTestimonials";
-import SocialFAQ from "@/components/sections/social-media/SocialFAQ";
+const SocialShowcase = dynamic(() => import("@/components/sections/social-media/SocialShowcase"));
+const SocialWhyMatters = dynamic(() => import("@/components/sections/social-media/SocialWhyMatters"));
+const SocialServices = dynamic(() => import("@/components/sections/social-media/SocialServices"));
+const SocialPlatforms = dynamic(() => import("@/components/sections/social-media/SocialPlatforms"));
+const SocialContentStrategy = dynamic(() => import("@/components/sections/social-media/SocialContentStrategy"));
+const SocialBenefits = dynamic(() => import("@/components/sections/social-media/SocialBenefits"));
+const SocialProcess = dynamic(() => import("@/components/sections/social-media/SocialProcess"));
+const SocialWhyChooseUs = dynamic(() => import("@/components/sections/social-media/SocialWhyChooseUs"));
+const SocialPortfolio = dynamic(() => import("@/components/sections/social-media/SocialPortfolio"));
+const SocialTestimonials = dynamic(() => import("@/components/sections/social-media/SocialTestimonials"));
+const SocialFAQ = dynamic(() => import("@/components/sections/social-media/SocialFAQ"));
 
 const faqs = [
   {

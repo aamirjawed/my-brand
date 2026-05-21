@@ -3,18 +3,20 @@ import { Metadata } from "next";
 import Link from "next/link";
 import { ArrowUpRight, Sparkles } from "lucide-react";
 
+import dynamic from "next/dynamic";
+
 // Modular UI/UX Components
 import UiUxHero from "@/components/sections/ui-ux-design/UiUxHero";
-import UiUxShowcase from "@/components/sections/ui-ux-design/UiUxShowcase";
-import UiUxWhyMatters from "@/components/sections/ui-ux-design/UiUxWhyMatters";
-import UiUxServices from "@/components/sections/ui-ux-design/UiUxServices";
-import UiUxSolutions from "@/components/sections/ui-ux-design/UiUxSolutions";
-import UiUxProcess from "@/components/sections/ui-ux-design/UiUxProcess";
-import UiUxFeatures from "@/components/sections/ui-ux-design/UiUxFeatures";
-import UiUxWhyChooseUs from "@/components/sections/ui-ux-design/UiUxWhyChooseUs";
-import UiUxPortfolio from "@/components/sections/ui-ux-design/UiUxPortfolio";
-import UiUxTestimonials from "@/components/sections/ui-ux-design/UiUxTestimonials";
-import UiUxFAQ from "@/components/sections/ui-ux-design/UiUxFAQ";
+const UiUxShowcase = dynamic(() => import("@/components/sections/ui-ux-design/UiUxShowcase"));
+const UiUxWhyMatters = dynamic(() => import("@/components/sections/ui-ux-design/UiUxWhyMatters"));
+const UiUxServices = dynamic(() => import("@/components/sections/ui-ux-design/UiUxServices"));
+const UiUxSolutions = dynamic(() => import("@/components/sections/ui-ux-design/UiUxSolutions"));
+const UiUxProcess = dynamic(() => import("@/components/sections/ui-ux-design/UiUxProcess"));
+const UiUxFeatures = dynamic(() => import("@/components/sections/ui-ux-design/UiUxFeatures"));
+const UiUxWhyChooseUs = dynamic(() => import("@/components/sections/ui-ux-design/UiUxWhyChooseUs"));
+const UiUxPortfolio = dynamic(() => import("@/components/sections/ui-ux-design/UiUxPortfolio"));
+const UiUxTestimonials = dynamic(() => import("@/components/sections/ui-ux-design/UiUxTestimonials"));
+const UiUxFAQ = dynamic(() => import("@/components/sections/ui-ux-design/UiUxFAQ"));
 
 const faqs = [
   {

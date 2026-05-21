@@ -1,14 +1,16 @@
+import dynamic from "next/dynamic";
+
 import Hero from "@/components/sections/Hero";
-import AboutSection from "@/components/sections/About";
-import ServicesSection from "@/components/sections/Services";
-import WebDevelopmentSection from "@/components/sections/WebDevelopment";
-import SeoSection from "@/components/sections/SeoSection";
-import GraphicDesignSection from "@/components/sections/GraphicDesignSection";
-import ContentCreationSection from "@/components/sections/ContentCreationSection";
-import EventManagementSection from "@/components/sections/EventManagementSection";
-import TrustSection from "@/components/sections/TrustSection";
-import TestimonialsSection from "@/components/sections/TestimonialsSection";
-import ContactBanner from "@/components/sections/ContactBanner";
+const AboutSection = dynamic(() => import("@/components/sections/About"));
+const ServicesSection = dynamic(() => import("@/components/sections/Services"));
+const WebDevelopmentSection = dynamic(() => import("@/components/sections/WebDevelopment"));
+const SeoSection = dynamic(() => import("@/components/sections/SeoSection"));
+const GraphicDesignSection = dynamic(() => import("@/components/sections/GraphicDesignSection"));
+const ContentCreationSection = dynamic(() => import("@/components/sections/ContentCreationSection"));
+const EventManagementSection = dynamic(() => import("@/components/sections/EventManagementSection"));
+const TrustSection = dynamic(() => import("@/components/sections/TrustSection"));
+const TestimonialsSection = dynamic(() => import("@/components/sections/TestimonialsSection"));
+const ContactBanner = dynamic(() => import("@/components/sections/ContactBanner"));
 
 export default function Home() {
   return (

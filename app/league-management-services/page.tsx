@@ -1,17 +1,19 @@
 import React from "react";
 import { Metadata } from "next";
 
+import dynamic from "next/dynamic";
+
 import Hero from "@/components/sections/events/league-management/Hero";
-import Showcase from "@/components/sections/events/league-management/Showcase";
-import Stats from "@/components/sections/events/league-management/Stats";
-import Services from "@/components/sections/events/league-management/Services";
-import WhyMatters from "@/components/sections/events/league-management/WhyMatters";
-import LeagueFormats from "@/components/sections/events/league-management/LeagueFormats";
-import Process from "@/components/sections/events/league-management/Process";
-import WhyChooseUs from "@/components/sections/events/league-management/WhyChooseUs";
-import Gallery from "@/components/sections/events/league-management/Gallery";
-import FAQ from "@/components/sections/events/league-management/FAQ";
-import CTA from "@/components/sections/events/league-management/CTA";
+const Showcase = dynamic(() => import("@/components/sections/events/league-management/Showcase"));
+const Stats = dynamic(() => import("@/components/sections/events/league-management/Stats"));
+const Services = dynamic(() => import("@/components/sections/events/league-management/Services"));
+const WhyMatters = dynamic(() => import("@/components/sections/events/league-management/WhyMatters"));
+const LeagueFormats = dynamic(() => import("@/components/sections/events/league-management/LeagueFormats"));
+const Process = dynamic(() => import("@/components/sections/events/league-management/Process"));
+const WhyChooseUs = dynamic(() => import("@/components/sections/events/league-management/WhyChooseUs"));
+const Gallery = dynamic(() => import("@/components/sections/events/league-management/Gallery"));
+const FAQ = dynamic(() => import("@/components/sections/events/league-management/FAQ"));
+const CTA = dynamic(() => import("@/components/sections/events/league-management/CTA"));
 
 // SEO Target Metadata
 export const metadata: Metadata = {

@@ -3,17 +3,19 @@ import { Metadata } from "next";
 import Link from "next/link";
 import { ArrowUpRight, ShieldAlert } from "lucide-react";
 
+import dynamic from "next/dynamic";
+
 // Import modular sections
 import CorporateHero from "@/components/sections/corporate-website/CorporateHero";
-import CorporateShowcase from "@/components/sections/corporate-website/CorporateShowcase";
-import CorporateFeatures from "@/components/sections/corporate-website/CorporateFeatures";
-import CorporateSpecificFeatures from "@/components/sections/corporate-website/CorporateSpecificFeatures";
-import CorporatePortfolio from "@/components/sections/corporate-website/CorporatePortfolio";
-import CorporateIndustries from "@/components/sections/corporate-website/CorporateIndustries";
-import CorporateProcessSteps from "@/components/sections/corporate-website/CorporateProcessSteps";
-import CorporateWhyChooseUs from "@/components/sections/corporate-website/CorporateWhyChooseUs";
-import CorporateInteractiveDemo from "@/components/sections/corporate-website/CorporateInteractiveDemo";
-import CorporateFAQ from "@/components/sections/corporate-website/CorporateFAQ";
+const CorporateShowcase = dynamic(() => import("@/components/sections/corporate-website/CorporateShowcase"));
+const CorporateFeatures = dynamic(() => import("@/components/sections/corporate-website/CorporateFeatures"));
+const CorporateSpecificFeatures = dynamic(() => import("@/components/sections/corporate-website/CorporateSpecificFeatures"));
+const CorporatePortfolio = dynamic(() => import("@/components/sections/corporate-website/CorporatePortfolio"));
+const CorporateIndustries = dynamic(() => import("@/components/sections/corporate-website/CorporateIndustries"));
+const CorporateProcessSteps = dynamic(() => import("@/components/sections/corporate-website/CorporateProcessSteps"));
+const CorporateWhyChooseUs = dynamic(() => import("@/components/sections/corporate-website/CorporateWhyChooseUs"));
+const CorporateInteractiveDemo = dynamic(() => import("@/components/sections/corporate-website/CorporateInteractiveDemo"));
+const CorporateFAQ = dynamic(() => import("@/components/sections/corporate-website/CorporateFAQ"));
 
 export const metadata: Metadata = {
   title: "Corporate Website Development Services | Professional Business Websites",

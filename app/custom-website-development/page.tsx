@@ -3,20 +3,22 @@ import { Metadata } from "next";
 import Link from "next/link";
 import { ArrowUpRight, Sparkles } from "lucide-react";
 
+import dynamic from "next/dynamic";
+
 // Modular Section Components
 import CustomHero from "@/components/sections/custom-website/CustomHero";
-import CustomShowcase from "@/components/sections/custom-website/CustomShowcase";
-import InteractiveCustomDemo from "@/components/sections/custom-website/InteractiveCustomDemo";
-import CustomServices from "@/components/sections/custom-website/CustomServices";
-import CustomTypes from "@/components/sections/custom-website/CustomTypes";
-import CustomFeatures from "@/components/sections/custom-website/CustomFeatures";
-import CustomProcessSteps from "@/components/sections/custom-website/CustomProcessSteps";
-import CustomBenefits from "@/components/sections/custom-website/CustomBenefits";
-import CustomPortfolio from "@/components/sections/custom-website/CustomPortfolio";
-import CustomIndustries from "@/components/sections/custom-website/CustomIndustries";
-import CustomTechnical from "@/components/sections/custom-website/CustomTechnical";
-import CustomTestimonials from "@/components/sections/custom-website/CustomTestimonials";
-import CustomFAQ from "@/components/sections/custom-website/CustomFAQ";
+const CustomShowcase = dynamic(() => import("@/components/sections/custom-website/CustomShowcase"));
+const InteractiveCustomDemo = dynamic(() => import("@/components/sections/custom-website/InteractiveCustomDemo"));
+const CustomServices = dynamic(() => import("@/components/sections/custom-website/CustomServices"));
+const CustomTypes = dynamic(() => import("@/components/sections/custom-website/CustomTypes"));
+const CustomFeatures = dynamic(() => import("@/components/sections/custom-website/CustomFeatures"));
+const CustomProcessSteps = dynamic(() => import("@/components/sections/custom-website/CustomProcessSteps"));
+const CustomBenefits = dynamic(() => import("@/components/sections/custom-website/CustomBenefits"));
+const CustomPortfolio = dynamic(() => import("@/components/sections/custom-website/CustomPortfolio"));
+const CustomIndustries = dynamic(() => import("@/components/sections/custom-website/CustomIndustries"));
+const CustomTechnical = dynamic(() => import("@/components/sections/custom-website/CustomTechnical"));
+const CustomTestimonials = dynamic(() => import("@/components/sections/custom-website/CustomTestimonials"));
+const CustomFAQ = dynamic(() => import("@/components/sections/custom-website/CustomFAQ"));
 
 // Define FAQ data to keep schema and component aligned
 const faqs = [

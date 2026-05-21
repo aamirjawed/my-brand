@@ -3,16 +3,18 @@ import { Metadata } from "next";
 import Link from "next/link";
 import { ArrowUpRight, AppWindow } from "lucide-react";
 
+import dynamic from "next/dynamic";
+
 import SpaHero from "@/components/sections/spa/SpaHero";
-import SpaShowcase from "@/components/sections/spa/SpaShowcase";
-import SpaBenefits from "@/components/sections/spa/SpaBenefits";
-import SpaSeoSection from "@/components/sections/spa/SpaSeoSection";
-import SpaInteractiveDemo from "@/components/sections/spa/SpaInteractiveDemo";
-import SpaTechStack from "@/components/sections/spa/SpaTechStack";
-import SpaStats from "@/components/sections/spa/SpaStats";
-import SpaComparison from "@/components/sections/spa/SpaComparison";
-import SpaProcessSteps from "@/components/sections/spa/SpaProcessSteps";
-import SpaFAQ from "@/components/sections/spa/SpaFAQ";
+const SpaShowcase = dynamic(() => import("@/components/sections/spa/SpaShowcase"));
+const SpaBenefits = dynamic(() => import("@/components/sections/spa/SpaBenefits"));
+const SpaSeoSection = dynamic(() => import("@/components/sections/spa/SpaSeoSection"));
+const SpaInteractiveDemo = dynamic(() => import("@/components/sections/spa/SpaInteractiveDemo"));
+const SpaTechStack = dynamic(() => import("@/components/sections/spa/SpaTechStack"));
+const SpaStats = dynamic(() => import("@/components/sections/spa/SpaStats"));
+const SpaComparison = dynamic(() => import("@/components/sections/spa/SpaComparison"));
+const SpaProcessSteps = dynamic(() => import("@/components/sections/spa/SpaProcessSteps"));
+const SpaFAQ = dynamic(() => import("@/components/sections/spa/SpaFAQ"));
 
 export const metadata: Metadata = {
   title: "Single Page Application Development Services | Fast & Modern Web Apps",

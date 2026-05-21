@@ -3,17 +3,19 @@ import { Metadata } from "next";
 import Link from "next/link";
 import { ArrowUpRight, Rocket } from "lucide-react";
 
+import dynamic from "next/dynamic";
+
 // Import modular sections from components/sections/landing-page
 import LandingHero from "@/components/sections/landing-page/LandingHero";
-import LandingShowcase from "@/components/sections/landing-page/LandingShowcase";
-import InteractiveLandingDemo from "@/components/sections/landing-page/InteractiveLandingDemo";
-import LandingBenefits from "@/components/sections/landing-page/LandingBenefits";
-import LandingServices from "@/components/sections/landing-page/LandingServices";
-import LandingPortfolio from "@/components/sections/landing-page/LandingPortfolio";
-import LandingIndustries from "@/components/sections/landing-page/LandingIndustries";
-import LandingProcessSteps from "@/components/sections/landing-page/LandingProcessSteps";
-import LandingTechnical from "@/components/sections/landing-page/LandingTechnical";
-import LandingFAQ from "@/components/sections/landing-page/LandingFAQ";
+const LandingShowcase = dynamic(() => import("@/components/sections/landing-page/LandingShowcase"));
+const InteractiveLandingDemo = dynamic(() => import("@/components/sections/landing-page/InteractiveLandingDemo"));
+const LandingBenefits = dynamic(() => import("@/components/sections/landing-page/LandingBenefits"));
+const LandingServices = dynamic(() => import("@/components/sections/landing-page/LandingServices"));
+const LandingPortfolio = dynamic(() => import("@/components/sections/landing-page/LandingPortfolio"));
+const LandingIndustries = dynamic(() => import("@/components/sections/landing-page/LandingIndustries"));
+const LandingProcessSteps = dynamic(() => import("@/components/sections/landing-page/LandingProcessSteps"));
+const LandingTechnical = dynamic(() => import("@/components/sections/landing-page/LandingTechnical"));
+const LandingFAQ = dynamic(() => import("@/components/sections/landing-page/LandingFAQ"));
 
 // Define search intent metadata
 export const metadata: Metadata = {

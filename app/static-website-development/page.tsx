@@ -3,14 +3,16 @@ import { Metadata } from "next";
 import Link from "next/link";
 import { ArrowUpRight, ShieldCheck } from "lucide-react";
 
+import dynamic from "next/dynamic";
+
 // Import modular sections from components/sections/static-website
 import StaticHero from "@/components/sections/static-website/StaticHero";
-import StaticShowcase from "@/components/sections/static-website/StaticShowcase";
-import StaticStats from "@/components/sections/static-website/StaticStats";
-import StaticInteractiveDemo from "@/components/sections/static-website/StaticInteractiveDemo";
-import StaticComparison from "@/components/sections/static-website/StaticComparison";
-import StaticProcessSteps from "@/components/sections/static-website/StaticProcessSteps";
-import StaticFAQ from "@/components/sections/static-website/StaticFAQ";
+const StaticShowcase = dynamic(() => import("@/components/sections/static-website/StaticShowcase"));
+const StaticStats = dynamic(() => import("@/components/sections/static-website/StaticStats"));
+const StaticInteractiveDemo = dynamic(() => import("@/components/sections/static-website/StaticInteractiveDemo"));
+const StaticComparison = dynamic(() => import("@/components/sections/static-website/StaticComparison"));
+const StaticProcessSteps = dynamic(() => import("@/components/sections/static-website/StaticProcessSteps"));
+const StaticFAQ = dynamic(() => import("@/components/sections/static-website/StaticFAQ"));
 
 // Define search intent metadata
 export const metadata: Metadata = {
