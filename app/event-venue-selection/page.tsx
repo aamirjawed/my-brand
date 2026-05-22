@@ -1,5 +1,6 @@
 import React from "react";
 import { Metadata } from "next";
+import { SITE_URL } from "@/lib/constants";
 
 import Hero from "@/components/sections/event-venue-selection/Hero";
 import Showcase from "@/components/sections/event-venue-selection/Showcase";
@@ -28,6 +29,9 @@ export const metadata: Metadata = {
     "venue coordination",
     "professional venue selection"
   ],
+  alternates: {
+    canonical: "/event-venue-selection",
+  },
   openGraph: {
     title: "Venue Selection Services | Find the Perfect Event Venue",
     description: "Professional venue selection services for weddings, corporate events, conferences, and private occasions with expert planning and venue coordination.",
@@ -83,7 +87,7 @@ export default function EventVenueSelectionPage() {
             "provider": {
               "@type": "Organization",
               "name": "DigitalDeveloper",
-              "url": "https://digitaldeveloper.co"
+              "url": SITE_URL
             },
             "areaServed": "Worldwide",
             "description": "Professional venue selection services for weddings, corporate events, conferences, and private occasions."

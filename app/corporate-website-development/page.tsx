@@ -2,6 +2,7 @@ import React from "react";
 import { Metadata } from "next";
 import Link from "next/link";
 import { ArrowUpRight, ShieldAlert } from "lucide-react";
+import { SITE_URL } from "@/lib/constants";
 
 import dynamic from "next/dynamic";
 
@@ -33,6 +34,9 @@ export const metadata: Metadata = {
     "corporate web solutions",
     "company website design"
   ],
+  alternates: {
+    canonical: "/corporate-website-development",
+  },
   openGraph: {
     title: "Corporate Website Development Services | Professional Business Websites",
     description: "Professional corporate website development services focused on branding, user experience, performance, SEO, and business growth.",
@@ -84,8 +88,8 @@ export default function CorporateWebsiteDevelopmentPage() {
             "name": "Corporate Website Development Services",
             "provider": {
               "@type": "Organization",
-              "name": "Your Agency Name",
-              "url": "https://yourwebsite.com"
+              "name": "DigitalDeveloper",
+              "url": SITE_URL
             },
             "areaServed": "Worldwide",
             "description": "Professional corporate website development services focused on branding, SEO, performance, and business growth."

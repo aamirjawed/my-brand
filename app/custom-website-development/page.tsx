@@ -2,6 +2,7 @@ import React from "react";
 import { Metadata } from "next";
 import Link from "next/link";
 import { ArrowUpRight, Sparkles } from "lucide-react";
+import { SITE_URL } from "@/lib/constants";
 
 import dynamic from "next/dynamic";
 
@@ -60,6 +61,9 @@ export const metadata: Metadata = {
     "modern custom websites",
     "business website development"
   ],
+  alternates: {
+    canonical: "/custom-website-development",
+  },
   openGraph: {
     title: "Custom Website Development Services | Tailored Web Solutions",
     description: "Professional custom website development services designed for businesses requiring scalable, SEO-friendly, responsive, and tailored web solutions.",
@@ -164,7 +168,7 @@ export default function CustomWebsiteDevelopmentPage() {
             "provider": {
               "@type": "Organization",
               "name": "DigitalDeveloper",
-              "url": "https://digitaldeveloper.co"
+              "url": SITE_URL
             },
             "areaServed": "Worldwide",
             "description": "Professional custom website development services designed for businesses requiring scalable, SEO-friendly, responsive, and tailored web solutions.",

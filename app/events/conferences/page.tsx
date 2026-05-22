@@ -1,6 +1,5 @@
-"use client";
-
 import React from "react";
+import { Metadata } from "next";
 import Link from "next/link";
 import { ArrowUpRight, MicVocal } from "lucide-react";
 
@@ -10,6 +9,14 @@ import Stats from "@/components/sections/events/conference/Stats";
 import Speakers from "@/components/sections/events/conference/Speakers";
 import Process from "@/components/sections/events/conference/Process";
 import FAQ from "@/components/sections/events/conference/FAQ";
+
+export const metadata: Metadata = {
+  title: "Conference Planning & Management Services | DigitalDeveloper",
+  description: "Professional conference planning and management services. We produce seamless, high-impact summits, tech conferences, and corporate events globally.",
+  alternates: {
+    canonical: "/events/conferences",
+  },
+};
 
 export default function ConferencePage() {
   return (

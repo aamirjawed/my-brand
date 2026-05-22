@@ -2,6 +2,7 @@ import React from "react";
 import { Metadata } from "next";
 import Link from "next/link";
 import { ArrowUpRight, Sparkles } from "lucide-react";
+import { SITE_URL } from "@/lib/constants";
 
 import dynamic from "next/dynamic";
 
@@ -58,6 +59,9 @@ export const metadata: Metadata = {
     "social media content planning",
     "audience engagement services"
   ],
+  alternates: {
+    canonical: "/social-media-management-services",
+  },
   openGraph: {
     title: "Social Media Management Services | Grow Your Brand Online",
     description: "Professional social media management services focused on content creation, audience engagement, brand visibility, and business growth across digital platforms.",
@@ -159,7 +163,7 @@ export default function SocialMediaManagementPage() {
             "provider": {
               "@type": "Organization",
               "name": "DigitalDeveloper",
-              "url": "https://digitaldeveloper.co"
+              "url": SITE_URL
             },
             "areaServed": "Worldwide",
             "description": "Professional social media management services focused on content creation, audience engagement, branding, and business growth."

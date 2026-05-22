@@ -1,6 +1,5 @@
-"use client";
-
 import React from "react";
+import { Metadata } from "next";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 
@@ -8,6 +7,14 @@ import AboutHero from "@/components/sections/about/AboutHero";
 import AboutStory from "@/components/sections/about/AboutStory";
 import AboutValues from "@/components/sections/about/AboutValues";
 import AboutTeam from "@/components/sections/about/AboutTeam";
+
+export const metadata: Metadata = {
+  title: "About Us | DigitalDeveloper",
+  description: "Learn more about DigitalDeveloper, our values, our team, and how we deliver high-performance web solutions.",
+  alternates: {
+    canonical: "/about-us",
+  },
+};
 
 export default function AboutPage() {
   return (

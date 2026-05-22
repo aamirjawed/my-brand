@@ -2,6 +2,7 @@ import React from "react";
 import { Metadata } from "next";
 import Link from "next/link";
 import { ArrowUpRight, AppWindow } from "lucide-react";
+import { SITE_URL } from "@/lib/constants";
 
 import dynamic from "next/dynamic";
 
@@ -42,6 +43,9 @@ export const metadata: Metadata = {
     "scalable applications",
     "user experience"
   ],
+  alternates: {
+    canonical: "/single-page-application-development",
+  },
   openGraph: {
     title: "Single Page Application Development Services | Fast & Modern Web Apps",
     description: "We build fast, scalable, and SEO-friendly single page applications using modern technologies focused on performance, user experience, and business growth.",
@@ -94,7 +98,7 @@ export default function SinglePageApplicationDevelopmentPage() {
             "provider": {
               "@type": "Organization",
               "name": "DigitalDeveloper",
-              "url": "https://digitaldeveloper.co"
+              "url": SITE_URL
             },
             "areaServed": "Worldwide",
             "description": "Modern single page application development services focused on performance, responsiveness, scalability, and SEO optimization."

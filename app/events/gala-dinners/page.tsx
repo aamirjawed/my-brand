@@ -2,6 +2,7 @@ import React from "react";
 import { Metadata } from "next";
 import Link from "next/link";
 import { ArrowUpRight, Sparkles } from "lucide-react";
+import { SITE_URL } from "@/lib/constants";
 
 import Hero from "@/components/sections/events/gala-dinners/Hero";
 import Showcase from "@/components/sections/events/gala-dinners/Showcase";
@@ -25,6 +26,9 @@ export const metadata: Metadata = {
     "VIP state banquets hospitality",
     "corporate annual dinner seating charts"
   ],
+  alternates: {
+    canonical: "/events/gala-dinners",
+  },
   openGraph: {
     title: "Luxury Gala Dinners & Award Ceremony Production | Event Coordinators",
     description: "We design and execute luxury gala dinners, charity fundraisers, award nights, and VIP state banquets with custom production and flawless hospitality.",
@@ -74,7 +78,7 @@ export default function GalaDinnersPage() {
             "provider": {
               "@type": "Organization",
               "name": "DigitalDeveloper",
-              "url": "https://digitaldeveloper.co"
+              "url": SITE_URL
             },
             "areaServed": "Worldwide",
             "description": "Luxury gala dinner design, award night staging, and charity ball event coordination.",

@@ -1,5 +1,6 @@
 import React from "react";
 import { Metadata } from "next";
+import { SITE_URL } from "@/lib/constants";
 
 import dynamic from "next/dynamic";
 
@@ -32,6 +33,9 @@ export const metadata: Metadata = {
     "league organization services",
     "sports tournament planning"
   ],
+  alternates: {
+    canonical: "/league-management-services",
+  },
   openGraph: {
     title: "League Management Services | Professional Tournament & Event Coordination",
     description: "Professional league management services for sports tournaments and competitions including scheduling, registrations, coordination, operations, and event execution.",
@@ -88,7 +92,7 @@ export default function LeagueManagementPage() {
             "provider": {
               "@type": "Organization",
               "name": "DigitalDeveloper",
-              "url": "https://digitaldeveloper.co"
+              "url": SITE_URL
             },
             "areaServed": "Worldwide",
             "description": "Professional league and tournament management services including scheduling, registrations, coordination, operations, and event execution."

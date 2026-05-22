@@ -1,6 +1,5 @@
-"use client";
-
 import React from "react";
+import { Metadata } from "next";
 import Link from "next/link";
 import { ArrowUpRight, Palette } from "lucide-react";
 
@@ -11,6 +10,14 @@ import BrandingInteractiveDemo from "@/components/sections/branding/BrandingInte
 import BrandingFeatures from "@/components/sections/branding/BrandingFeatures";
 import BrandingProcessSteps from "@/components/sections/branding/BrandingProcessSteps";
 import BrandingFAQ from "@/components/sections/branding/BrandingFAQ";
+
+export const metadata: Metadata = {
+  title: "Branding & Logo Design Services | Brand Identity Systems",
+  description: "Bespoke branding and logo design services. We craft iconic visual identity systems, brand guidelines, color palettes, and assets for fast-growing companies.",
+  alternates: {
+    canonical: "/design/branding",
+  },
+};
 
 export default function BrandingPage() {
   return (

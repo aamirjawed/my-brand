@@ -1,6 +1,5 @@
-"use client";
-
 import React from "react";
+import { Metadata } from "next";
 import Link from "next/link";
 import { ArrowUpRight, Rocket } from "lucide-react";
 
@@ -11,6 +10,14 @@ import Process from "@/components/sections/events/product-launches/Process";
 import Features from "@/components/sections/events/product-launches/Features";
 import Benefits from "@/components/sections/events/product-launches/Benefits";
 import FAQ from "@/components/sections/events/product-launches/FAQ";
+
+export const metadata: Metadata = {
+  title: "Product Launch Event Management & Production | DigitalDeveloper",
+  description: "Expert product launch event management and production. We produce memorable, high-impact brand reveal and launch events globally.",
+  alternates: {
+    canonical: "/events/product-launches",
+  },
+};
 
 export default function ProductLaunchesPage() {
   return (

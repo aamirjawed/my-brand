@@ -1,6 +1,7 @@
 import React from "react";
 import { Metadata } from "next";
 import ContactForm from "./ContactForm";
+import { SITE_URL } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: "Contact Us | High-Performance Development & AI SEO Services",
@@ -56,12 +57,12 @@ export default function ContactUsPage() {
             "@type": "ContactPage",
             "name": "Contact Us - DigitalDeveloper",
             "description": "Contact DigitalDeveloper for top-tier custom web application development, SEO, and branding.",
-            "url": "https://digitaldeveloper.co/contact-us",
+            "url": `${SITE_URL}/contact-us`,
             "mainEntity": {
               "@type": "Organization",
               "name": "DigitalDeveloper",
-              "url": "https://digitaldeveloper.co",
-              "logo": "https://digitaldeveloper.co/logo.png",
+              "url": SITE_URL,
+              "logo": `${SITE_URL}/logo.png`,
               "contactPoint": {
                 "@type": "ContactPoint",
                 "telephone": "+1-800-555-0199",

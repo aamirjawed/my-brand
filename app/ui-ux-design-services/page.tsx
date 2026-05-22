@@ -2,6 +2,7 @@ import React from "react";
 import { Metadata } from "next";
 import Link from "next/link";
 import { ArrowUpRight, Sparkles } from "lucide-react";
+import { SITE_URL } from "@/lib/constants";
 
 import dynamic from "next/dynamic";
 
@@ -57,6 +58,9 @@ export const metadata: Metadata = {
     "professional UX services",
     "digital product design"
   ],
+  alternates: {
+    canonical: "/ui-ux-design-services",
+  },
   openGraph: {
     title: "UI/UX Design Services | Modern User Experience & Interface Design",
     description: "Professional UI/UX design services focused on user experience, responsive interfaces, usability, branding, and conversion-focused digital design.",
@@ -155,7 +159,7 @@ export default function UiUxDesignServicesPage() {
             "provider": {
               "@type": "Organization",
               "name": "DigitalDeveloper",
-              "url": "https://digitaldeveloper.co"
+              "url": SITE_URL
             },
             "areaServed": "Worldwide",
             "description": "Professional UI/UX design services focused on user experience, responsive design, usability, and conversion-focused interfaces.",

@@ -6,6 +6,9 @@ import BlogListing from "../../components/sections/blog/BlogListing";
 export const metadata: Metadata = {
   title: "Landing Page & CRO Blog | High-Converting Design Tips",
   description: "Explore our strategic design, copy, and performance optimization guides. Learn how to design landing pages that capture leads and scale conversions.",
+  alternates: {
+    canonical: "/blog",
+  },
 };
 
 export default function BlogListingPage() {

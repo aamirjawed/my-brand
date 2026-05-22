@@ -2,6 +2,7 @@ import React from "react";
 import { Metadata } from "next";
 import Link from "next/link";
 import { ArrowUpRight, Rocket } from "lucide-react";
+import { SITE_URL } from "@/lib/constants";
 
 import dynamic from "next/dynamic";
 
@@ -29,6 +30,9 @@ export const metadata: Metadata = {
     "ad landing pages",
     "fast-loading landing pages"
   ],
+  alternates: {
+    canonical: "/landing-page-development",
+  },
   openGraph: {
     title: "Landing Page Development Services | High-Converting Pages",
     description: "We create high-converting landing pages designed for better leads, sales, performance, and user experience across all devices.",
@@ -81,7 +85,7 @@ export default function LandingPageDevelopment() {
             "provider": {
               "@type": "Organization",
               "name": "DigitalDeveloper",
-              "url": "https://digitaldeveloper.co"
+              "url": SITE_URL
             },
             "areaServed": "Worldwide",
             "description": "High-converting landing page development services focused on performance, lead generation, SEO, and user experience.",

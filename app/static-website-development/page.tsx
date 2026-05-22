@@ -2,6 +2,7 @@ import React from "react";
 import { Metadata } from "next";
 import Link from "next/link";
 import { ArrowUpRight, ShieldCheck } from "lucide-react";
+import { SITE_URL } from "@/lib/constants";
 
 import dynamic from "next/dynamic";
 
@@ -31,6 +32,9 @@ export const metadata: Metadata = {
     "static web design services",
     "modern static websites"
   ],
+  alternates: {
+    canonical: "/static-website-development",
+  },
   openGraph: {
     title: "Static Website Development Services | Fast & SEO-Friendly Websites",
     description: "We build fast, secure, and SEO-friendly static websites optimized for performance, user experience, and business growth.",
@@ -74,7 +78,7 @@ export default function StaticWebsiteDevelopmentPage() {
             "provider": {
               "@type": "Organization",
               "name": "DigitalDeveloper",
-              "url": "https://digitaldeveloper.co"
+              "url": SITE_URL
             },
             "areaServed": "Worldwide",
             "description": "Fast, secure, and SEO-friendly static website development services designed for performance, scalability, and business growth.",

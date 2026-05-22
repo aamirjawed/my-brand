@@ -1,6 +1,5 @@
-"use client";
-
 import React from "react";
+import { Metadata } from "next";
 import Link from "next/link";
 import { ArrowUpRight, CalendarCheck } from "lucide-react";
 
@@ -10,6 +9,14 @@ import Stats from "@/components/sections/events/corporate/Stats";
 import Features from "@/components/sections/events/corporate/Features";
 import Process from "@/components/sections/events/corporate/Process";
 import FAQ from "@/components/sections/events/corporate/FAQ";
+
+export const metadata: Metadata = {
+  title: "Corporate Event Planning & Production Services | DigitalDeveloper",
+  description: "Bespoke corporate event planning and production services. We design and coordinate conferences, brand activations, galas, and corporate meetings.",
+  alternates: {
+    canonical: "/events/corporate",
+  },
+};
 
 export default function CorporateEventPage() {
   return (

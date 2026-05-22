@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { ArrowUpRight, TrendingUp } from "lucide-react";
 import type { Metadata } from "next";
+import { SITE_URL } from "@/lib/constants";
 
 import SeoHero from "@/components/sections/seo/SeoHero";
 import SeoShowcase from "@/components/sections/seo/SeoShowcase";
@@ -17,6 +18,9 @@ import SeoFAQ from "@/components/sections/seo/SeoFAQ";
 export const metadata: Metadata = {
   title: "AI SEO Services | Dominate Search Rankings",
   description: "Leverage our premium AI SEO services to scale your organic traffic, dominate search rankings, and maximize ROI with machine-precision intelligence.",
+  alternates: {
+    canonical: "/ai-seo-services",
+  },
 };
 
 export default function AiSeoPage() {
@@ -64,7 +68,7 @@ export default function AiSeoPage() {
             "provider": {
               "@type": "Organization",
               "name": "DigitalDeveloper",
-              "url": "https://digitaldeveloper.co"
+              "url": SITE_URL
             },
             "areaServed": "Worldwide",
             "description": "AI-powered SEO services focused on technical optimization, keyword research, content strategy, and organic growth.",
