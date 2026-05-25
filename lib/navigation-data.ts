@@ -120,6 +120,10 @@ export const navigationData: NavLink[] = [
     ],
   },
   {
+    label: "Our Work",
+    href: "/our-work",
+  },
+  {
     label: "About Us",
     href: "/about-us",
   },
