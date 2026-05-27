@@ -9,7 +9,7 @@ function LogoTile({ name, logoSrc }: { name: string; logoSrc: string }) {
       <img
         src={logoSrc}
         alt={`${name} logo`}
-        className="max-h-12 w-auto max-w-[130px] object-contain grayscale opacity-50 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300 group-hover:scale-110"
+        className="max-h-12 w-auto max-w-[130px] object-contain transition-transform duration-300 group-hover:scale-110"
       />
 
       {/* Tooltip */}
