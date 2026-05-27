@@ -35,39 +35,11 @@ const PROJECTS_SCHEMA = [
     imageSrc: "https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?q=80&w=1200&auto=format&fit=crop"
   },
   {
-    title: "Luxury E-Commerce Headless Storefront",
-    description: "A state-of-the-art headless storefront using Next.js and Shopify API. Features instant transitions, custom visual product customizers, and an ultra-lightweight check-out process.",
-    liveLink: "https://zenith-apparel-demo.vercel.app",
-    categoryLabel: "Web Development",
-    imageSrc: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop"
-  },
-  {
-    title: "B2B Cloud Analytics Dashboard Design",
-    description: "An intuitive data visualization workspace designed for cloud infrastructure administrators. Focused on high-density information layouts, customizable widgets, and sleek dark mode aesthetics.",
-    liveLink: "https://nova-dashboard-demo.vercel.app",
-    categoryLabel: "UI/UX & Design",
-    imageSrc: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop"
-  },
-  {
-    title: "Enterprise AI SEO Optimization & Strategy",
-    description: "Designed and executed a modern AI-driven search strategy for a competitive fintech workspace. Re-architected site hierarchy, deployed programmatic semantic schema markup.",
-    liveLink: "https://ascend-fintech-demo.vercel.app",
-    categoryLabel: "AI SEO & Growth",
-    imageSrc: "https://images.unsplash.com/photo-1434626881859-194d67b2b86f?q=80&w=1200&auto=format&fit=crop"
-  },
-  {
-    title: "Fintech Rebrand & Dynamic Asset System",
-    description: "Developed a modern, trust-focused brand identity system for a leading investment firm. Created logos, tailored typography sets, a CSS-integrated color framework.",
-    liveLink: "https://hyperion-branding-demo.vercel.app",
-    categoryLabel: "UI/UX & Design",
-    imageSrc: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1200&auto=format&fit=crop"
-  },
-  {
-    title: "Real-Time DevOps Telemetry Dashboard",
-    description: "A highly performant single page application for displaying real-time cluster workloads. Uses WebSocket endpoints, canvas-based memory layouts, and optimized React virtual list rendering.",
-    liveLink: "https://veloce-telemetry-demo.vercel.app",
-    categoryLabel: "Web Development",
-    imageSrc: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1200&auto=format&fit=crop"
+    title: "EventFlow - Guest Check-in & QR Dashboard",
+    description: "A comprehensive event attendee management platform supporting pre-registration, real-time check-ins, custom QR code passes, and an administrative dashboard.",
+    liveLink: "https://eventflow-iiio.vercel.app/",
+    categoryLabel: "Event Management",
+    imageSrc: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=1200&auto=format&fit=crop"
   }
 ];
 

@@ -90,7 +90,7 @@ export default function AboutSection() {
                 }}
               >
                 <Image 
-                  src="/images/about-person.jpg" 
+                  src="/images/about-person.png" 
                   alt="Digital Developer Team" 
                   fill 
                   className="object-cover"

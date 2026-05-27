@@ -108,20 +108,20 @@ export default function WarriorDoodle() {
             {/* Shield Core (Theme Orange circle) */}
             <circle cx="0" cy="0" r="44" fill="#fed7aa" stroke="currentColor" strokeWidth="3.5" />
 
-            {/* Hand-written AG Logo in 3D style */}
+            {/* Hand-written DD Logo in 3D style */}
             <g transform="translate(-25, -20) scale(1.1)">
-              {/* Bold line-art letter A */}
+              {/* Bold line-art letter D */}
               <path
-                d="M 10 32 L 20 6 C 21 4, 25 4, 26 6 L 36 32 M 14 22 L 32 22"
+                d="M 10 6 L 10 32 M 10 6 C 22 6, 26 10, 26 19 C 26 28, 22 32, 10 32"
                 fill="none"
                 stroke="currentColor"
                 strokeWidth="4.5"
                 strokeLinecap="round"
                 strokeLinejoin="round"
               />
-              {/* Bold line-art letter G */}
+              {/* Bold line-art letter D */}
               <path
-                d="M 52 14 C 48 8, 40 8, 38 15 C 36 22, 38 29, 44 32 C 48 34, 52 32, 53 26 L 44 26"
+                d="M 38 6 L 38 32 M 38 6 C 50 6, 54 10, 54 19 C 54 28, 50 32, 38 32"
                 fill="none"
                 stroke="currentColor"
                 strokeWidth="4.5"

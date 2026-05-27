@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Palette, Layers, Search, Compass, Target, BarChart2, SplitSquareVertical, CheckCircle2 } from "lucide-react";
+import { cn } from "@/lib/utils";
 
 export default function LandingServices() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -179,46 +180,92 @@ export default function LandingServices() {
         </div>
 
         {/* Dynamic Split Layout */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-start">
           
-          {/* Left Side: Interactive Sidebar Menu - Horizontal scroll on mobile, vertical stack on desktop */}
-          <div className="lg:col-span-6 flex lg:flex-col max-lg:flex-row max-lg:overflow-x-auto max-lg:-mx-6 max-lg:px-6 max-lg:pb-6 max-lg:gap-4 max-lg:snap-x max-lg:snap-mandatory scrollbar-none">
+          {/* Left Side: Interactive Sidebar Menu - Vertical stack on all screen sizes */}
+          <div className="lg:col-span-6 flex flex-col gap-3 sm:gap-4 w-full">
             {services.map((service, idx) => {
               const Icon = service.icon;
               const isActive = activeIndex === idx;
 
               return (
-                <button
-                  key={idx}
-                  onClick={() => setActiveIndex(idx)}
-                  className={`text-left transition-all duration-300 flex items-center lg:items-start gap-3 lg:gap-4 lg:w-full lg:p-6 lg:rounded-2xl max-lg:flex-shrink-0 max-lg:w-[240px] max-lg:p-3 max-lg:rounded-xl max-lg:snap-center ${
-                    isActive
-                      ? "bg-slate-950 text-white shadow-xl shadow-slate-950/20 lg:translate-x-2"
-                      : "bg-slate-50 hover:bg-slate-100 text-slate-800"
-                  }`}
-                >
-                  <div className={`p-2 rounded-lg lg:p-2.5 lg:rounded-xl transition-colors flex-shrink-0 ${
-                    isActive ? "bg-orange-600 text-white" : "bg-slate-200 text-slate-700"
-                  }`}>
-                    <Icon className="w-4 h-4 lg:w-5 h-5" />
-                  </div>
-                  <div className="min-w-0">
-                    <h3 className="font-extrabold text-xs lg:text-base sm:text-sm uppercase tracking-wide truncate">
-                      {service.title}
-                    </h3>
-                    <p className={`text-[10px] lg:text-xs mt-0.5 transition-colors truncate ${
-                      isActive ? "text-slate-400" : "text-slate-500"
-                    }`}>
-                      {service.subtitle}
-                    </p>
-                  </div>
-                </button>
+                <div key={idx} className="flex flex-col w-full">
+                  <button
+                    onClick={() => setActiveIndex(idx)}
+                    className={cn(
+                      "text-left transition-all duration-300 flex items-center gap-3.5 sm:gap-4 w-full p-4 sm:p-5 lg:p-6 rounded-xl sm:rounded-2xl",
+                      isActive
+                        ? "bg-slate-950 text-white shadow-xl shadow-slate-950/20 lg:translate-x-2"
+                        : "bg-slate-50 hover:bg-slate-100 text-slate-800"
+                    )}
+                  >
+                    <div className={cn(
+                      "p-2 rounded-lg lg:p-2.5 lg:rounded-xl transition-colors flex-shrink-0",
+                      isActive ? "bg-orange-600 text-white" : "bg-slate-200 text-slate-700"
+                    )}>
+                      <Icon className="w-4 h-4 lg:w-5 h-5" />
+                    </div>
+                    <div className="min-w-0 flex-grow">
+                      <h3 className="font-extrabold text-sm sm:text-base uppercase tracking-wide truncate">
+                        {service.title}
+                      </h3>
+                      <p className={cn(
+                        "text-[10px] sm:text-xs mt-0.5 transition-colors truncate",
+                        isActive ? "text-slate-400" : "text-slate-500"
+                      )}>
+                        {service.subtitle}
+                      </p>
+                    </div>
+                  </button>
+
+                  {/* Mobile active content (expanded accordion-style under the option) */}
+                  <AnimatePresence initial={false}>
+                    {isActive && (
+                      <motion.div
+                        initial={{ opacity: 0, height: 0 }}
+                        animate={{ opacity: 1, height: "auto" }}
+                        exit={{ opacity: 0, height: 0 }}
+                        transition={{ duration: 0.3 }}
+                        className="lg:hidden overflow-hidden w-full mt-2"
+                      >
+                        <div className="bg-slate-950 text-white p-6 sm:p-8 rounded-2xl border border-slate-900 shadow-xl space-y-6">
+                          <div>
+                            <span className="text-orange-500 text-[10px] font-bold uppercase tracking-widest block mb-1">
+                              Included Capability
+                            </span>
+                            <h4 className="text-lg sm:text-xl font-black uppercase tracking-wide text-white">
+                              {service.title}
+                            </h4>
+                            <p className="text-slate-400 text-xs sm:text-sm leading-relaxed mt-3">
+                              {service.description}
+                            </p>
+                          </div>
+
+                          {/* Bullet points */}
+                          <div className="space-y-2.5 border-t border-slate-850 pt-5">
+                            {service.details.map((detail, dIdx) => (
+                              <div key={dIdx} className="flex items-center gap-2.5 text-slate-300 text-xs sm:text-sm">
+                                <CheckCircle2 className="w-4 h-4 text-orange-500 flex-shrink-0" />
+                                <span>{detail}</span>
+                              </div>
+                            ))}
+                          </div>
+
+                          {/* Feature Visual Code or UI Mockup */}
+                          <div className="pt-3">
+                            {service.previewContent}
+                          </div>
+                        </div>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </div>
               );
             })}
           </div>
 
-          {/* Right Side: Active Feature Detail Box */}
-          <div className="lg:col-span-6 lg:sticky lg:top-32">
+          {/* Right Side: Active Feature Detail Box (Desktop Only) */}
+          <div className="hidden lg:block lg:col-span-6 lg:sticky lg:top-32">
             <div className="bg-slate-950 text-white p-8 sm:p-10 rounded-3xl border border-slate-900 shadow-2xl relative overflow-hidden">
               {/* Subtle background glow */}
               <div className="absolute right-0 top-0 w-44 h-44 bg-orange-600/10 rounded-full blur-[60px] pointer-events-none" />

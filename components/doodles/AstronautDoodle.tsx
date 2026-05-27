@@ -56,7 +56,7 @@ export default function AstronautDoodle() {
           strokeLinejoin="round"
         />
         {/* Hand-written text inside flag */}
-        <text x="136" y="270" className="font-extrabold text-[10px]" fill="currentColor">AG</text>
+        <text x="136" y="270" className="font-extrabold text-[10px]" fill="currentColor">DD</text>
         {/* Craters base */}
         <path d="M 135 353 Q 150 350 165 353" fill="none" stroke="currentColor" strokeWidth="2.5" />
       </g>
@@ -144,15 +144,15 @@ export default function AstronautDoodle() {
               strokeLinecap="round"
               strokeLinejoin="round"
             />
-            {/* 14 Years Track Record text - bold, organic, quirky */}
+            {/* 6 Years Track Record text - bold, organic, quirky */}
             <text
-              x="28"
+              x="32"
               y="38"
               className="font-black text-2xl uppercase tracking-tighter"
               fill="currentColor"
               style={{ fontFamily: 'monospace' }}
             >
-              14 Yrs
+              6 Yrs
             </text>
           </g>
         </g>

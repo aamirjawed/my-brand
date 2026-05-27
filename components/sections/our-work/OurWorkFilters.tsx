@@ -2,7 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { CATEGORIES, Category } from "@/lib/portfolio-data";
+import { CATEGORIES, PROJECTS, Category } from "@/lib/portfolio-data";
 
 interface OurWorkFiltersProps {
   activeFilter: string;
@@ -10,12 +10,17 @@ interface OurWorkFiltersProps {
 }
 
 export default function OurWorkFilters({ activeFilter, setActiveFilter }: OurWorkFiltersProps) {
+  const activeCategories = React.useMemo(() => {
+    const activeIds = new Set(PROJECTS.map((p) => p.category));
+    return CATEGORIES.filter((cat) => cat.id === "all" || activeIds.has(cat.id as any));
+  }, []);
+
   return (
     <section className="py-5 sm:py-10 bg-slate-900 border-y border-slate-800 sticky top-[70px] z-30 backdrop-blur-md bg-opacity-95 overflow-hidden">
       <div className="container mx-auto px-4 sm:px-6 max-w-[1200px]">
         <div className="flex items-center justify-start md:justify-center overflow-x-auto scrollbar-none -mx-4 px-4 sm:mx-0 sm:px-0">
           <div className="flex flex-nowrap md:flex-wrap gap-2.5 sm:gap-3 pb-1 md:pb-0">
-            {CATEGORIES.map((cat: Category) => {
+            {activeCategories.map((cat: Category) => {
               const IconComponent = cat.icon;
               const isActive = activeFilter === cat.id;
               return (

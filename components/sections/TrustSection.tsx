@@ -11,7 +11,7 @@ import GrowthJourneyDoodle from "../doodles/GrowthJourneyDoodle";
 const stats = [
   {
     icon: Award,
-    title: "14 Years of Track Record"
+    title: "6 Years of Track Record"
   },
   {
     icon: HeartPulse,
@@ -29,7 +29,7 @@ const stats = [
 
 const tabContent = [
   {
-    title: "14 Years of Track Record",
+    title: "6 Years of Track Record",
     description: "For over a decade, we have been at the absolute forefront of digital innovation. We've weathered algorithm updates, design trends, and massive technological shifts, consistently delivering results that stand the test of time. Our experience isn't just a number; it's a proven, battle-tested blueprint for your ultimate success.",
     buttonText: "View Our Journey",
     visual: (

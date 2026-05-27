@@ -101,25 +101,35 @@ export default function Header() {
                   <AnimatePresence>
                     {activeMegaMenu === link.label && (
                       <motion.div
-                        initial={{ opacity: 0, y: 15 }}
+                        initial={{ opacity: 0, y: 10 }}
                         animate={{ opacity: 1, y: 0 }}
-                        exit={{ opacity: 0, y: 10 }}
-                        transition={{ duration: 0.2 }}
-                        className="fixed top-[70px] left-0 right-0 w-full px-4 pointer-events-none"
+                        exit={{ opacity: 0, y: 5 }}
+                        transition={{ duration: 0.15 }}
+                        className={cn(
+                          "absolute top-full mt-2 z-50 pointer-events-auto",
+                          link.label === "About Us" || link.label === "Content Creation"
+                            ? "right-0"
+                            : link.label === "Event Management"
+                            ? "left-0"
+                            : "left-1/2 -translate-x-1/2"
+                        )}
                       >
-                        <div className="container mx-auto pointer-events-auto">
-                          <div className="bg-slate-900/95 backdrop-blur-xl rounded-3xl shadow-2xl border border-white/10 overflow-hidden flex flex-wrap gap-x-24 p-12 w-fit mx-auto">
+                        <div className="bg-slate-900/95 backdrop-blur-xl rounded-2xl shadow-2xl border border-white/10 p-6 sm:p-8 min-w-[220px]">
+                          <div className={cn(
+                            "flex gap-8",
+                            link.megaMenu.length > 1 ? "flex-row" : "flex-col"
+                          )}>
                             {link.megaMenu.map((category) => (
-                              <div key={category.title} className="flex flex-col gap-6">
-                                <h3 className="text-orange-500 font-black text-[11px] tracking-[0.25em] uppercase border-b border-white/5 pb-2">
+                              <div key={category.title} className="flex flex-col gap-4">
+                                <h3 className="text-orange-500 font-black text-[10px] tracking-[0.2em] uppercase border-b border-white/5 pb-1 whitespace-nowrap">
                                   {category.title}
                                 </h3>
-                                <ul className="flex flex-col gap-3.5">
+                                <ul className="flex flex-col gap-2.5">
                                   {category.links.map((subLink) => (
                                     <li key={subLink.label}>
                                       <Link
                                         href={subLink.href}
-                                        className="text-gray-300 hover:text-white text-[15px] transition-all hover:translate-x-1.5 inline-block whitespace-nowrap"
+                                        className="text-gray-300 hover:text-white text-[13px] sm:text-[14px] font-medium transition-all hover:translate-x-1 inline-block whitespace-nowrap"
                                       >
                                         {subLink.label}
                                       </Link>

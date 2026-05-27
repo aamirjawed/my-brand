@@ -72,23 +72,23 @@ export const navigationData: NavLink[] = [
         title: "EVENT SERVICES",
         links: [
           { label: "Corporate Events", href: "/events/corporate" },
-          { label: "Weddings", href: "/events/weddings" },
+          // { label: "Weddings", href: "/events/weddings" },
           { label: "Conferences", href: "/events/conferences" },
           { label: "Product Launches", href: "/events/product-launches" },
           { label: "Gala Dinners", href: "/events/gala-dinners" },
           { label: "League Management", href: "/league-management-services" },
         ],
       },
-      {
-        title: "PLANNING",
-        links: [
-          { label: "Venue Selection", href: "/event-venue-selection" },
-          { label: "Catering", href: "/events/catering" },
-          { label: "Entertainment", href: "/events/entertainment" },
-          { label: "Decor & Theme", href: "/events/decor" },
-          { label: "Photography", href: "/events/photography" },
-        ],
-      },
+      // {
+      //   title: "PLANNING",
+      //   links: [
+      //     { label: "Venue Selection", href: "/event-venue-selection" },
+      //     { label: "Catering", href: "/events/catering" },
+      //     { label: "Entertainment", href: "/events/entertainment" },
+      //     { label: "Decor & Theme", href: "/events/decor" },
+      //     { label: "Photography", href: "/events/photography" },
+      //   ],
+      // },
     ],
   },
   {
@@ -100,32 +100,41 @@ export const navigationData: NavLink[] = [
         links: [
           { label: "Branding & Logo", href: "/design/branding" },
           { label: "UI/UX Design", href: "/ui-ux-design-services" },
-          { label: "Social Graphics", href: "/design/social" },
+          // { label: "Social Graphics", href: "/design/social" },
         ],
       },
     ],
   },
-  {
-    label: "Content Creation",
-    href: "/content-creation",
-    megaMenu: [
-      {
-        title: "CREATION",
-        links: [
-          { label: "Video Production", href: "/content/video" },
-          { label: "Copywriting", href: "/content/copywriting" },
-          { label: "Social Media Management", href: "/social-media-management-services" },
-        ],
-      },
-    ],
-  },
-  {
-    label: "Our Work",
-    href: "/our-work",
-  },
+  // {
+  //   label: "Content Creation",
+  //   href: "/content-creation",
+  //   megaMenu: [
+  //     {
+  //       title: "CREATION",
+  //       links: [
+  //         { label: "Video Production", href: "/content/video" },
+  //         { label: "Copywriting", href: "/content/copywriting" },
+  //         { label: "Social Media Management", href: "/social-media-management-services" },
+  //       ],
+  //     },
+  //   ],
+  // },
+  // {s
+  //   label: "Our Work",
+  //   href: "/our-work",
+  // },
   {
     label: "About Us",
     href: "/about-us",
+    megaMenu: [
+      {
+        title: "ABOUT",
+        links: [
+          { label: "About Us", href: "/about-us" },
+          { label: "Our Clients", href: "/our-clients" },
+        ],
+      },
+    ],
   },
   {
     label: "Blog",

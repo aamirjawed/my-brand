@@ -22,6 +22,11 @@ export const metadata: Metadata = {
   },
   title: "DigitalDeveloper",
   description: "DigitalDeveloper - Your Trusted Consulting Partner for Web, SEO, and more.",
+  icons: {
+    icon: "/favicon.png",
+    shortcut: "/favicon.png",
+    apple: "/favicon.png",
+  },
 };
 
 export default function RootLayout({
