@@ -20,25 +20,30 @@ const LandingFAQ = dynamic(() => import("@/components/sections/landing-page/Land
 
 // Define search intent metadata
 export const metadata: Metadata = {
-  title: "Landing Page Development Services | High-Converting Pages",
-  description: "We create high-converting landing pages designed for better leads, sales, performance, and user experience across all devices.",
+  title: "Landing Page Development Services | USA, UK, Canada",
+  description: "Hire expert landing page developers for high-converting custom pages (USA/UK/Canada). CRO, A/B testing & <2.5s speed. Offshore rates $25–50/hr.",
   keywords: [
     "landing page development services",
-    "high-converting landing pages",
-    "landing page development startups",
-    "conversion rate optimization",
-    "ad landing pages",
-    "fast-loading landing pages"
+    "hire landing page developer",
+    "custom landing page design",
+    "high converting landing page",
+    "landing page design agency",
+    "CRO landing page",
+    "Webflow landing page",
+    "WordPress landing page",
+    "USA landing page developer",
+    "UK landing page designer"
   ],
   alternates: {
     canonical: "/landing-page-development",
   },
   openGraph: {
-    title: "Landing Page Development Services | High-Converting Pages",
-    description: "We create high-converting landing pages designed for better leads, sales, performance, and user experience across all devices.",
+    title: "Landing Page Development Services | USA, UK, Canada",
+    description: "Hire expert landing page developers for high-converting custom pages (USA/UK/Canada). CRO, A/B testing & <2.5s speed. Offshore rates $25–50/hr.",
     type: "website",
   }
 };
+
 
 export default function LandingPageDevelopment() {
   return (
@@ -80,18 +85,43 @@ export default function LandingPageDevelopment() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Service",
-            "serviceType": "Landing Page Development",
-            "name": "Landing Page Development Services",
+            "name": "Landing Page Development Services for USA, UK, Canada Clients",
+            "serviceType": "Web Development - Landing Pages",
             "provider": {
               "@type": "Organization",
               "name": "DigitalDeveloper",
-              "url": SITE_URL
+              "image": `${SITE_URL}/favicon.png`,
+              "url": SITE_URL,
+              "email": "hello@digitaldeveloper.com",
+              "areaServed": ["USA", "UK", "Canada", "Australia", "UAE"]
             },
-            "areaServed": "Worldwide",
-            "description": "High-converting landing page development services focused on performance, lead generation, SEO, and user experience.",
-            "offers": {
-              "@type": "Offer",
-              "availability": "https://schema.org/InStock"
+            "description": "High-converting landing page development for USA, UK, Canada, Australia, UAE clients. CRO, A/B testing, Webflow, WordPress, React. $25–50/hr offshore pricing.",
+            "areaServed": ["USA", "UK", "Canada", "Australia", "UAE"],
+            "hasOfferCatalog": {
+              "@type": "OfferCatalog",
+              "name": "Landing Page Development Packages",
+              "itemListElement": [
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Starter Landing Page Package",
+                    "description": "1 custom high-converting page, mobile-first design, basic CRO, 5–7 days delivery",
+                    "price": "1500",
+                    "priceCurrency": "USD"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Professional Landing Page Package",
+                    "description": "1-2 conversion-optimized pages, full A/B testing setup, CRM integration (HubSpot/Salesforce), GA4/Meta Pixel integration, 10–14 days delivery",
+                    "price": "3000",
+                    "priceCurrency": "USD"
+                  }
+                }
+              ]
             }
           })
         }}
@@ -105,42 +135,74 @@ export default function LandingPageDevelopment() {
             "mainEntity": [
               {
                 "@type": "Question",
-                "name": "How long does landing page development take?",
+                "name": "What is the cost of landing page development for USA/UK clients?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Our typical timeline is 1 to 2 weeks. This includes audience research, conversion-focused copywriting, custom UI/UX design, custom Next.js development, CRM integration, and analytics setup."
+                  "text": "Landing page development costs $1,500–5,000 for a single high-converting page. Our offshore pricing is $25–50/hr vs $150–200/hr US agencies. Enterprise suites (3–5 pages) cost $6,000–12,000. We include CRO, A/B testing, and CRM integration in all packages."
                 }
               },
               {
                 "@type": "Question",
-                "name": "Are the landing pages SEO-friendly?",
+                "name": "Do you work with international clients (USA, UK, Canada, Australia, UAE)?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Absolutely. We build all landing pages with clean semantic HTML structures, server-side page rendering, optimized meta tags, and structured schema markup. This makes it easy for search engine crawlers to read and rank your page."
+                  "text": "Yes, 60% of our clients are international (USA 35%, UK 15%, Canada/Australia/UAE 10%). We support US/UK timezones, use agile methodology, provide weekly updates, and have built 200+ pages for global clients."
                 }
               },
               {
                 "@type": "Question",
-                "name": "Can you redesign existing landing pages?",
+                "name": "What platforms do you use (Webflow, WordPress, React, HubSpot)?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Yes. We analyze your existing page to identify friction points and conversion drop-offs. Then, we redesign it with clear copywriting, modern styling, and optimized CTA paths to lift conversion rates."
+                  "text": "We specialize in Webflow (no-code, fast deployment), WordPress (custom themes), React (custom builds), and HubSpot (CRM-integrated). 70% of projects use Webflow for speed and flexibility. All pages are mobile-responsive with sub-2.5s load times."
                 }
               },
               {
                 "@type": "Question",
-                "name": "Do you develop responsive landing pages?",
+                "name": "How long does it take to build a high-converting landing page?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Yes. Every landing page we build is developed mobile-first. Over 60% of web traffic is mobile, so we optimize and test extensively on mobile, tablet, and desktop viewports to ensure seamless visual layouts and swift loading times."
+                  "text": "A standard landing page takes 5–7 days (design 2–3 days, development 2–3 days, QA 1 day). Complex pages with A/B testing and CRM integration take 10–14 days. We offer rush delivery (3–4 days) for urgent campaigns."
                 }
               },
               {
                 "@type": "Question",
-                "name": "Which technologies do you use?",
+                "name": "Do you include CRO and A/B testing in your services?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "We build with Next.js, React, Tailwind CSS, and Framer Motion. This modern stack allows us to create blazing-fast static pages, custom interactive components, and smooth micro-animations without heavy bundle weight."
+                  "text": "Yes, all our landing pages include CRO (conversion rate optimization) with A/B testing setup, analytics tracking, and behavior analysis. We achieve average 8–15% conversion rates (vs 2–5% industry average) through message match, friction reduction, and data-driven improvements."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What conversion rates can I expect from your landing pages?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Our landing pages achieve 8–15% average conversion rates for SaaS lead gen, 6–10% for eCommerce, and 10–20% for B2B. Industry average is 2–5%. We optimize through CRO, A/B testing, speed (<2.5s), and social proof."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Why is your pricing lower than US/UK agencies?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "We are a remote offshore team with $25–50/hr pricing vs $150–200/hr US agencies like OuterBox and AdVenture Media. This provides 60–75% cost savings for the exact same high-end engineering quality. We work in US/UK timezones with full daily communication."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Do you integrate CRM and analytics (HubSpot, Salesforce, Google Analytics)?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes, we integrate all landing pages with your existing marketing stack, including HubSpot, Salesforce, ActiveCampaign, Mailchimp, Google Analytics 4, and Meta Pixel."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Do you provide post-launch support and optimization?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes, we provide 30 days of free post-launch support to monitor analytics and fix any bugs. We also offer monthly optimization retainers for continuous A/B testing."
                 }
               }
             ]

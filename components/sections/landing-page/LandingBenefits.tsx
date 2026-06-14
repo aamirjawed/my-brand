@@ -10,38 +10,38 @@ export default function LandingBenefits() {
   const benefits = [
     {
       icon: Target,
-      title: "Better Lead Generation",
-      description: "Direct campaigns into singular, conversion-focused pathways. Removing distracting navigation loops captures up to 3x more qualified leads for your startup.",
+      title: "10+ Years Experience, 200+ Pages Delivered",
+      description: "We are the best landing page development service because we combine a decade of technical execution with over 200 high-performing custom pages delivered globally.",
       accent: "from-orange-500 to-amber-500",
     },
     {
       icon: Sparkles,
-      title: "Higher Ad Conversion Rates",
-      description: "Match your paid search or social media ad copy directly to the page headline. This tight search intent alignment keeps ad costs down and ROI high.",
+      title: "CRO-Focused (Average 8–15% Conversion Rate)",
+      description: "We design and build with conversion-rate optimization best practices to achieve average rates of 8–15%, compared to the standard 2–5% industry average.",
       accent: "from-rose-500 to-orange-500",
     },
     {
       icon: Zap,
-      title: "Faster Page Speed",
-      description: "Built on a static React core that finishes rendering in milliseconds. Slow sites kill sales—our lightweight pages load instantly to retain visitors.",
+      title: "Offshore Pricing: $25–50/hr (Save 60–75%)",
+      description: "Get elite agency-level engineering quality at offshore rates ($25–50/hr), saving 60–75% compared to expensive US/UK agencies charging $150–200/hr.",
       accent: "from-amber-500 to-yellow-500",
     },
     {
       icon: Smartphone,
-      title: "Mobile Optimization First",
-      description: "Over 60% of paid ad traffic comes from mobile screens. We design mobile-first interfaces that scale, tap, and load seamlessly across all devices.",
+      title: "US/UK Timezone Support + Fast 5–7 Day Delivery",
+      description: "We align with your local operational timezone for easy communication and offer standard 5–7 day rapid turnaround to sync with your ad campaigns.",
       accent: "from-orange-600 to-rose-600",
     },
     {
       icon: Eye,
-      title: "Better User Experience",
-      description: "Guide eyes down a structured path with clear typographic hierarchy, psychological anchors, and smooth, responsive design elements.",
+      title: "5-Star Rated on Clutch & Google Reviews",
+      description: "Backed by five-star corporate citations and verified reviews, proving our dedication to clean, compliant code and excellent client support.",
       accent: "from-rose-600 to-amber-600",
     },
     {
       icon: HeartHandshake,
-      title: "Lower Bounce Rates",
-      description: "Instant visual appeal combined with clear value propositions captures user interest in under 3 seconds, keeping them on page to act.",
+      title: "Advanced Integrations & Tracking Setup",
+      description: "All pages include custom CRM integrations (HubSpot, Salesforce) and tracking configurations (Google Analytics, Meta Pixel) with zero lead leak.",
       accent: "from-yellow-500 to-orange-600",
     },
   ];
@@ -57,10 +57,10 @@ export default function LandingBenefits() {
         {/* Header */}
         <div className="w-full mb-20 border-l-4 border-orange-500 pl-6">
           <span className="font-extrabold text-xs text-orange-500 uppercase tracking-widest block mb-2">
-            The Conversion Difference
+            The Performance Difference
           </span>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-black uppercase tracking-wide max-w-2xl leading-none">
-            Why Businesses Need High-Converting Landing Pages
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-black uppercase tracking-wide max-w-3xl leading-none">
+            Why Choose Us for Your Landing Page Development?
           </h2>
         </div>
 

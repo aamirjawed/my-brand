@@ -10,41 +10,42 @@ export default function LandingIndustries() {
   const industries = [
     {
       icon: Rocket,
-      name: "Startups",
-      focus: "Investment & Early Growth",
-      description: "Pitch ideas to early adopters and VCs. We design high-converting waitlist signups and prototype feedback funnels that establish instant credibility.",
-    },
-    {
-      icon: BarChart2,
-      name: "SaaS & Software",
+      name: "SaaS & B2B Tech",
       focus: "Trials & Subscriptions",
-      description: "Explain complex workflow features simply. We construct interactive product sandbox previews and multi-tiered pricing charts that drive SaaS growth.",
-    },
-    {
-      icon: MapPin,
-      name: "Local Businesses",
-      focus: "Phone Leads & Bookings",
-      description: "Get direct phone calls and booking requests. We build local-first pages optimized for mapping software and quick tap-to-call interfaces.",
-    },
-    {
-      icon: Briefcase,
-      name: "Agencies & Professional",
-      focus: "Consultation Bookings",
-      description: "Showcase client testimonials and booking calendars. We eliminate calendar scheduling friction, turning visitors into warm sales calls.",
+      description: "Explain complex workflow features simply. We construct interactive product sandbox previews and multi-tiered pricing charts that drive trial registrations and demo bookings.",
     },
     {
       icon: ShoppingBag,
-      name: "E-Commerce",
+      name: "eCommerce & Retail",
       focus: "Direct Sales & Promos",
-      description: "Drive sales for single-product lines or seasonal offers. We build checkout paths and buy buttons integrated directly with payment checkouts.",
+      description: "Drive high direct-to-checkout conversions for single products or collections. We optimize payment checkouts, speed (<2.5s), and coupon flows.",
+    },
+    {
+      icon: Briefcase,
+      name: "FinTech & Crypto",
+      focus: "Trust & Registrations",
+      description: "Establish immediate security and credibility. We design pages for investment platforms, mobile app downloads, secure forms, and compliance badges.",
+    },
+    {
+      icon: BarChart2,
+      name: "Professional Agencies",
+      focus: "Consultation Bookings",
+      description: "Showcase case studies and embed calendar scheduling. We eliminate friction paths to turn anonymous search traffic into qualified sales calls.",
+    },
+    {
+      icon: MapPin,
+      name: "Healthcare & Wellness",
+      focus: "Patient Bookings",
+      description: "Optimize layout for doctor profiles, clinic locator tools, patient inquiry forms, and HIPAA-compliant secure intake integrations.",
     },
     {
       icon: GraduationCap,
-      name: "Coaches & Education",
-      focus: "Webinar & Course Signups",
-      description: "Grow your email list and sell premium courses. We build beautiful lead magnets and webinar signup pages optimized for email software.",
+      name: "EdTech & Online Courses",
+      focus: "Student Enrollments",
+      description: "Grow your email list and sell premium courses. We build custom lead magnets and webinar signup pages optimized for email platforms.",
     }
   ];
+
 
   return (
     <section className="py-28 bg-white text-slate-900 relative overflow-hidden">

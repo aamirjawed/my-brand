@@ -11,159 +11,130 @@ export default function LandingServices() {
   const services = [
     {
       icon: Palette,
-      title: "Custom UI Design",
-      subtitle: "Tailored design system, not templates",
-      description: "We craft custom visual interfaces reflecting your startup's branding. By designing layouts focused on clear hierarchy and conversion psychology, we build trust with visitors instantly.",
+      title: "Custom Landing Page Design (Webflow, WordPress, Framer)",
+      subtitle: "Tailor-made landing pages built on modern platforms",
+      description: "We design and build bespoke, responsive landing pages on Webflow, WordPress, Framer, or custom React/HTML5 templates. This gives you complete editor control to easily modify copy, images, and visual elements.",
       details: [
-        "Brand-aligned color palettes and custom typography",
-        "Visual feedback & scroll triggers",
-        "Clean, modern whitespace execution"
+        "Easy content management with Webflow Editor/WordPress CMS",
+        "Rapid 5–7 day delivery from design to launch",
+        "Lightweight, semantic layouts optimized for all devices"
       ],
       previewContent: (
-        <div className="p-6 bg-slate-900 rounded-2xl border border-slate-800 text-left font-mono text-xs text-slate-400 space-y-3">
-          <div className="text-orange-500">// Custom Tailwind Theme Config</div>
-          <div>theme: &#123;</div>
-          <div className="pl-4">extend: &#123;</div>
-          <div className="pl-8 text-white">colors: &#123; brand: '#f97316' &#125;,</div>
-          <div className="pl-8 text-white">fontFamily: &#123; sans: ['Outfit', 'sans-serif'] &#125;</div>
-          <div className="pl-4">&#125;</div>
-          <div>&#125;</div>
-        </div>
-      )
-    },
-    {
-      icon: Layers,
-      title: "Responsive Development",
-      subtitle: "Tailored for phone, tablet, and desktop",
-      description: "A fast, fully responsive layout built with Next.js ensures zero layout shifts on mobile platforms. Since the majority of ad traffic is mobile, we test and refine layouts extensively.",
-      details: [
-        "Fluid flex and CSS grid containers",
-        "Touch-friendly target click elements",
-        "Adaptive styling for high-density Retina screens"
-      ],
-      previewContent: (
-        <div className="relative aspect-[16/9] w-full border border-slate-800 rounded-2xl bg-slate-900 flex items-center justify-center p-4">
-          <div className="w-[120px] h-[200px] border-2 border-slate-700 bg-slate-950 rounded-xl p-2 relative flex flex-col justify-between">
-            <div className="w-8 h-1.5 bg-slate-700 rounded-full mx-auto"></div>
-            <div className="space-y-1.5 my-auto">
-              <div className="w-full h-8 bg-orange-600/20 border border-orange-500/30 rounded flex items-center justify-center text-[8px] text-orange-400 font-bold">MOBILE OK</div>
-              <div className="w-full h-2 bg-slate-800 rounded"></div>
-              <div className="w-2/3 h-2 bg-slate-800 rounded"></div>
-            </div>
-            <div className="w-4 h-4 rounded-full border border-slate-700 mx-auto"></div>
-          </div>
-        </div>
-      )
-    },
-    {
-      icon: Search,
-      title: "SEO Optimization",
-      subtitle: "Engineered to rank, structured to index",
-      description: "A landing page is useless if search engines can't parse it. We configure structural metadata, semantic HTML headers, and clean site routes that help pages rank and convert.",
-      details: [
-        "Server-rendered page dynamic metadata",
-        "Schema markup integration",
-        "Proper H1-H6 semantic page structures"
-      ],
-      previewContent: (
-        <div className="p-6 bg-slate-900 rounded-2xl border border-slate-800 text-left font-mono text-xs text-slate-400 space-y-2">
-          <div className="text-emerald-500">// Next.js Metadata Output</div>
-          <div className="text-white">&lt;title&gt;Landing Page Development Services...&lt;/title&gt;</div>
-          <div className="text-white">&lt;meta name="description" content="..." /&gt;</div>
-          <div className="text-slate-500">&lt;script type="application/ld+json"&gt; ...</div>
-        </div>
-      )
-    },
-    {
-      icon: Compass,
-      title: "Speed Optimization",
-      subtitle: "Sub-second load times for lower bounce rates",
-      description: "Milliseconds translate directly to conversions. We implement server-side caching, modern image formats, and minimal bundle sizes to load pages near-instantly.",
-      details: [
-        "Lightweight WebP/AVIF format rendering",
-        "Component code-splitting & lazy loading",
-        "Zero unused CSS styles"
-      ],
-      previewContent: (
-        <div className="p-6 bg-slate-900 rounded-2xl border border-slate-800 text-center space-y-3">
-          <div className="text-5xl font-black text-emerald-400">100</div>
-          <div className="text-xs uppercase tracking-widest text-slate-400 font-bold">Google Lighthouse Score</div>
-          <div className="flex justify-center gap-4 text-[10px] text-slate-500">
-            <div>Perf: 100</div>
-            <div>SEO: 100</div>
-            <div>Access: 100</div>
-          </div>
+        <div className="p-6 bg-slate-900 rounded-2xl border border-slate-800 text-left font-mono text-xs text-slate-450 space-y-3">
+          <div className="text-orange-500">// CMS & Platform Configuration</div>
+          <div className="text-white">platform: "Webflow / WordPress / Framer",</div>
+          <div className="text-white">editorAccess: true,</div>
+          <div className="text-white">customCode: "Next.js React Integration Ready"</div>
         </div>
       )
     },
     {
       icon: Target,
-      title: "CTA Optimization",
-      subtitle: "Scientific button placements that prompt action",
-      description: "We optimize forms, call-to-actions, and button positioning using psychological layouts that reduce friction and double your startup's submission volumes.",
+      title: "Landing Pages for Paid Ads (Google, Meta, LinkedIn)",
+      subtitle: "Conversion-optimized landing pages configured for ad campaigns",
+      description: "Maximize your advertising budget with pages designed specifically for paid channels. By matching landing page messaging perfectly with your Google, Meta, or LinkedIn search hooks, we lower your CPA and improve ad Quality Scores.",
       details: [
-        "Sticky CTA bars on mobile scrolls",
-        "High-contrast contrast action coloring",
-        "Single-field fields to eliminate friction"
+        "Tight message-match alignment with ad headlines",
+        "High-contrast call-to-actions placed scientifically",
+        "Minimal navigation menu loops to prevent visitor distraction"
       ],
       previewContent: (
         <div className="p-6 bg-slate-900 rounded-2xl border border-slate-800 text-center space-y-4">
-          <div className="w-full bg-slate-950 p-3 rounded-lg border border-slate-800 text-left text-xs">
-            <span className="text-slate-500 block mb-1">Business Email</span>
-            <span className="text-white">hello@yourstartup.com</span>
+          <div className="text-emerald-400 font-bold text-lg">Quality Score: 10/10</div>
+          <div className="text-xs text-slate-400">Ad Click-Through matched to Landing Page Header</div>
+          <div className="text-xs text-slate-500 font-bold">Result: -32% Cost Per Acquisition (CPA)</div>
+        </div>
+      )
+    },
+    {
+      icon: CheckCircle2,
+      title: "Lead Gen Landing Pages with CRM Integration",
+      subtitle: "Smart capture pages streaming leads straight to pipeline",
+      description: "Streamline your sales workflow. We configure lead generation fields to feed directly into your CRM pipelines (HubSpot, Salesforce, Zapier, ActiveCampaign) with instant email notifications and zero lead leakage.",
+      details: [
+        "Seamless integration with HubSpot, Salesforce, and Zapier webhooks",
+        "Pre-filled fields and dynamic forms to minimize typing friction",
+        "Automated confirmation email triggers and lead routing"
+      ],
+      previewContent: (
+        <div className="p-6 bg-slate-900 rounded-2xl border border-slate-800 text-left font-mono text-xs text-slate-400 space-y-2">
+          <div className="text-indigo-400">// CRM API Pipeline Push</div>
+          <div className="text-white">axios.post('/api/hubspot/lead', &#123;</div>
+          <div className="pl-4">email: lead.email,</div>
+          <div className="pl-4">source: "Google Search Ads",</div>
+          <div className="pl-4">status: "Instant Route"</div>
+          <div>&#125;);</div>
+        </div>
+      )
+    },
+    {
+      icon: Compass,
+      title: "SaaS Product Landing Pages",
+      subtitle: "Engineered for app trials, signups, and bookings",
+      description: "Designed for high-growth tech companies and SaaS startups. We build pages optimized to explain complex product values, showcase interactive screenshots, and drive direct demo bookings or trial signups.",
+      details: [
+        "Interactive product demo displays and interface mockups",
+        "Calendar booking tools (Calendly, SavvyCal) direct embeds",
+        "Dynamic testimonials, trust badges, and security credentials"
+      ],
+      previewContent: (
+        <div className="p-6 bg-slate-900 rounded-2xl border border-slate-800 text-center space-y-2">
+          <div className="w-full bg-slate-950 p-2.5 rounded border border-slate-800 text-[10px] text-left text-slate-400">
+            ✓ 14-Day Free Trial (No Credit Card Required)
           </div>
-          <button className="w-full py-3 bg-gradient-to-r from-orange-500 to-amber-500 text-white rounded-lg font-bold text-xs uppercase tracking-widest shadow-lg shadow-orange-500/20">
-            Get High-Converting Proposal
+          <button className="w-full py-2.5 bg-orange-600 text-white rounded font-bold text-xs uppercase tracking-wide">
+            Start Free Trial
           </button>
         </div>
       )
     },
     {
       icon: BarChart2,
-      title: "Analytics Integration",
-      subtitle: "Turn anonymous traffic into actionable metrics",
-      description: "Integrate Google Tag Manager, custom event tracking, and pixels smoothly so you know exactly where your users come from and which copy makes them convert.",
+      title: "eCommerce Landing Pages",
+      subtitle: "Promo pages designed to showcase and sell single products",
+      description: "Drive immediate transactions. We create direct-to-checkout promo landers that highlight single flagship products or bundle collections, eliminating standard store navigation to maximize conversion rates.",
       details: [
-        "Facebook Pixel & Google Ads tagging",
-        "Form submission trigger events",
-        "Conversion funnel reports setup"
+        "Frictionless direct-to-checkout flows and one-click buying",
+        "Shopify Buy Button, Stripe, and WooCommerce custom setups",
+        "Urgency timers and product benefits comparison grids"
       ],
       previewContent: (
-        <div className="p-6 bg-slate-900 rounded-2xl border border-slate-800 text-left font-mono text-xs text-slate-400 space-y-2">
-          <div className="text-indigo-400">// Analytics Event Fire</div>
-          <div className="text-white">window.gtag('event', 'generate_lead', &#123;</div>
-          <div className="pl-4">'value': 120.00,</div>
-          <div className="pl-4">'currency': 'USD'</div>
-          <div>&#125;);</div>
+        <div className="p-6 bg-slate-900 rounded-2xl border border-slate-800 text-center space-y-2">
+          <div className="text-xs text-slate-500 line-through">$89.00</div>
+          <div className="text-xl font-bold text-white">$49.00 <span className="text-xs text-orange-500 font-bold">(Save 45%)</span></div>
+          <button className="w-full py-2.5 bg-emerald-600 hover:bg-emerald-700 text-white rounded font-bold text-xs uppercase tracking-wide">
+            Buy Now - Stripe Checkout
+          </button>
         </div>
       )
     },
     {
       icon: SplitSquareVertical,
-      title: "A/B Testing Ready",
-      subtitle: "Continuous scaling setup for growth testing",
-      description: "We set up clean code structures that allow you to deploy A/B testing variations effortlessly, helping you find and scale the absolute highest performing headlines.",
+      title: "Landing Page CRO & A/B Testing Services",
+      subtitle: "Ongoing split-testing to scale conversion metrics",
+      description: "A launch is just the beginning. We run continuous conversion rate optimization (CRO) cycles, reviewing heatmap data, analyzing user sessions, and implementing A/B split-tests to lift conversion rates over time.",
       details: [
-        "Clean, componentized code modular blocks",
-        "Compatible with Google Optimize, VWO, or Optimizely",
-        "Modular variants logic"
+        "Setup of session recording tools (Hotjar, Microsoft Clarity)",
+        "Headline and copy variations testing to find winners",
+        "Regular conversion reports with actionable design recommendations"
       ],
       previewContent: (
-        <div className="grid grid-cols-2 gap-4">
-          <div className="p-4 bg-slate-900 border border-slate-800 rounded-xl text-center">
-            <div className="text-xs text-slate-500 mb-2">Variant A</div>
-            <div className="font-bold text-sm text-white mb-2">Claim Free Demo</div>
-            <div className="text-xs text-emerald-400 font-bold">12.4% Conv.</div>
+        <div className="grid grid-cols-2 gap-3">
+          <div className="p-3 bg-slate-900 border border-slate-800 rounded-xl text-center">
+            <div className="text-[10px] text-slate-500">Variant A</div>
+            <div className="font-bold text-xs text-white">"Standard"</div>
+            <div className="text-[10px] text-slate-400">5.4% CR</div>
           </div>
-          <div className="p-4 bg-slate-900 border-2 border-orange-500/50 rounded-xl text-center">
-            <div className="text-xs text-slate-500 mb-2">Variant B (Winner)</div>
-            <div className="font-bold text-sm text-orange-400 mb-2">Start Free Trail</div>
-            <div className="text-xs text-emerald-400 font-bold">18.7% Conv.</div>
+          <div className="p-3 bg-slate-950 border-2 border-orange-500 rounded-xl text-center">
+            <div className="text-[10px] text-slate-500">Variant B (Winner)</div>
+            <div className="font-bold text-xs text-orange-450">"CRO Optimised"</div>
+            <div className="text-[10px] text-emerald-400 font-bold">+180% Lift</div>
           </div>
         </div>
       )
     }
   ];
+
 
   return (
     <section className="py-28 bg-white text-slate-900 relative overflow-hidden">

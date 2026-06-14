@@ -9,24 +9,40 @@ export default function LandingFAQ() {
 
   const faqs = [
     {
-      q: "How long does landing page development take?",
-      a: "Our typical timeline is 1 to 2 weeks. This includes audience research, conversion-focused copywriting, custom UI/UX design, custom Next.js development, CRM integration, and analytics setup."
+      q: "What is the cost of landing page development for USA/UK clients?",
+      a: "Landing page development costs $1,500–5,000 for a single high-converting page. Our offshore pricing is $25–50/hr vs $150–200/hr US agencies. Enterprise suites (3–5 pages) cost $6,000–12,000. We include CRO, A/B testing, and CRM integration in all packages."
     },
     {
-      q: "Are the landing pages SEO-friendly?",
-      a: "Absolutely. We build all landing pages with clean semantic HTML structures, server-side page rendering, optimized meta tags, and structured schema markup. This makes it easy for search engine crawlers to read and rank your page."
+      q: "Do you work with international clients (USA, UK, Canada, Australia, UAE)?",
+      a: "Yes, 60% of our clients are international (USA 35%, UK 15%, Canada/Australia/UAE 10%). We support US/UK timezones, use agile methodology, provide weekly updates, and have built 200+ pages for global clients."
     },
     {
-      q: "Can you redesign existing landing pages?",
-      a: "Yes. We analyze your existing page to identify friction points and conversion drop-offs. Then, we redesign it with clear copywriting, modern styling, and optimized CTA paths to lift conversion rates."
+      q: "What platforms do you use (Webflow, WordPress, React, HubSpot)?",
+      a: "We specialize in Webflow (no-code, fast deployment), WordPress (custom themes), React (custom builds), and HubSpot (CRM-integrated). 70% of projects use Webflow for speed and flexibility. All pages are mobile-responsive with sub-2.5s load times."
     },
     {
-      q: "Do you develop responsive landing pages?",
-      a: "Yes. Every landing page we build is developed mobile-first. Over 60% of web traffic is mobile, so we optimize and test extensively on mobile, tablet, and desktop viewports to ensure seamless visual layouts and swift loading times."
+      q: "How long does it take to build a high-converting landing page?",
+      a: "A standard landing page takes 5–7 days (design 2–3 days, development 2–3 days, QA 1 day). Complex pages with A/B testing and CRM integration take 10–14 days. We offer rush delivery (3–4 days) for urgent campaigns."
     },
     {
-      q: "Which technologies do you use?",
-      a: "We build with Next.js, React, Tailwind CSS, and Framer Motion. This modern stack allows us to create blazing-fast static pages, custom interactive components, and smooth micro-animations without heavy bundle weight."
+      q: "Do you include CRO and A/B testing in your services?",
+      a: "Yes, all our landing pages include CRO (conversion rate optimization) with A/B testing setup, analytics tracking, and behavior analysis. We achieve average 8–15% conversion rates (vs 2–5% industry average) through message match, friction reduction, and data-driven improvements."
+    },
+    {
+      q: "What conversion rates can I expect from your landing pages?",
+      a: "Our landing pages achieve 8–15% average conversion rates for SaaS lead gen, 6–10% for eCommerce, and 10–20% for B2B. Industry average is 2–5%. We optimize through CRO, A/B testing, speed (<2.5s), and social proof."
+    },
+    {
+      q: "Why is your pricing lower than US/UK agencies?",
+      a: "We are a remote offshore team with $25–50/hr pricing vs $150–200/hr US agencies like OuterBox and AdVenture Media. This provides 60–75% cost savings for the exact same high-end engineering quality. We work in US/UK timezones with full daily communication."
+    },
+    {
+      q: "Do you integrate CRM and analytics (HubSpot, Salesforce, Google Analytics)?",
+      a: "Yes, we integrate all landing pages with your existing marketing stack, including HubSpot, Salesforce, ActiveCampaign, Mailchimp, Google Analytics 4, and Meta Pixel."
+    },
+    {
+      q: "Do you provide post-launch support and optimization?",
+      a: "Yes, we provide 30 days of free post-launch support to monitor analytics and fix any bugs. We also offer monthly optimization retainers for continuous A/B testing."
     }
   ];
 

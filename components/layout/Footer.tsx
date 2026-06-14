@@ -30,7 +30,7 @@ export default function Footer() {
               <span className="text-orange-500 font-black">Digital</span>Developer
             </span>
             <p className="text-xs text-slate-500 leading-relaxed max-w-sm">
-              We design, build, optimize, and launch digital experiences. A collaborative playground where code meets wobbly lines of creativity.
+              We design, build, and scale digital experiences. A premium offshore product engineering studio based in India, serving startups and enterprises globally across the USA, UK, Canada, Australia, and UAE.
             </p>
           </div>
 
