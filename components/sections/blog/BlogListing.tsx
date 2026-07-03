@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { ArrowRight, Calendar, Clock, Bookmark, Filter, Send, Sparkles, ChevronLeft, ChevronRight } from "lucide-react";
-import { BlogPost } from "@/lib/blog-data";
+import { BlogPost, parseMarkdownToReact } from "@/lib/contentful";
 
 interface BlogListingProps {
   posts: BlogPost[];
@@ -85,35 +85,48 @@ export default function BlogListing({ posts }: BlogListingProps) {
         >
           {/* Left Visual: Premium Abstract Wireframe Grid */}
           <div className="col-span-1 lg:col-span-6 relative aspect-[16/10] bg-slate-950 rounded-3xl overflow-hidden border border-slate-900 flex items-center justify-center">
-            {/* Mesh Grid Pattern */}
-            <div className="absolute inset-0 bg-[linear-gradient(to_right,#ea580c05_1px,transparent_1px),linear-gradient(to_bottom,#ea580c05_1px,transparent_1px)] bg-[size:2rem_2rem] z-0" />
-            <div className="absolute w-[60%] h-[60%] bg-orange-600/5 rounded-full blur-[100px] pointer-events-none z-0" />
-            
-            {/* Animated floating abstract doodles */}
-            <motion.svg
-              className="absolute w-48 h-48 text-orange-600/20 pointer-events-none z-10"
-              viewBox="0 0 100 100"
-            >
-              <motion.circle
-                cx="50"
-                cy="50"
-                r="40"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeDasharray="6 6"
-                animate={{ rotate: 360 }}
-                transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-              />
-              <motion.path
-                d="M 50 10 L 90 50 L 50 90 L 10 50 Z"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="1.5"
-                animate={{ rotate: -360 }}
-                transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
-              />
-            </motion.svg>
+            {featuredPost.imageUrl ? (
+              <>
+                <img
+                  src={featuredPost.imageUrl}
+                  alt={featuredPost.title}
+                  className="absolute inset-0 w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-700"
+                />
+                <div className="absolute inset-0 bg-slate-950/40" />
+              </>
+            ) : (
+              <>
+                {/* Mesh Grid Pattern */}
+                <div className="absolute inset-0 bg-[linear-gradient(to_right,#ea580c05_1px,transparent_1px),linear-gradient(to_bottom,#ea580c05_1px,transparent_1px)] bg-[size:2rem_2rem] z-0" />
+                <div className="absolute w-[60%] h-[60%] bg-orange-600/5 rounded-full blur-[100px] pointer-events-none z-0" />
+                
+                {/* Animated floating abstract doodles */}
+                <motion.svg
+                  className="absolute w-48 h-48 text-orange-600/20 pointer-events-none z-10"
+                  viewBox="0 0 100 100"
+                >
+                  <motion.circle
+                    cx="50"
+                    cy="50"
+                    r="40"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeDasharray="6 6"
+                    animate={{ rotate: 360 }}
+                    transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
+                  />
+                  <motion.path
+                    d="M 50 10 L 90 50 L 50 90 L 10 50 Z"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="1.5"
+                    animate={{ rotate: -360 }}
+                    transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
+                  />
+                </motion.svg>
+              </>
+            )}
 
             {/* Simulated Live Analytics Feed */}
             <div className="relative bg-slate-900/90 border border-slate-800 rounded-2xl p-6 w-[80%] shadow-2xl z-20 flex flex-col gap-3 transform group-hover:scale-[1.03] transition-transform duration-500">
@@ -162,7 +175,7 @@ export default function BlogListing({ posts }: BlogListingProps) {
             </h2>
 
             <p className="text-slate-400 text-base sm:text-lg leading-relaxed mb-8 font-medium">
-              {featuredPost.excerpt}
+              {parseMarkdownToReact(featuredPost.excerpt)}
             </p>
 
             <div className="flex flex-wrap gap-2 mb-8">
@@ -243,7 +256,7 @@ export default function BlogListing({ posts }: BlogListingProps) {
 
                       {/* Excerpt */}
                       <p className="text-slate-400 text-sm sm:text-base leading-relaxed font-medium">
-                        {post.excerpt}
+                        {parseMarkdownToReact(post.excerpt)}
                       </p>
 
                       {/* Button */}

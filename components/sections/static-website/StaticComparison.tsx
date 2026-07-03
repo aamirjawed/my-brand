@@ -59,7 +59,7 @@ export default function StaticComparison() {
       <div className="absolute left-0 bottom-0 w-96 h-96 bg-orange-600/5 rounded-full blur-[120px] pointer-events-none" />
 
       <div className="container mx-auto px-6 max-w-[1200px] relative z-10">
-        
+
         {/* Section Header */}
         <div className="w-full mb-16 border-l-4 border-orange-600 pl-4 sm:pl-6 text-left">
           <span className="font-extrabold text-[10px] text-orange-500 uppercase tracking-widest block mb-2">
@@ -91,7 +91,7 @@ export default function StaticComparison() {
               {comparisonRows.map((row, idx) => {
                 const StatIcon = row.staticIcon;
                 const DynIcon = row.dynamicIcon;
-                
+
                 return (
                   <tr key={idx} className="hover:bg-slate-900/10 transition-colors">
                     <td className="p-5 font-extrabold text-white text-xs sm:text-sm border-r border-slate-900">

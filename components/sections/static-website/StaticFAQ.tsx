@@ -62,14 +62,12 @@ export default function StaticFAQ() {
                   onClick={() => setExpandedIndex(isExpanded ? null : idx)}
                   className="w-full flex items-center justify-between text-left gap-4 outline-none group"
                 >
-                  <h3 className={`font-extrabold text-base sm:text-lg uppercase tracking-wide transition-colors ${
-                    isExpanded ? "text-orange-600" : "text-slate-950 group-hover:text-orange-500"
-                  }`}>
+                  <h3 className={`font-extrabold text-base sm:text-lg uppercase tracking-wide transition-colors ${isExpanded ? "text-orange-600" : "text-slate-950 group-hover:text-orange-500"
+                    }`}>
                     {faq.q}
                   </h3>
-                  <div className={`w-8 h-8 rounded-full flex items-center justify-center border transition-colors ${
-                    isExpanded ? "bg-orange-600 border-orange-600 text-white" : "border-slate-200 text-slate-500 group-hover:border-slate-900"
-                  }`}>
+                  <div className={`w-8 h-8 rounded-full flex items-center justify-center border transition-colors ${isExpanded ? "bg-orange-600 border-orange-600 text-white" : "border-slate-200 text-slate-500 group-hover:border-slate-900"
+                    }`}>
                     {isExpanded ? <ChevronUp className="w-4 h-4" /> : <ChevronDown className="w-4 h-4" />}
                   </div>
                 </button>

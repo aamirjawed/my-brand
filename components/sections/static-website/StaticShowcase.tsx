@@ -7,7 +7,7 @@ export default function StaticShowcase() {
   return (
     <section className="py-24 bg-white relative overflow-hidden">
       <div className="container mx-auto px-6 max-w-[1400px]">
-        
+
         {/* Section Heading */}
         <div className="w-full mb-16 border-l-4 border-orange-600 pl-4 sm:pl-6">
           <motion.h2
@@ -23,10 +23,10 @@ export default function StaticShowcase() {
 
         {/* Grid Area */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
-          
+
           {/* Left Side: Distinct Visual Design (Code Window overlapping Browser) */}
           <div className="col-span-1 lg:col-span-6 relative flex items-center justify-center min-h-[350px] sm:min-h-[460px] md:min-h-[500px]">
-            
+
             {/* Ambient Background Glow */}
             <div className="absolute w-[80%] h-[80%] bg-orange-600/5 rounded-full blur-[100px] pointer-events-none z-0"></div>
 
@@ -108,7 +108,7 @@ export default function StaticShowcase() {
               <p className="text-sm sm:text-base leading-relaxed">
                 Our engineering team pre-compiles pages into flat HTML files using a modern <strong className="text-orange-600">JAMstack</strong> stack, running <strong className="text-orange-600">mobile-first development</strong> and advanced <strong className="text-orange-600">deployment optimization</strong> on edge networks. This ensures a 100/100 score in Google's <a href="/blog/core-web-vitals-explained" className="text-orange-600 underline font-semibold hover:text-orange-500">Core Web Vitals</a>. To learn more, read our detailed comparison of <a href="/blog/static-vs-dynamic-websites" className="text-orange-600 underline font-semibold hover:text-orange-500">static vs dynamic websites</a> and check our technical <strong className="text-orange-600">technical SEO</strong> guidelines for <strong className="text-orange-600">fast loading speed</strong>.
               </p>
-              
+
               <p className="text-slate-700 text-xs sm:text-sm font-semibold italic border-l-2 border-orange-500 pl-4">
                 Ensure your web performance is bulletproof, delivers instantaneous rendering speeds, and optimizes technical SEO properties to keep users engaged and search engines satisfied.
               </p>
