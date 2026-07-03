@@ -125,36 +125,36 @@ export default function BlogListing({ posts }: BlogListingProps) {
                     transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
                   />
                 </motion.svg>
+
+                {/* Simulated Live Analytics Feed */}
+                <div className="relative bg-slate-900/90 border border-slate-800 rounded-2xl p-6 w-[80%] shadow-2xl z-20 flex flex-col gap-3 transform group-hover:scale-[1.03] transition-transform duration-500">
+                  <div className="flex items-center justify-between">
+                    <span className="text-[9px] font-black text-orange-500 uppercase tracking-widest flex items-center gap-1.5">
+                      <Sparkles className="w-3.5 h-3.5 text-orange-500 animate-pulse" />
+                      Conversion Engine Active
+                    </span>
+                    <div className="flex gap-1">
+                      <span className="w-1.5 h-1.5 rounded-full bg-slate-700"></span>
+                      <span className="w-1.5 h-1.5 rounded-full bg-slate-700"></span>
+                      <span className="w-1.5 h-1.5 rounded-full bg-slate-700"></span>
+                    </div>
+                  </div>
+                  <div className="space-y-1.5 border-t border-slate-800 pt-3">
+                    <div className="text-[18px] font-black text-white leading-none">↑ 34.8% Conversion Lift</div>
+                    <div className="text-[9px] text-slate-400">A/B Testing: Split Traffic Experiment #082</div>
+                  </div>
+                  {/* Funnel Visual */}
+                  <div className="w-full h-1 bg-slate-800 rounded-full mt-1 overflow-hidden">
+                    <motion.div 
+                      className="h-full bg-orange-500"
+                      initial={{ width: "30%" }}
+                      whileInView={{ width: "85%" }}
+                      transition={{ duration: 1.5, ease: "easeOut" }}
+                    />
+                  </div>
+                </div>
               </>
             )}
-
-            {/* Simulated Live Analytics Feed */}
-            <div className="relative bg-slate-900/90 border border-slate-800 rounded-2xl p-6 w-[80%] shadow-2xl z-20 flex flex-col gap-3 transform group-hover:scale-[1.03] transition-transform duration-500">
-              <div className="flex items-center justify-between">
-                <span className="text-[9px] font-black text-orange-500 uppercase tracking-widest flex items-center gap-1.5">
-                  <Sparkles className="w-3.5 h-3.5 text-orange-500 animate-pulse" />
-                  Conversion Engine Active
-                </span>
-                <div className="flex gap-1">
-                  <span className="w-1.5 h-1.5 rounded-full bg-slate-700"></span>
-                  <span className="w-1.5 h-1.5 rounded-full bg-slate-700"></span>
-                  <span className="w-1.5 h-1.5 rounded-full bg-slate-700"></span>
-                </div>
-              </div>
-              <div className="space-y-1.5 border-t border-slate-800 pt-3">
-                <div className="text-[18px] font-black text-white leading-none">↑ 34.8% Conversion Lift</div>
-                <div className="text-[9px] text-slate-400">A/B Testing: Split Traffic Experiment #082</div>
-              </div>
-              {/* Funnel Visual */}
-              <div className="w-full h-1 bg-slate-800 rounded-full mt-1 overflow-hidden">
-                <motion.div 
-                  className="h-full bg-orange-500"
-                  initial={{ width: "30%" }}
-                  whileInView={{ width: "85%" }}
-                  transition={{ duration: 1.5, ease: "easeOut" }}
-                />
-              </div>
-            </div>
           </div>
 
           {/* Right Info: Text Content */}
